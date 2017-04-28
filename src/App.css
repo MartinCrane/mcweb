@@ -4,30 +4,36 @@
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  background-color: white
+  background-color: white;
 }
 
 .MainContent {
   -ms-flex-positive: 1;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .Logo {
-  display: inline;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
+  flex-grow: 1;
   color: black;
-  transition: transform .4s cubic-bezier(0, 0, .2, 1), filter .15s cubic-bezier(0, 0, .2, 1);
-  will-change: transform;
   opacity: .2;
+  transition: all .8s;
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 .Logo img {
   display: inline;
   width: inherit;
   color: black;
-  box-shadow: 100px 100px blue;
+  box-shadow: 100px 100px 30px #888888;
 }
 
 .Menu {

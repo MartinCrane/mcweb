@@ -27,9 +27,8 @@ class Logo extends React.Component {
 
   render() {
     return (
-      <div className='Logo'>
+      <div className={`Logo`} style={this.logoTwirl()}>
           <img ref='Logo'
-               style={this.logoTwirl()}
                src={require('../images/logo.jpg')}></img>
       </div>
     );
@@ -39,7 +38,8 @@ class Logo extends React.Component {
 const mapStateToProps = (state) =>{
   return{
     x: state.mouse.x,
-    y: state.mouse.y
+    y: state.mouse.y,
+    mouseFire: state.mouse.mouseFire
   }
 }
 

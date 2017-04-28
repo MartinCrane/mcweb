@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="Main" onMouseMove = {e => this.handleMouse(e)}>
         <div className="MainContent">
-          < ConnectedMenu />
+          
           < ConnectedLogo />
         </div>
       </div>
