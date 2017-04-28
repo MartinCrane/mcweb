@@ -1,0 +1,55 @@
+.Main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white
+}
+
+.MainContent {
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+
+.Logo {
+  display: inline;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  transition: transform .4s cubic-bezier(0, 0, .2, 1), filter .15s cubic-bezier(0, 0, .2, 1);
+  will-change: transform;
+  opacity: .2;
+}
+
+.Logo img {
+  display: inline;
+  width: inherit;
+  color: black;
+  box-shadow: 100px 100px blue;
+}
+
+.Menu {
+  padding: 2em;
+  width: 50%;
+  margin-right: auto;
+  color: white;
+  background-color: blue
+}
+
+.MenuItem:hover {
+  color: black;
+  background-color: green;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 80%;
+  }
+}
