@@ -5,7 +5,7 @@ export const updateMouse = (position) => {
   }
 }
 
-export function logoTwirl() {
+export function elementFloat() {
   let left = this.state.left
   let right = this.state.right
   let top = this.state.top
@@ -30,7 +30,7 @@ export function logoTwirl() {
   } else {
     percentageY = relativeY / boundBottom
   }
-  let style={"transform":`rotateX(${percentageY * -40}deg) rotateY(${percentageX * 40}deg) scale(.5)`}
+  let style={"transform":`rotateX(${percentageY * -30}deg) rotateY(${percentageX * 30}deg) scale(1)`}
   return style
 }
 

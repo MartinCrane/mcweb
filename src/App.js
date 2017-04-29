@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { ConnectedLogo } from './components/Logo'
 import { ConnectedMenu } from './components/Menu'
-import logo from './logo.svg';
+
 import './App.css';
 
 class App extends Component {
@@ -23,9 +23,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="Main" onMouseMove = {e => this.handleMouse(e)}>
+      <div className="Main" onMouseMove={e => this.handleMouse(e)}>
         <div className="MainContent">
-          
+          < ConnectedMenu />
           < ConnectedLogo />
         </div>
       </div>
