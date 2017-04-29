@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { elementFloat } from '../actions/mouse'
+import { Link } from 'react-router'
 
 class Menu extends React.Component {
   constructor() {
@@ -26,11 +27,11 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <div id="menu" style={this.elementFloat()} ref='Menu' className='Menu'>
-        <div className='MenuItem' key={1}>Work</div>
-        <div className='MenuItem' key={2}>Library</div>
-        <div className='MenuItem' key={3}>News</div>
-        <div className='MenuItem' key={4}>About</div>
+      <div id="menu" style={this.elementFloat()} ref='Menu' className='Menu elementFloat'>
+        <div className='MenuItem' key={1}><Link to='/titles'>Work</Link></div>
+        <div className='MenuItem' key={2}><Link to='/logo'>Logo</Link></div>
+        <div className='MenuItem' key={3}><Link to='/news'>News</Link></div>
+        <div className='MenuItem' key={4}><Link to='/about'>About</Link></div>
       </div>
     );
   }

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { updateMouse } from './actions/mouse'
+import { Row, Grid, Col } from 'react-bootstrap';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { ConnectedLogo } from './components/Logo'
 import { ConnectedMenu } from './components/Menu'
+
 
 import './App.css';
 
@@ -24,10 +25,12 @@ class App extends Component {
   render() {
     return (
       <div className="Main" onMouseMove={e => this.handleMouse(e)}>
-        <div className="MainContent">
-          < ConnectedMenu />
-          < ConnectedLogo />
-        </div>
+          <div className="MainContent ">
+            <ConnectedMenu/>
+            <div className="ViewPort">
+              {this.props.children}
+            </div>
+          </div>
       </div>
     )
   }
