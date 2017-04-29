@@ -77,6 +77,19 @@
   cursor: pointer;
 }
 
+.Mwork {
+  width: 50%;
+  background-color: white;
+  z-index: 1;
+  display: inline;
+}
+
+.Mlogo {}
+
+.Mnews {}
+
+.Mabout {}
+
 
 /*TITLE*/
 

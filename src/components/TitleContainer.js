@@ -8,7 +8,7 @@ export default class TitleContainer extends React.Component {
     return (
       <div className="TitleContainer container">
       <Grid>
-          <Row className="show-grid ">
+          <Row className="show-grid leftFace">
             < Title key={1}/>
             < Title key={2}/>
             < Title key={3}/>

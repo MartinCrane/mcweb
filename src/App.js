@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { updateMouse } from './actions/mouse'
+import { updateSize } from './actions/mouse'
 import { Row, Grid, Col } from 'react-bootstrap';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -11,9 +12,24 @@ import './App.css';
 class App extends Component {
   constructor() {
     super()
+    this.state = {
+      width: window.innerWidth
+    }
     this.handleMouse = this.handleMouse.bind(this)
+    this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this)
   }
 
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange)
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+  handleWindowSizeChange = () => {
+    this.setState({
+      width: window.innerWidth
+    });
+  }
   handleMouse(e) {
     this.props.updateMouse({
       x: e.clientX,
@@ -38,7 +54,8 @@ class App extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    updateMouse: updateMouse
+    updateMouse: updateMouse,
+    updateSize: updateSize
   }, dispatch)
 }
 
