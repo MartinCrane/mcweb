@@ -4,9 +4,8 @@ import { updateSize } from './actions/mouse'
 import { Row, Grid, Col } from 'react-bootstrap';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { ConnectedMenu } from './components/Menu'
-
-
+import { ConnectedDtMenu } from './components/DtMenu'
+import { ConnectedMobileMenu } from './components/MobileMenu'
 import './App.css';
 
 class App extends Component {
@@ -16,20 +15,22 @@ class App extends Component {
       width: window.innerWidth
     }
     this.handleMouse = this.handleMouse.bind(this)
-    this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this)
   }
 
   componentWillMount() {
     window.addEventListener('resize', this.handleWindowSizeChange)
   }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleWindowSizeChange);
   }
+
   handleWindowSizeChange = () => {
-    this.setState({
+    this.props.updateSize({
       width: window.innerWidth
-    });
+    })
   }
+
   handleMouse(e) {
     this.props.updateMouse({
       x: e.clientX,
@@ -42,7 +43,7 @@ class App extends Component {
     return (
       <div className="Main" onMouseMove={e => this.handleMouse(e)}>
           <div className="MainContent ">
-            <ConnectedMenu/>
+            <ConnectedDtMenu/>
             <div className="ViewPort">
               {this.props.children}
             </div>
@@ -62,7 +63,8 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) =>{
   return{
     x: state.mouse.x,
-    y: state.mouse.y
+    y: state.mouse.y,
+    screenWidth: state.screen.width
   }
 }
 

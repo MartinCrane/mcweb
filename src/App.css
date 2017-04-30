@@ -12,6 +12,10 @@
   flex-grow: 1;
 }
 
+.ViewPort {
+  width: inherit;
+}
+
 
 /*MAGIC*/
 
@@ -60,7 +64,7 @@
 
 /*MENU*/
 
-.Menu {
+.DtMenu {
   padding: 2em;
   width: 100%;
   opacity: .7;
@@ -71,14 +75,31 @@
   z-index: 2
 }
 
-.MenuItem:hover {
+.DtMenuItem:hover {
   color: black;
   background-color: green;
   cursor: pointer;
 }
 
+.DtSubMenu {
+  font-size: 20em;
+  color: black;
+}
+
+.MobileMenu {
+  padding: 2em;
+  width: 100%;
+  opacity: .7;
+  font-size: 3em;
+  color: white;
+  background-color: blue;
+  position: fixed;
+  z-index: 2;
+}
+
 .Mwork {
-  width: 50%;
+  width: 20%;
+  height: 30%;
   background-color: white;
   z-index: 1;
   display: inline;
@@ -94,13 +115,17 @@
 /*TITLE*/
 
 .Title {
-  padding: 2em;
+  padding: .1em;
   margin: 2em;
   width: 100%;
   color: white;
-  background-color: green;
-  border: 3px solid blue;
-  opacity: .8
+}
+
+.TitleDetails {
+  padding: .4em;
+  font-size: .5em;
+  color: black;
+  background-color: white;
 }
 
 .Title:hover {
@@ -114,4 +139,13 @@
 
 .TitleContainer {
   display: inline;
+  width: 100%;
+  background-color: black;
+}
+
+.soundcloud {
+  padding: 5px;
+  border: 2px solid black;
+  width: 100%;
+  height: 40px;
 }

@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { elementFloat } from '../actions/mouse'
 import { Link } from 'react-router'
 
-class Menu extends React.Component {
+class MobileMenu extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -18,7 +18,7 @@ class Menu extends React.Component {
   }
 
   componentDidMount() {
-    let specs = this.refs.Menu.getBoundingClientRect()
+    let specs = this.refs.MobileMenu.getBoundingClientRect()
     this.setState({
       left: specs.left,
       right: specs.right,
@@ -36,13 +36,13 @@ class Menu extends React.Component {
   render() {
     return (
       <div id="menu" style={this.elementFloat()}
-                     ref='Menu'
-                     className={`Menu elementFloat ${this.state.menu}`}
+                     ref='MobileMenu'
+                     className={`MobileMenu elementFloat ${this.state.menu}`}
                      onClick={e => this.handleClick(e)}>
-        <div className='MenuItem' key={1}><Link to='/titles' data-id='Mwork'>Work</Link></div>
-        <div className='MenuItem' key={2}><Link to='/logo' data-id='Mlogo' >Logo</Link></div>
-        <div className='MenuItem' key={3}><Link to='/news' data-id='Mnews'>News</Link></div>
-        <div className='MenuItem' key={4}><Link to='/about' data-id='Mabout'>About</Link></div>
+        <div className='MobileMenuItem' key={1}><Link to='/titles' data-id='Mwork'>Work</Link></div>
+        <div className='MobileMenuItem' key={2}><Link to='/logo' data-id='Mlogo' >Logo</Link></div>
+        <div className='MobileMenuItem' key={3}><Link to='/news' data-id='Mnews'>News</Link></div>
+        <div className='MobileMenuItem' key={4}><Link to='/about' data-id='Mabout'>About</Link></div>
       </div>
     );
   }
@@ -55,4 +55,4 @@ const mapStateToProps = (state) =>{
   }
 }
 
-export const ConnectedMenu = connect(mapStateToProps)(Menu)
+export const ConnectedMobileMenu = connect(mapStateToProps)(MobileMenu)

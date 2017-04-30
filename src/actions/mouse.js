@@ -30,7 +30,7 @@ export function elementFloat() {
   } else {
     percentageY = relativeY / boundBottom
   }
-  let style={"transform":`rotateX(${percentageY * -30}deg) rotateY(${percentageX * 30}deg) scale(1)`}
+  let style={"transform":`rotateX(${percentageY * -20}deg) rotateY(${percentageX * 20}deg) scale(1)`}
   return style
 }
 

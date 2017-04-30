@@ -8,18 +8,21 @@ class Title extends Component {
   }
 
   handleClick(e) {
-    
+
   }
 
   render() {
     return (
-      <Col sm={12} md={6} lg={6} onClick={e => this.handleClick(e)}>
+      <Col sm={12} md={6} lg={6}>
         <div className="Title">
-          <img src={require('../images/East-Hell.png')}></img>
-          <h1>East Hell</h1>
-          <h2>2017</h2>
-          <h2>Callum Smith</h2>
-          <h2>Short</h2>
+          <img src={require(`../images/${this.props.title.image_url}`)}></img>
+          <div className="TitleDetails">
+            <h1>{this.props.title.name}</h1>
+            <h2>{this.props.title.year}</h2>
+            <h3>{this.props.title.credit}</h3>
+            <h3>{this.props.title.director.name}</h3>
+            <iframe className="soundcloud" src={`${this.props.title.audio1}`}></iframe>
+          </div>
         </div>
       </Col>
     );
