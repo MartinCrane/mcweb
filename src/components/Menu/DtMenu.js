@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { elementFloat } from '../actions/mouse'
 import { Link } from 'react-router'
+import { elementFloat } from '../../actions/mouse'
+import LogoTop  from '../LogoTop'
 
 class DtMenu extends React.Component {
   constructor() {
@@ -36,12 +37,15 @@ class DtMenu extends React.Component {
   render() {
 
     const dtSubMenu = (
-      <div style={this.elementFloat()}
-           className={`DtSubMenu elementFloat ${this.state.menu}`}>
-           <h1>XYX</h1>
-           <h1>XYX</h1>
-           <h1>XYX</h1>
-        <div className='DtSubMenu' key={1}>Work</div>
+      <div className='DtSubMenu'>
+           <h2>scoring:</h2>
+           <h3>narrative</h3>
+           <h3>documentary</h3>
+           <h3>commercial</h3>
+           <h2>original music:</h2>
+           <h3>production</h3>
+           <h3>mixing</h3>
+           <h3>original music:</h3>
       </div>
     )
 
@@ -50,17 +54,18 @@ class DtMenu extends React.Component {
           ref='DtMenu'
           className={`DtMenu elementFloat ${this.state.menu}`}
           onClick={e => this.handleClick(e)}>
-        <div className='DtMenuItem' key={1}><Link to='/titles' data-id='Mwork'>Work</Link></div>
-        <div className='DtMenuItem' key={2}><Link to='/logo' data-id='Mlogo' >Logo</Link></div>
-        <div className='DtMenuItem' key={3}><Link to='/news' data-id='Mnews'>News</Link></div>
-        <div className='DtMenuItem' key={4}><Link to='/about' data-id='Mabout'>About</Link></div>
-        {this.state.menu === 'Mwork' ? dtSubMenu : null}
+          <div className='DtMenuItem' key={1}><Link to='/home' data-id='Mnow'>NOW</Link></div>
+          <div className='DtMenuItem' key={2}><Link to='/titles' data-id='Mwork'>Work</Link></div>
+          <div className='DtMenuItem' key={3}><Link to='/news' data-id='Mnews'>News</Link></div>
+          <div className='DtMenuItem' key={4}><Link to='/about' data-id='Mabout'>About</Link></div>
+          {this.state.menu === 'Mwork' ? dtSubMenu : null}
       </div>
     )
 
 
     return (
       <div>
+        <LogoTop/>
         {dtMenu}
       </div>
     );

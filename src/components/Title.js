@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
+import { PlayButton, Progress, Icons } from 'react-soundplayer/components';
+import { SoundPlayerContainer } from 'react-soundplayer/addons';
+
+const { SoundCloudLogoSVG } = Icons;
 
 class Title extends Component {
   constructor() {
@@ -13,7 +17,7 @@ class Title extends Component {
 
   render() {
     return (
-      <Col sm={12} md={6} lg={6}>
+      <Col sm={12} md={6} lg={4}>
         <div className="Title">
           <img src={require(`../images/${this.props.title.image_url}`)}></img>
           <div className="TitleDetails">
@@ -21,7 +25,7 @@ class Title extends Component {
             <h2>{this.props.title.year}</h2>
             <h3>{this.props.title.credit}</h3>
             <h3>{this.props.title.director.name}</h3>
-            <iframe className="soundcloud" src={`${this.props.title.audio1}`}></iframe>
+
           </div>
         </div>
       </Col>

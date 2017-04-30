@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './Title'
-import { Row, Grid } from 'react-bootstrap';
+import { Row, Grid, Clearfix } from 'react-bootstrap';
 import { connect } from 'react-redux'
 import { elementFloat } from '../actions/mouse'
 
@@ -34,18 +34,15 @@ export default class TitleContainer extends React.Component {
                                               )
 
     return (
-      <div className="TitleContainer"
-           ref='TitleContainer'>
-           <Grid>
-             <Row className="show-grid leftFace">
-               {portfolio}
-             </Row>
-        </Grid>
-      </div>
-
+       <Grid className="TitleContainer leftFace">
+         <Row >
+             {portfolio}
+         </Row>
+      </Grid>
     );
   }
 }
+
 const mapStateToProps = (state) =>{
   return{
     x: state.mouse.x,

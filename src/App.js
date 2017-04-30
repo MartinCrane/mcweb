@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { updateMouse } from './actions/mouse'
-import { updateSize } from './actions/mouse'
-import { Row, Grid, Col } from 'react-bootstrap';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { ConnectedDtMenu } from './components/DtMenu'
-import { ConnectedMobileMenu } from './components/MobileMenu'
+import { Row, Grid, Col } from 'react-bootstrap';
+import { updateMouse } from './actions/mouse'
+import { updateSize } from './actions/screen'
+import { ConnectedDtMenu } from './components/Menu/DtMenu'
+import { ConnectedMobileMenu } from './components/Menu/MobileMenu'
+import LogoTop  from './components/LogoTop'
 import './App.css';
 
 class App extends Component {
@@ -42,12 +43,10 @@ class App extends Component {
   render() {
     return (
       <div className="Main" onMouseMove={e => this.handleMouse(e)}>
-          <div className="MainContent ">
-            <ConnectedDtMenu/>
-            <div className="ViewPort">
-              {this.props.children}
-            </div>
-          </div>
+        <ConnectedDtMenu/>
+        <div className="ViewPort">
+          {this.props.children}
+        </div>
       </div>
     )
   }

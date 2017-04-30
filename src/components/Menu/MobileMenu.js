@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { elementFloat } from '../actions/mouse'
 import { Link } from 'react-router'
+import { elementFloat } from '../../actions/mouse'
 
 class MobileMenu extends React.Component {
   constructor() {
