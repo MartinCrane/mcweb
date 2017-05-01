@@ -6,7 +6,7 @@ export default class LogoTop extends React.Component {
     return (
       <div className='LogoTop'>
           <div >
-          <img className='center-block' src={require('../images/logo-small-black.png')}></img>
+          <img className='center-block' alt='Martin Crane Logo' src={require('../images/logo-small-black.png')}></img>
           </div>
     </div>
     );

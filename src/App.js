@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { Row, Grid, Col } from 'react-bootstrap';
 import { updateMouse } from './actions/mouse'
 import { updateSize } from './actions/screen'
 import { ConnectedDtMenu } from './components/Menu/DtMenu'
 import { ConnectedMobileMenu } from './components/Menu/MobileMenu'
-import LogoTop  from './components/LogoTop'
+
 import './App.css';
 
 class App extends Component {
@@ -38,7 +37,6 @@ class App extends Component {
       y: e.clientY
     })
   }
-
 
   render() {
     return (

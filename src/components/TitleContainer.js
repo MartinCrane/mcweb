@@ -1,8 +1,9 @@
 import React from 'react';
 import Title from './Title'
-import { Row, Grid, Clearfix } from 'react-bootstrap';
+import { Row, Grid } from 'react-bootstrap';
 import { connect } from 'react-redux'
-import { elementFloat } from '../actions/mouse'
+
+import { filterDisplay } from '../actions/filter'
 
 export default class TitleContainer extends React.Component {
   constructor() {
@@ -13,26 +14,16 @@ export default class TitleContainer extends React.Component {
       top: 0,
       bottom: 0
     }
-    this.elementFloat = elementFloat.bind(this)
-  }
 
-  componentDidMount() {
-    let specs = this.refs.TitleContainer.getBoundingClientRect()
-    this.setState({
-      left: specs.left,
-      right: specs.right,
-      top: specs.top,
-      bottom: specs.bottom
-    })
+    this.filterDisplay = filterDisplay.bind(this)
   }
 
   render() {
-    let portfolio = this.props.portfolio.map((title, index) =>
+    let portfolio = this.filterDisplay(this.props.filter).map((title, index) =>
                                                 <div>
                                                   <Title title={title} key={index}/>
                                                 </div>
                                               )
-
     return (
        <Grid className="TitleContainer leftFace">
          <Row >
@@ -45,9 +36,8 @@ export default class TitleContainer extends React.Component {
 
 const mapStateToProps = (state) =>{
   return{
-    x: state.mouse.x,
-    y: state.mouse.y,
-    portfolio: state.portfolio
+    portfolio: state.portfolio,
+    filter: state.filter
   }
 }
 

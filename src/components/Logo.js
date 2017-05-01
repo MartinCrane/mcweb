@@ -28,6 +28,7 @@ class Logo extends React.Component {
     return (
       <div className='Logo elementFloat' style={this.elementFloat()}>
           <img ref='Logo'
+               alt='Martin Crane Logo'
                src={require('../images/logo.jpg')}></img>
       </div>
     );

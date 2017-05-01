@@ -2,10 +2,12 @@
 .MainContent {
   -ms-flex-positive: 1;
   flex-grow: 1;
+  max-width: 1200px;
 }
 
 .ViewPort {
   width: inherit;
+  padding-left: 10em;
 }
 
 
@@ -50,7 +52,7 @@
   width: 100%;
   z-index: 7;
   width: 100%;
-  background-color: green;
+  background-color: white;
 }
 
 
@@ -92,8 +94,22 @@
 }
 
 .DtSubMenu {
-  font-size: 20em;
   color: black;
+
+}
+
+.DtSubMenu  {
+    margin: 0;
+    list-style:none;
+    padding-top: 5em;
+    padding-left:0;
+    line-height: 120%;
+}
+
+.DtSubMenu h2 {
+  font-size: .7em;
+  transform: skewX(10deg) rotate(45deg);
+  cursor: pointer;
 }
 
 .MobileMenu {
@@ -114,6 +130,10 @@
   display: inline;
 }
 
+menu {
+  color:black;
+}
+
 .Mlogo {}
 
 .Mnews {}
@@ -124,16 +144,19 @@
 /*TITLE*/
 
 .Title {
-  padding: .6em;
+  padding: .2em;
   margin: 2em;
-  width: 100%;
-  opacity: .9
+  width: 95%;
 }
 
 .TitleDetails {
-  padding: .4em;
-  font-size: .5em;
-  color: white;
+  color: black;
+}
+
+.TitleDetails h2 {
+  line-height: 10%;
+  font-size: 1em;
+  color: black;
 }
 
 .Title:hover {
@@ -146,6 +169,11 @@
 }
 
 .TitleContainer {
-  background-color: blue;
+  padding-top: 3em;
+}
+
+
+/*BLOG*/
+.BlogContainer {
   padding-top: 3em;
 }

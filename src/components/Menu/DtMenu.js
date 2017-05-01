@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import { elementFloat } from '../../actions/mouse'
+import { bindActionCreators } from 'redux'
+import { updateFilter } from '../../actions/filter'
 import LogoTop  from '../LogoTop'
 
 class DtMenu extends React.Component {
@@ -12,7 +14,8 @@ class DtMenu extends React.Component {
       right: 0,
       top: 0,
       bottom: 0,
-      menu: 'Mlogo'
+      menu: 'mHome',
+      filter: 'fAll'
     }
     this.elementFloat = elementFloat.bind(this)
     this.handleClick = this.handleClick.bind(this)
@@ -29,23 +32,32 @@ class DtMenu extends React.Component {
   }
 
   handleClick(e) {
-    this.setState({
-      menu: e.target.dataset.id
-    })
+      if (e.target.dataset.id != null) {
+        this.setState({
+          menu: e.target.dataset.id
+        })
+      }
+      if (e.target.dataset.filter != null) {
+        this.setState({
+          filter: e.target.dataset.filter
+        })
+        this.props.updateFilter(e.target.dataset.filter)
+      }
+
   }
 
   render() {
-
     const dtSubMenu = (
       <div className='DtSubMenu'>
-           <h2>scoring:</h2>
-           <h3>narrative</h3>
-           <h3>documentary</h3>
-           <h3>commercial</h3>
-           <h2>original music:</h2>
-           <h3>production</h3>
-           <h3>mixing</h3>
-           <h3>original music:</h3>
+         <h2 data-filter='fAll'>all</h2>
+         <h2><b data-filter='fScoring'>scoring</b></h2>
+         <h2 data-filter='fNarrative'>narrative</h2>
+         <h2 data-filter='fDocumentary'>documentary</h2>
+         <h2 data-filter='fCommercial'>commercial</h2>
+         <h2><b data-filter='fOriginalMusic'>original music</b></h2>
+         <h2 data-filter='fProduction'>production</h2>
+         <h2 data-filter='fMixing'>mixing</h2>
+         <h2 data-filter='fSongwriting'>songwriting</h2>
       </div>
     )
 
@@ -54,11 +66,12 @@ class DtMenu extends React.Component {
           ref='DtMenu'
           className={`DtMenu elementFloat ${this.state.menu}`}
           onClick={e => this.handleClick(e)}>
-          <div className='DtMenuItem' key={1}><Link to='/home' data-id='Mnow'>NOW</Link></div>
-          <div className='DtMenuItem' key={2}><Link to='/titles' data-id='Mwork'>Work</Link></div>
-          <div className='DtMenuItem' key={3}><Link to='/news' data-id='Mnews'>News</Link></div>
-          <div className='DtMenuItem' key={4}><Link to='/about' data-id='Mabout'>About</Link></div>
-          {this.state.menu === 'Mwork' ? dtSubMenu : null}
+          <div className='DtMenuItem' key={1}><Link to='/home' data-id='mNow'>NOW</Link></div>
+          <div className='DtMenuItem' key={2}><Link to='/titles' data-id='mWork'>Work</Link></div>
+          <div className='DtMenuItem' key={3}><Link to='/news' data-id='mNews'>News</Link></div>
+          <div className='DtMenuItem' key={4}><Link to='/about' data-id='mAbout'>About</Link></div>
+          {this.props.filter}
+          {this.state.menu === 'mWork' ? dtSubMenu : null}
       </div>
     )
 
@@ -75,8 +88,14 @@ class DtMenu extends React.Component {
 const mapStateToProps = (state) =>{
   return{
     x: state.mouse.x,
-    y: state.mouse.y
+    y: state.mouse.y,
+    filter: state.filter
   }
 }
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    updateFilter: updateFilter
+  }, dispatch)
+}
 
-export const ConnectedDtMenu = connect(mapStateToProps)(DtMenu)
+export const ConnectedDtMenu = connect(mapStateToProps, mapDispatchToProps)(DtMenu)
