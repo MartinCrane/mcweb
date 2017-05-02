@@ -20,7 +20,7 @@ import './index.css';
 const store = createStore(rootReducer, applyMiddleware(thunk),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 const history = syncHistoryWithStore(browserHistory, store)
 store.dispatch({type: "LOAD_PORTFOLIO", payload: portfolioData})
-store.dispatch({type: "LOAD_BLOG", payload: blogData})
+store.dispatch({type: "LOAD_BLOG", payload: blogData.reverse()})
 
 ReactDOM.render(
   <Provider store={store}>

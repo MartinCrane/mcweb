@@ -7,7 +7,7 @@ export default class BlogContainer extends React.Component {
 
   render() {
 
-    let blogList = this.props.blog.reverse().map((blog, index) =>
+    let blogList = this.props.blog.map((blog, index) =>
                                             <div>
                                               <Post blog={blog} key={index}/>
                                             </div>)
