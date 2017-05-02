@@ -176,4 +176,14 @@ menu {
 /*BLOG*/
 .BlogContainer {
   padding-top: 3em;
+
+}
+
+.blogNew {
+  align-items: center;
+  width: 80%;
+}
+
+textarea.form-control {
+  height: 100%;
 }

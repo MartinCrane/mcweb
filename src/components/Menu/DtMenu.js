@@ -70,7 +70,6 @@ class DtMenu extends React.Component {
           <div className='DtMenuItem' key={2}><Link to='/titles' data-id='mWork'>Work</Link></div>
           <div className='DtMenuItem' key={3}><Link to='/news' data-id='mNews'>News</Link></div>
           <div className='DtMenuItem' key={4}><Link to='/about' data-id='mAbout'>About</Link></div>
-          {this.props.filter}
           {this.state.menu === 'mWork' ? dtSubMenu : null}
       </div>
     )

@@ -7,14 +7,14 @@ export default class BlogContainer extends React.Component {
 
   render() {
 
-    let blogList = this.props.blog.map((blog, index) =>
+    let blogList = this.props.blog.reverse().map((blog, index) =>
                                             <div>
                                               <Post blog={blog} key={index}/>
                                             </div>)
 
     return (
-       <Grid className="BlogContainer leftFace">
-         <Row >
+       <Grid className="BlogContainer">
+         <Row>
              {blogList}
          </Row>
       </Grid>
