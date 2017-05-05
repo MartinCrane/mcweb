@@ -32,12 +32,6 @@ export class Login extends Component {
   render(){
     return(
       <div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <h1>Login</h1>
         <form onSubmit={(event) => this.handleSubmit(event)} className="grey" >
           <label>Email</label>

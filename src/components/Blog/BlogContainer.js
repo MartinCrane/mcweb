@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from './Post'
+import PostThumb from './PostThumb'
 import { Row, Grid } from 'react-bootstrap';
 import { connect } from 'react-redux'
 
@@ -9,13 +9,13 @@ export default class BlogContainer extends React.Component {
 
     let blogList = this.props.blog.map((blog, index) =>
                                             <div>
-                                              <Post blog={blog} key={index}/>
+                                              <PostThumb blog={blog} key={index}/>
                                             </div>)
 
     return (
        <Grid className="BlogContainer">
          <Row>
-             {blogList}
+             {this.props.children || blogList}
          </Row>
       </Grid>
     );

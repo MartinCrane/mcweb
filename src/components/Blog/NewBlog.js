@@ -72,16 +72,11 @@ class NewBlog extends Component {
     const postWithTitle = `# ${this.state.title} \r\n ${this.state.post}`
 
     return (
-      <Row>
-      <br></br>
-      <br></br>
-      <br></br>
+      <Row>    
         <Col sm={6} md={6} lg={6}>
           {formBoot}
         </Col>
         <Col sm={6} md={6} lg={6}>
-          <br></br>
-          <br></br>
           {postWithTitle.length > 0 ? this.formatMarkdown(postWithTitle) : null }
           {this.state.date}
         </Col>

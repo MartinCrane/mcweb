@@ -1,197 +1,328 @@
 
-.MainContent {
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 1200px;
+.MainContent
+{
+    max-width: 1200px;
+
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
-.ViewPort {
-  width: inherit;
-  padding-left: 10em;
+.ViewPort
+{
+    width: inherit;
+    padding-top: 10em;
+    padding-right: .5em;
+    padding-left: 9em;
 }
-
 
 /*MAGIC*/
 
-.elementFloat {
-  transition: all .8s;
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+.elementFloat
+{
+    -webkit-transition: all .8s;
+       -moz-transition: all .8s;
+        -ms-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+    -webkit-transition-timing-function: ease-out;
+       -moz-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 }
 
-.leftFace {
-  transform: matrix3d(1, 0, 0.00, .00001, 0.00, 1, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  -webkit-transform: matrix3d(1, 0, 0.00, .00001, 0.00, 1, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+.leftFace
+{
+    -webkit-transform: matrix3d(1, 0, .00, .00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+            transform: matrix3d(1, 0, .00, .00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 
-.rightface {
-  transform: matrix3d(1, 0, 0.00, -.00001, 0.00, 1, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  -webkit-transform: matrix3d(1, 0, 0.00, -.00001, 0.00, 1, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+.rightface
+{
+    -webkit-transform: matrix3d(1, 0, .00, -.00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+            transform: matrix3d(1, 0, .00, -.00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
-
 
 /*LOGO*/
 
-.Logo {
-  width: 100%;
-  height: 100%;
-  flex-grow: 1;
-  color: black;
-  position: fixed;
-  margin-top: 10em;
+.Logo
+{
+    position: fixed;
+
+    width: 90%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    color: black;
+
+    flex-grow: 1;
 }
 
-.LogoTop {
-  position: fixed;
-  width: 100%;
-  z-index: 7;
-  width: 100%;
-  background-color: white;
+.LogoTop
+{
+    position: fixed;
+    z-index: 7;
+
+    width: 100%;
+    width: 100%;
+    padding-top: 2em;
 }
 
+.LoginLogo
+{
+    position: absolute;
+    top: 30%;
+    left: 90%;
+}
 
-.Logo img {
-  display: inline;
-  width: inherit;
-  color: black;
-  box-shadow: 100px 100px 30px #888888;
+.Logo img
+{
+    display: inline;
+
+    width: inherit;
+
+    color: black;
+    box-shadow: 100px 100px 30px #888;
 }
 
 
 /*MENU*/
 
-.DtMenu {
-  padding: 2em;
-  width: 15%;
-  opacity: .7;
-  font-size: 1.5em;
-  position: fixed;
-  color: black;
-  z-index: 2
+.DtMenu
+{
+    font-size: 1.5em;
+
+    position: fixed;
+    z-index: 8;
+
+    width: 8%;
+    padding: 1.5em;
+    padding-top: 1.5em;
+
+    opacity: .7;
+    color: black;
 }
 
-.DtMenu a {
-  color: black;
-  text-decoration: none;
-  z-index: 2
+.menuActive
+{
+    background-color: red;
 }
 
-.DtMenu img {
-  width: 7em;
-  padding-bottom: 1em;
+.DtMenu a
+{
+    z-index: 9;
+
+    text-decoration: none;
+
+    color: black;
 }
 
-.DtMenuItem:hover {
-  color: black;
-  cursor: pointer;
-  font-style: normal;
+.DtMenu img
+{
+    width: 7em;
+    padding-bottom: 1em;
 }
 
-.DtSubMenu {
-  color: black;
+.DtMenuItem:hover
+{
+    font-style: normal;
 
+    cursor: pointer;
+
+    color: black;
 }
 
-.DtSubMenu  {
-    margin: 0;
-    list-style:none;
-    padding-top: 5em;
-    padding-left:0;
+.DtSubMenu
+{
+    color: black;
+}
+
+.DtSubMenu
+{
     line-height: 120%;
+
+    margin: 0;
+    padding-top: 5em;
+    padding-left: 0;
+
+    list-style: none;
 }
 
-.DtSubMenu h2 {
-  font-size: .7em;
-  transform: skewX(10deg) rotate(45deg);
-  cursor: pointer;
+.DtSubMenu h2
+{
+    font-size: .7em;
+
+    cursor: pointer;
+    transform: skewX(10deg) rotate(45deg);
 }
 
-.MobileMenu {
-  padding: 2em;
-  width: 100%;
-  opacity: .7;
-  font-size: 3em;
-  color: white;
-  background-color: blue;
-  position: fixed;
-  z-index: 2;
+.MobileMenu
+{
+    font-size: 3em;
+
+    position: fixed;
+    z-index: 2;
+
+    width: 100%;
+    padding: 2em;
+
+    opacity: .7;
+    color: white;
+    background-color: blue;
 }
 
-.Mwork {
-  width: 15%;
-  height: 30%;
-  z-index: 1;
-  display: inline;
+.Mwork
+{
+    z-index: 1;
+
+    display: inline;
+
+    width: 15%;
+    height: 30%;
 }
 
-menu {
-  color:black;
+menu
+{
+    color: black;
 }
 
-.Mlogo {}
+/*BLOG*/
 
-.Mnews {}
+.blogNew
+{
+    width: 80%;
+    padding-left: 2em;
 
-.Mabout {}
+    align-items: center;
+}
 
+.PostThumb
+{
+    /*padding: .2em;
+  margin: 2em;
+  width: 95%;*/
+}
+.Post h1
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+textarea.form-control
+{
+    height: 100%;
+}
+
+/*PLAYER*/
 
 /*TITLE*/
 
-.Title {
-  padding: .2em;
-  margin: 2em;
-  width: 95%;
+.TitleThumb
+{
+    width: 95%;
+    height: auto;
+    margin: 2.4em;
+    padding: .2em;
+}
+.TitleThumb:hover .TitlePlayer
+{
+    opacity: 1;
+}
+.TitleThumb:hover
+{
+    cursor: pointer;
+
+    background-color: yellow;
+}
+.TitleThumb img
+{
+    width: 100%;
+}
+.pseudoAbs
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.TitlePlayer
+{
+    width: 100%;
+    height: inherit;
+    display: inline;
+    position: absolute;
+    opacity: .9;
+}
+.gone {
+  display: none;
+}
+.sb-soundplayer-play-btn
+{
+
+    z-index: 300;
+    width: 2em;
+    height: 3em;
+    color: black;
+    border: 0px solid white;
+    border-radius: 50%;
+    background-color: rgba(255,0,255,.0);
 }
 
-.TitleDetails {
-  color: black;
+.sb-soundplayer-progress-container
+{
+    opacity: 10;
+    position: absolute;
 }
 
-.TitleDetails h2 {
-  line-height: 10%;
-  font-size: 1em;
-  color: black;
+.sb-soundplayer-progress-container.prog
+{
+    position: absolute;
+  display: inline;
+    width: 100%;
+    height: .2em;
+
+    background-color: red;
 }
 
-.Title:hover {
-  background-color: yellow;
-  cursor: pointer;
+.sb-soundplayer-progress-inner
+{
+    top: .3em;
+    left: .3em;
+
+    height: inherit;
+
+    background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #c3c8e2 10px,
+    #7589ff 10px,
+    #465298 20px
+    );
 }
 
-.Title img {
-  width: 100%;
-}
-
-.TitleContainer {
-  padding-top: 3em;
-}
 
 
-/*BLOG*/
-.BlogContainer {
-  padding-top: 3em;
+
+.thumbDetails
+{
+    position: relative;
+    text-align: right;
+    display: inline;
+
+    width: inherit;
+
+    z-index: -1;
+    color: black;
+}
+.thumbImage
+{
+    width: 100%;
 }
 
-.blogNew {
-  align-items: center;
-  width: 80%;
-}
-.Post {
-  padding: .2em;
-  margin: 2em;
-  width: 95%;
-}
-.Post h1 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-textarea.form-control {
-  height: 100%;
+.thumbDetails h2
+{
+    font-size: 1em;
+    margin-top: .8em;
+    line-height: .2em;
+    color: black;
 }

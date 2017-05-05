@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
+import NavLink from './NavLink'
 import { elementFloat } from '../../actions/mouse'
 import { bindActionCreators } from 'redux'
 import { updateFilter } from '../../actions/filter'
-import LogoTop  from '../LogoTop'
+import LogoTop  from '../Logo/LogoTop'
 
 class DtMenu extends React.Component {
   constructor() {
@@ -43,7 +44,6 @@ class DtMenu extends React.Component {
         })
         this.props.updateFilter(e.target.dataset.filter)
       }
-
   }
 
   render() {
@@ -62,15 +62,28 @@ class DtMenu extends React.Component {
     )
 
     const dtMenu = (
-      <div id="menu" style={this.elementFloat()}
-          ref='DtMenu'
-          className={`DtMenu elementFloat ${this.state.menu}`}
-          onClick={e => this.handleClick(e)}>
-          <div className='DtMenuItem' key={1}><Link to='/home' data-id='mNow'>NOW</Link></div>
-          <div className='DtMenuItem' key={2}><Link to='/titles' data-id='mWork'>Work</Link></div>
-          <div className='DtMenuItem' key={3}><Link to='/news' data-id='mNews'>News</Link></div>
-          <div className='DtMenuItem' key={4}><Link to='/about' data-id='mAbout'>About</Link></div>
-          {this.state.menu === 'mWork' ? dtSubMenu : null}
+      <div
+        id="menu"
+        style={this.elementFloat()}
+        ref='DtMenu'
+        className={`DtMenu elementFloat ${this.state.menu}`}
+        onClick={e => this.handleClick(e)}>
+        <div className='DtMenuItem' key={1}>
+          <NavLink to='/' data-id='mNow'>NOW</NavLink>
+        </div>
+        <div className='DtMenuItem' key={2}>
+          <NavLink
+            ref='titleMenu'
+            to='/titles'
+            data-id='mWork'>Work</NavLink>
+        </div>
+        <div className='DtMenuItem' key={3}>
+          <NavLink to='/news' data-id='mNews'>News</NavLink>
+        </div>
+        <div className='DtMenuItem' key={4}>
+          <NavLink to='/about' data-id='mAbout'>About</NavLink>
+        </div>
+        {window.location.pathname === '/titles' ? dtSubMenu : null}
       </div>
     )
 
@@ -78,6 +91,7 @@ class DtMenu extends React.Component {
     return (
       <div>
         <LogoTop/>
+
         {dtMenu}
       </div>
     );

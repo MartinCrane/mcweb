@@ -7,10 +7,12 @@ import rootReducer from './reducers'
 import { syncHistoryWithStore } from 'react-router-redux'
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 import { ConnectedApp } from './App';
-import { ConnectedLogo } from './components/Logo';
+import { ConnectedLogo } from './components/Logo/Logo';
 import { ConnectedBlogContainer } from './components/Blog/BlogContainer';
+import { ConnectedTitleContainer } from './components/Portfolio/TitleContainer';
+import Title from './components/Portfolio/Title';
+import Post from './components/Blog/Post';
 import NewBlog from './components/Blog/NewBlog';
-import { ConnectedTitleContainer } from './components/TitleContainer';
 import { portfolioData } from './data/portfolio.js';
 import { blogData } from './data/blog.js';
 import About from './components/About';
@@ -28,10 +30,14 @@ ReactDOM.render(
       <Route component={ConnectedApp}>
         <Route path="/" component={ConnectedLogo} />
         <Route path="logo" component={ConnectedLogo} />
-        <Route path="news" component={ConnectedBlogContainer} />
+        <Route path="news" component={ConnectedBlogContainer}>
+          <Route path=":postName" component={Post} />
+        </Route>
         <Route path="newblog" component={NewBlog} />
         <Route path="login" component={Login} />
-        <Route path="titles" component={ConnectedTitleContainer} />
+        <Route path="titles" component={ConnectedTitleContainer} >
+          <Route path=":titleName" component={Title} />
+        </Route>
         <Route path="about" component={About} />
       </Route>
     </Router>

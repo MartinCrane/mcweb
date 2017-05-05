@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 export function accountLogin() {
-  const localApi = 'http://localhost:4000/'
-  return axios.post(localApi + 'sessions',
+
+  return axios.post('/sessions',
     {
     method: 'post',
     session: {

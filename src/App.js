@@ -40,7 +40,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="Main" onMouseMove={e => this.handleMouse(e)}>
+      <div
+        className="Main"
+        onMouseMove={e => this.handleMouse(e)}>
         <ConnectedDtMenu/>
         <div className="ViewPort">
           {this.props.children}

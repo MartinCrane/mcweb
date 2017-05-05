@@ -1,9 +1,9 @@
 import React from 'react';
-import Title from './Title'
+import TitleThumb from './TitleThumb'
 import { Row, Grid } from 'react-bootstrap';
 import { connect } from 'react-redux'
-
-import { filterDisplay } from '../actions/filter'
+import { Route } from 'react-router';
+import { filterDisplay } from '../../actions/filter'
 
 export default class TitleContainer extends React.Component {
   constructor() {
@@ -14,20 +14,15 @@ export default class TitleContainer extends React.Component {
       top: 0,
       bottom: 0
     }
-
     this.filterDisplay = filterDisplay.bind(this)
   }
 
   render() {
-    let portfolio = this.filterDisplay(this.props.filter).map((title, index) =>
-                                                <div>
-                                                  <Title title={title} key={index}/>
-                                                </div>
-                                              )
+    let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <TitleThumb title={title} key={index}></TitleThumb>)
     return (
-       <Grid className="TitleContainer leftFace">
+       <Grid className="TitleContainer ">
          <Row >
-             {portfolio}
+             {this.props.children || portfolio}
          </Row>
       </Grid>
     );
