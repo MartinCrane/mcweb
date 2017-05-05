@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { connect } from 'react-redux'
-import { logoTwirl } from '../actions/mouse'
+import { elementFloat } from '../../actions/mouse'
 
-class Logo extends React.Component {
+class LogoSlice extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -12,7 +11,7 @@ class Logo extends React.Component {
       top: 0,
       bottom: 0
     }
-    this.logoTwirl = logoTwirl.bind(this)
+    this.elementFloat = elementFloat.bind(this)
   }
 
   componentDidMount() {
@@ -27,10 +26,14 @@ class Logo extends React.Component {
 
   render() {
     return (
-      <div className='Logo'>
-          <img ref='Logo'
-               style={this.logoTwirl()}
-               src={require('../images/logo.jpg')}></img>
+      <div
+        className='Logo elementFloat'
+        style={this.elementFloat()}>
+        <img
+          ref={`Logo${this.props.key}`}
+          alt='Martin Crane Logo'
+          src={require(`../../images/logo/${this.props.file}`)}>
+        </img>
       </div>
     );
   }
@@ -43,4 +46,4 @@ const mapStateToProps = (state) =>{
   }
 }
 
-export const ConnectedLogo = connect(mapStateToProps)(Logo)
+export const ConnectedLogoSlice = connect(mapStateToProps)(LogoSlice)
