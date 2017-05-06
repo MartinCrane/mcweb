@@ -4,6 +4,7 @@ import { Row, Grid } from 'react-bootstrap';
 import { connect } from 'react-redux'
 import { Route } from 'react-router';
 import { filterDisplay } from '../../actions/filter'
+import { elementFloat } from '../../actions/mouse'
 
 export default class TitleContainer extends React.Component {
   constructor() {
@@ -15,13 +16,26 @@ export default class TitleContainer extends React.Component {
       bottom: 0
     }
     this.filterDisplay = filterDisplay.bind(this)
+    this.elementFloat = elementFloat.bind(this)
+  }
+
+  componentDidMount() {
+    let specs = this.refs.TitleContainer.getBoundingClientRect()
+    this.setState({
+      left: specs.left,
+      right: specs.right,
+      top: specs.top,
+      bottom: specs.bottom
+    })
   }
 
   render() {
     let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <TitleThumb title={title} key={index}></TitleThumb>)
     return (
-         <Row >
+         <Row className="elementFloat" style={this.elementFloat()}>
+           <div ref="TitleContainer">
              {this.props.children || portfolio}
+             </div>
          </Row>
     );
   }
