@@ -11,7 +11,7 @@ class TitleThumb extends Component {
         <div className="TitleThumb">
           <div className='thumbImage'>
             <img
-              src={require(`../../images/${this.props.title.imageUrl}`)}
+              src={`http://www.brazosbrazos.com/image/${this.props.title.imageUrl}`}
               alt='title'>
             </img>
           </div>
