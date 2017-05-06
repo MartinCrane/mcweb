@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import { Link } from 'react-router'
-
+import TitlePlayer from './TitlePlayer'
+import { PlayButton, Progress, Icons } from 'react-soundplayer/components';
+import { SoundPlayerContainer } from 'react-soundplayer/addons';
 
 
 class TitleThumb extends Component {
@@ -16,6 +18,7 @@ class TitleThumb extends Component {
             </img>
           </div>
           <div className='pseudoAbs'>
+            {this.props.title.scId ? <TitlePlayer songUrl={this.props.title.scId}/> : <div className='none TitlePlayer'></div>}
           </div>
           <div className="thumbDetails">
             <h2>
