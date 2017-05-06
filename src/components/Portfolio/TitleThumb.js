@@ -13,7 +13,7 @@ class TitleThumb extends Component {
         <div className="TitleThumb">
           <div className='thumbImage'>
             <img
-              src={`http://www.brazosbrazos.com/image/${this.props.title.imageUrl}`}
+              src={`https://s3.amazonaws.com/www.martincrane.net/image/${this.props.title.imageUrl}`}
               alt='title'>
             </img>
           </div>

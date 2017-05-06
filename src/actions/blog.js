@@ -5,7 +5,7 @@ import axios from 'axios'
 
 export function formatMarkdown(str) {
   str = str.replace(/\\n/g, '<br></br>')
-  str = str.replace(/xxximagehost/g, 'http://www.brazosbrazos.com/image/blog')
+  str = str.replace(/xxximagehost/g, 'https://s3.amazonaws.com/www.martincrane.net/image/blog')
   str = str.replace(/xxxmp3host/g, 'http://www.brazosbrazos.com/audio')
   let searchString = '!!!rp!!!'
   if (str.search(searchString) === 0) {
