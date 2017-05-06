@@ -198,6 +198,7 @@ menu
 {
     width: 100%;
     height: auto;
+    padding: 2em;
 }
 .TitleThumb:hover .TitlePlayer
 {
@@ -285,7 +286,7 @@ menu
 
     background-color: red;
 }
-.sb-soundplayer-progress-container.prog:hover
+.TitleThumb:hover .sb-soundplayer-progress-container.prog
 {
     height: .4em;
 
@@ -316,8 +317,10 @@ menu
 .PostThumb
 {
     width: 100%;
-    padding: 2em;
-
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
     background-color: rgba(222,218,237,.4)
 }
 .PostThumb h1

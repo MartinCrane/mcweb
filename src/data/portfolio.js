@@ -29,16 +29,6 @@ export const portfolioData = [{
   "slug": "the-blue-dot",
   "scId": 320972692
 }, {
-  "name": "Vito Acconci | Where We Are Now (Who Are We Anyway?)",
-  "imageUrl": "vito-acconci.png",
-  "credit": "Original Score",
-  "year": 2016,
-  "body": null,
-  "tags": ["short", "originalScore", "documentary"],
-  "author": "Zarchary Heinzerling",
-  "slug": "vito-acconci-where-we-are-now-who-are-we-anyway",
-  "scId": null
-}, {
   "name": "Airwick: Give the Gift of Home",
   "imageUrl": "airwick-gift-of-home.png",
   "credit": "Original Score",
@@ -69,6 +59,36 @@ export const portfolioData = [{
   "slug": "americana",
   "scId": 320972715
 }, {
+  "name": "Cutie and the Boxer",
+  "imageUrl": "cutie-and-the-boxer.png",
+  "credit": "Music Supervision",
+  "year": 2013,
+  "body": "2016 News \u0026 Documentary Emmy for Best Documentary .. 2014 Academy Award Nomination Best Documentary .. Cinema Eye Top 20 docs of the last 10 years .. New York Times Review / Rotten Tomatoes",
+  "tags": ["feature", "documentary", "musicSupervision"],
+  "author": "Zachary Heinzerling",
+  "slug": "cutie-and-the-boxer",
+  "scId": null
+}, {
+  "name": "Mazda Rebels: Phil and the Mighty Mushroom",
+  "imageUrl": "phil-mighty-mushroom.png",
+  "credit": "Original Score",
+  "year": 2015,
+  "body": "Streaming at Mazda Rebels: Phil and the Mighty Mushroom",
+  "tags": ["short", "originalScore", "documentary", "commercial"],
+  "author": "Zarchary Heinzerling",
+  "slug": "mazda-rebels-phil-and-the-mighty-mushroom",
+  "scId": 320972696
+}, {
+  "name": "Vito Acconci | Where We Are Now (Who Are We Anyway?)",
+  "imageUrl": "vito-acconci.png",
+  "credit": "Original Score",
+  "year": 2016,
+  "body": null,
+  "tags": ["short", "originalScore", "documentary"],
+  "author": "Zarchary Heinzerling",
+  "slug": "vito-acconci-where-we-are-now-who-are-we-anyway",
+  "scId": null
+}, {
   "name": "Katharina Grosse | Rockaway!",
   "imageUrl": "katharina-grosse.png",
   "credit": "Original Score",
@@ -86,18 +106,8 @@ export const portfolioData = [{
   "body": null,
   "tags": ["short", "originalScore", "commercial"],
   "author": "Ryan Dickie",
-  "slug": "carolina-herrera-refined-irreverence-celebrating-her-35-year-etropective-at-scad",
+  "slug": "carolina-herrera-refined-irreverence",
   "scId": 320972710
-}, {
-  "name": "Mazda Rebels: Phil and the Mighty Mushroom",
-  "imageUrl": "phil-mighty-mushroom.png",
-  "credit": "Original Score",
-  "year": 2015,
-  "body": "Streaming at Mazda Rebels: Phil and the Mighty Mushroom",
-  "tags": ["short", "originalScore", "documentary", "commercial"],
-  "author": "Zarchary Heinzerling",
-  "slug": "mazda-rebels-phil-and-the-mighty-mushroom",
-  "scId": 320972696
 }, {
   "name": "Animated Life: Mary Leakey",
   "imageUrl": "animated-life-mary-leakey.png",
@@ -164,19 +174,9 @@ export const portfolioData = [{
   "credit": "Production, Songwriting, Singing, Performing, Mixing",
   "year": 2016,
   "body": null,
-  "tags": ["mixing", "production", "songwriting"],
+  "tags": ["originalMusic", "mixing", "production", "songwriting"],
   "author": "Martin Crane",
   "slug": "physical-therapy-lp",
-  "scId": null
-}, {
-  "name": "Cutie and the Boxer",
-  "imageUrl": "cutie-and-the-boxer.png",
-  "credit": "Music Supervision",
-  "year": 2013,
-  "body": "2016 News \u0026 Documentary Emmy for Best Documentary .. 2014 Academy Award Nomination Best Documentary .. Cinema Eye Top 20 docs of the last 10 years .. New York Times Review / Rotten Tomatoes",
-  "tags": ["feature", "documentary", "musicSupervision"],
-  "author": "Zachary Heinzerling",
-  "slug": "cutie-and-the-boxer",
   "scId": null
 }, {
   "name": "Phosphorescent Blues LP",
@@ -184,7 +184,7 @@ export const portfolioData = [{
   "credit": "Production, Songwriting, Singing, Performing",
   "year": 2010,
   "body": null,
-  "tags": ["production", "songwriting"],
+  "tags": ["originalMusic", "production", "songwriting"],
   "author": "Brazos",
   "slug": "phosphorescent-blues-lp",
   "scId": null
@@ -194,7 +194,7 @@ export const portfolioData = [{
   "credit": "Production, Songwriting, Singing, Performing",
   "year": 2013,
   "body": null,
-  "tags": ["production", "songwriting"],
+  "tags": ["originalMusic", "production", "songwriting"],
   "author": "Brazos",
   "slug": "saltwater-lp",
   "scId": null
@@ -204,7 +204,7 @@ export const portfolioData = [{
   "credit": "Production, Mixing",
   "year": 2017,
   "body": null,
-  "tags": ["production", "mixing"],
+  "tags": ["originalMusic", "production", "mixing"],
   "author": "NARC",
   "slug": "narc-infinite-mine-lp",
   "scId": null

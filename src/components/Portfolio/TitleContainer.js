@@ -32,10 +32,10 @@ export default class TitleContainer extends React.Component {
   render() {
     let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <TitleThumb title={title} key={index}></TitleThumb>)
     return (
-         <Row className="elementFloat" style={this.elementFloat()}>
-           <div ref="TitleContainer">
+         <Row>
+           <div ref='TitleContainer' className="elementFloat" style={this.elementFloat()} >
              {this.props.children || portfolio}
-             </div>
+            </div>
          </Row>
     );
   }
