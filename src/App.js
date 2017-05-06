@@ -12,25 +12,11 @@ import './App.css';
 class App extends Component {
   constructor() {
     super()
-    this.state = {
-      width: window.innerWidth
-    }
+
     this.handleMouse = this.handleMouse.bind(this)
   }
 
-  componentWillMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange)
-  }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  handleWindowSizeChange = () => {
-    this.props.updateSize({
-      width: window.innerWidth
-    })
-  }
 
   handleMouse(e) {
     this.props.updateMouse({
@@ -57,16 +43,14 @@ class App extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    updateMouse: updateMouse,
-    updateSize: updateSize
+    updateMouse: updateMouse
   }, dispatch)
 }
 
 const mapStateToProps = (state) =>{
   return{
     x: state.mouse.x,
-    y: state.mouse.y,
-    screenWidth: state.screen.width
+    y: state.mouse.y
   }
 }
 
