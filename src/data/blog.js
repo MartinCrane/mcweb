@@ -8,28 +8,28 @@ export const blogData = [{
 }, {
   "id": 2,
   "archive": true,
-  "body": "We are working on the new [NARC](https://soundcloud.com/n-a-r-c) record right now... It's sounding amazing. I've spent the last 2 months making 30 or so sample based instruments using all kinds of found sounds for the drums and synths, so almost every sound on the record is custom made.  \n\nNARC in the studio ![alt text](xxximagehost/narc-1.png 'Logo Title Text 1') ![alt text](xxximagehost/narc-2.png 'Logo Title Text 1')",
+  "body": "![alt text](xxximagehost/narc-1.png 'Narc1') ![alt text](xxximagehost/narc-2.png 'Narc2')We are working on the new [NARC](https://soundcloud.com/n-a-r-c) record right now... It's sounding amazing. I've spent the last 2 months making 30 or so sample based instruments using all kinds of found sounds for the drums and synths, so almost every sound on the record is custom made.  \n\nNARC in the studio",
   "date": "2016-01-30",
   "title": "NARC",
   "slug": "narc"
 }, {
   "id": 3,
   "archive": true,
-  "body": "I'm working with my boy [Ian Chang](https://www.instagram.com/ianyhchang/) from [Son Lux](https://www.facebook.com/sonlux/) on some new music... He is going make [something amazing](https://instagram.com/p/BDdoluGmrnk/). \n\nHere are some instruments I'm making for it: !!!rp!!!xxxmp3host/sundial.m4a!!!rp!!!",
+  "body": "I'm working with my boy [Ian Chang](https://www.instagram.com/ianyhchang/) from [Son Lux](https://www.facebook.com/sonlux/) on some new music... He is going make [something amazing](https://instagram.com/p/BDdoluGmrnk/). \n\nHere are some instruments I'm making for it:",
   "date": "2016-03-20",
   "title": "Sundials",
   "slug": "sundials"
 }, {
   "id": 4,
   "archive": true,
-  "body": "Big news today....\n\nI'm extremely happy to report that the Animated Life series I worked on this past year has been [nominated for an Emmy](http://emmyonline.com/day_43rd_nominations) for Outstanding Special Class - Short Format Daytime Program! [Flora](https://twitter.com/flichtman?lang=en) and [Sharon](https://vimeo.com/sharonshattuck) and the whole crew who puts each episode together really deserve it. I'm super psyched, and I hope they win!!! \n\n[_Animated Life: The Living Fossil Fish_](http://www.nytimes.com/2015/12/22/opinion/animated-life-the-living-fossil-fish.html?_r=0) and [_Animated Life: Mary Leakey_](http://www.nytimes.com/2015/12/08/opinion/animated-life-mary-leakey.html?action=click\u0026pgtype=Homepage\u0026clickSource=story-heading\u0026module=opinion-c-col-right-region\u0026region=opinion-c-col-right-region\u0026WT.nav=opinion-c-col-right-region\u0026_r=1) at the New York Times",
+  "body": "![alt text](xxximagehost/emmy.png 'Emmy') Big news today....\n\nI'm extremely happy to report that the Animated Life series I worked on this past year has been [nominated for an Emmy](http://emmyonline.com/day_43rd_nominations) for Outstanding Special Class - Short Format Daytime Program! [Flora](https://twitter.com/flichtman?lang=en) and [Sharon](https://vimeo.com/sharonshattuck) and the whole crew who puts each episode together really deserve it. I'm super psyched, and I hope they win!!! \n\n[_Animated Life: The Living Fossil Fish_](http://www.nytimes.com/2015/12/22/opinion/animated-life-the-living-fossil-fish.html?_r=0) and [_Animated Life: Mary Leakey_](http://www.nytimes.com/2015/12/08/opinion/animated-life-mary-leakey.html?action=click\u0026pgtype=Homepage\u0026clickSource=story-heading\u0026module=opinion-c-col-right-region\u0026region=opinion-c-col-right-region\u0026WT.nav=opinion-c-col-right-region\u0026_r=1) at the New York Times",
   "date": "2016-03-25",
   "title": "Animated Life nominated for an EMMY!!!!",
   "slug": "animated-life-nominated-for-an-emmy"
 }, {
   "id": 5,
   "archive": true,
-  "body": "Hello everyone, \n\nYou all should [check out](http://www.howtoletgomovie.com/) Oscar-nominated Josh Fox's new movie, _How to Let Go of the World and Love All the Things Climate Can't Change_, which features some of my music. It's at [IFC this week](http://www.ifccenter.com/films/how-to-let-go-of-the-world-and-love-all-the-things-climate-cant-change/)(April 20-27) with some [AMAZING guests](http://www.ifccenter.com/films/how-to-let-go-of-the-world-and-love-all-the-things-climate-cant-change/), and will air on HBO later this year. \n\nJosh and his crew are [crusaders](http://www.gaslandthemovie.com/home) [against](https://www.youtube.com/watch?v=ppNIXhaBmLU) [climate](http://divest.bullfrogcommunities.com/divest_about) change. I had the privilege of mixing Josh and Steve Liptay's feature [Divest!](http://divest.bullfrogcommunities.com/divest_about) and the mini doc [Gaswork](http://www.gasworkfilm.com/) this summer. It's impossible to understate how important their work is, and I\\'m proud to be a part of it. Head over to their site to find out how [you can help](http://www.gaslandthemovie.com/take-action). And while you are at it, [stop eating red meat and pork (or meat in general)](http://time.com/4266874/vegetarian-diet-climate-change/), [sell any stock you have in the oil and gas industry](http://www.theguardian.com/environment/2015/sep/22/leonardo-dicaprio-joins-26tn-fossil-fuel-divestment-movement), [try to fly green](http://www.nytimes.com/2016/04/24/travel/ecotourism-green-travel-tips.html?_r=0), learn how [dirty global trade](http://www.npr.org/2016/04/13/474075142/door-to-door-reveals-the-magnificent-and-maddening-story-of-traffic) can be etc...",
+  "body": "![alt text](xxximagehost/how-to-let-go.png 'How to Let Go') Hello everyone, \n\nYou all should [check out](http://www.howtoletgomovie.com/) Oscar-nominated Josh Fox's new movie, _How to Let Go of the World and Love All the Things Climate Can't Change_, which features some of my music. It's at [IFC this week](http://www.ifccenter.com/films/how-to-let-go-of-the-world-and-love-all-the-things-climate-cant-change/)(April 20-27) with some [AMAZING guests](http://www.ifccenter.com/films/how-to-let-go-of-the-world-and-love-all-the-things-climate-cant-change/), and will air on HBO later this year. \n\nJosh and his crew are [crusaders](http://www.gaslandthemovie.com/home) [against](https://www.youtube.com/watch?v=ppNIXhaBmLU) [climate](http://divest.bullfrogcommunities.com/divest_about) change. I had the privilege of mixing Josh and Steve Liptay's feature [Divest!](http://divest.bullfrogcommunities.com/divest_about) and the mini doc [Gaswork](http://www.gasworkfilm.com/) this summer. It's impossible to understate how important their work is, and I\\'m proud to be a part of it. Head over to their site to find out how [you can help](http://www.gaslandthemovie.com/take-action). And while you are at it, [stop eating red meat and pork (or meat in general)](http://time.com/4266874/vegetarian-diet-climate-change/), [sell any stock you have in the oil and gas industry](http://www.theguardian.com/environment/2015/sep/22/leonardo-dicaprio-joins-26tn-fossil-fuel-divestment-movement), [try to fly green](http://www.nytimes.com/2016/04/24/travel/ecotourism-green-travel-tips.html?_r=0), learn how [dirty global trade](http://www.npr.org/2016/04/13/474075142/door-to-door-reveals-the-magnificent-and-maddening-story-of-traffic) can be etc...",
   "date": "2016-04-20",
   "title": "How to Let Go of the World: and Love All the Things Climate Can't Change",
   "slug": "how-to-let-go-of-the-world-and-love-all-the-things-climate-can-t-change"
@@ -43,7 +43,7 @@ export const blogData = [{
 }, {
   "id": 7,
   "archive": true,
-  "body": "Props to Zachary and the amazing film he made for adding an Emmy to a long list of awards. Cutie went to [POV](http://www.pbs.org/pov/) over at PBS last year, hence the Emmy eligibility. The full list of winners can be found [here](http://emmyonline.com/news_37th_winners).\n\n[Variety, Frontline, 60 Minutes Dominate News and Documentary Emmy Awards (FULL LIST)](http://variety.com/2016/tv/news/frontline-60-minutes-news-and-documentary-award-winners-1201867659/)",
+  "body": "![alt text](xxximagehost/emmy.png 'Emmy') Props to Zachary and the amazing film he made for adding an Emmy to a long list of awards. Cutie went to [POV](http://www.pbs.org/pov/) over at PBS last year, hence the Emmy eligibility. The full list of winners can be found [here](http://emmyonline.com/news_37th_winners).\n\n[Variety, Frontline, 60 Minutes Dominate News and Documentary Emmy Awards (FULL LIST)](http://variety.com/2016/tv/news/frontline-60-minutes-news-and-documentary-award-winners-1201867659/)",
   "date": "2016-09-22",
   "title": "Cutie and the Boxer wins a News Documentary Emmy for Best Documentary",
   "slug": "cutie-and-the-boxer-wins-a-news-documentary-emmy-for-best-documentary"
@@ -57,7 +57,7 @@ export const blogData = [{
 }, {
   "id": 9,
   "archive": true,
-  "body": "The Vito Acconci short I worked on this summer will be playing at the Nitehawk Film Festival November 10 (Brooklyn, NY). [Come through!](http://nitehawkshortsfestival.com/2016/films/where-we-are-now-who-are-we-anyway/)",
+  "body": "![alt text](xxximagehost/nitehawk-festival.png 'Nighthawk Festival') The Vito Acconci short I worked on this summer will be playing at the Nitehawk Film Festival November 10 (Brooklyn, NY). [Come through!](http://nitehawkshortsfestival.com/2016/films/where-we-are-now-who-are-we-anyway/)",
   "date": "2016-10-26",
   "title": "WHERE WE ARE NOW (WHO ARE WE ANYWAY?) playing at Nitehawk Film Festival",
   "slug": "where-we-are-now-who-are-we-anyway-playing-at-nitehawk-film-festival"
@@ -71,14 +71,14 @@ export const blogData = [{
 }, {
   "id": 11,
   "archive": true,
-  "body": "I'm currently in the process of recording a 45 minute instrumental album based off of music from my library. This will be my first instrumental album, and the music is by best yet. The whole process has been very exciting, and it's being documented in a short film. Expect to see updates here over the next few months! \n\nI am also starting the beginning stages of music supervision / scoring for Bentley Heyman's debut feature. Shooting tentatively begins in June! Will post updates as well. \n \nHappy new year everybody! \n\nMC",
+  "body": "![alt text](xxximagehost/string-quartets.png 'String Quartets') I'm currently in the process of recording a 45 minute instrumental album based off music in my library. This will be my first instrumental album, and the music is by best yet. The whole process has been very exciting, and it's being documented in a short film. Expect to see updates here over the next few months! \n\nI am also starting the beginning stages of music supervision / scoring for Bentley Heyman's debut feature. Shooting tentatively begins in June! Will post updates as well. \n \nHappy new year everybody! \n\nMC",
   "date": "2017-01-11",
   "title": "The New Year",
   "slug": "the-new-year"
 }, {
   "id": 12,
   "archive": true,
-  "body": "Psyched to be participating in the ASCAP scoring workshop at Columbia University over the next few months. I’ll be working with Callum Smith on his amazing short “East Hell”. It is about 2 teenage girls who perform a satanic ritual the learned off of reddit. It cracks me up every time I see it, which makes working on it a real pleasure. ![alt text](xxximagehost/ascap1.png 'Logo Title Text 1') \n\nWe will be recording in April :)",
+  "body": "![alt text](xxximagehost/ascap1.png 'ASCAP in the studio1') ![alt text](xxximagehost/ascap2.png 'ASCAP in the studio2') Psyched to be participating in the ASCAP scoring workshop at Columbia University over the next few months. I’ll be working with Callum Smith on his amazing short “East Hell”. It is about 2 teenage girls who perform a satanic ritual the learned off of reddit. It cracks me up every time I see it, which makes working on it a real pleasure. \n\nWe will be recording in April :)",
   "date": "2016-01-17",
   "title": "The 2017 ASCAP/Columbia University Film Scoring Workshop",
   "slug": "the-2017-ascap-columbia-university-film-scoring-workshop"

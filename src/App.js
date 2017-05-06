@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux'
+import { Row, Grid } from 'react-bootstrap';
 import { connect } from 'react-redux'
 import { updateMouse } from './actions/mouse'
 import { updateSize } from './actions/screen'
@@ -41,12 +42,14 @@ class App extends Component {
   render() {
     return (
       <div
-        className="Main"
+        className="MainContent"
         onMouseMove={e => this.handleMouse(e)}>
         <ConnectedDtMenu/>
-        <div className="ViewPort">
+
+          <Grid className="ViewPort">
           {this.props.children}
-        </div>
+          </Grid>
+
       </div>
     )
   }

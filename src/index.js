@@ -17,6 +17,7 @@ import { portfolioData } from './data/portfolio.js';
 import { blogData } from './data/blog.js';
 import About from './components/About';
 import { Login } from './components/account/Login';
+
 import './index.css';
 
 const store = createStore(rootReducer, applyMiddleware(thunk),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())

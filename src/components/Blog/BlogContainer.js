@@ -13,11 +13,9 @@ export default class BlogContainer extends React.Component {
                                             </div>)
 
     return (
-       <Grid className="BlogContainer">
          <Row>
              {this.props.children || blogList}
          </Row>
-      </Grid>
     );
   }
 }
