@@ -97,7 +97,7 @@
     font-size: 1.5em;
 
     position: fixed;
-    z-index: 8;
+    z-index: 7;
 
     width: 8%;
     padding: 1em;
@@ -114,7 +114,7 @@
 
 .DtMenu a
 {
-    z-index: 9;
+    z-index: 7;
 
     text-decoration: none;
 
@@ -144,14 +144,14 @@
     padding-top: 5em;
     padding-left: 0;
     left: -3em;
-
+    background-color: pink;
     list-style: none;
 }
 
 .DtSubMenu h2
 {
     font-size: .7em;
-
+    z-index: 1;
     cursor: pointer;
     transform: skewX(10deg) rotate(45deg);
 }
