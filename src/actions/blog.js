@@ -13,12 +13,12 @@ export function formatMarkdown(str) {
       if (index % 2 === 0) {
         return <ReactMarkdown source={string}/>
       } else {
-        return <div><br></br><ReactPlayer controls url={string} /><br></br></div>
+        return <div><br></br><ReactPlayer className="postMedia" controls url={string} /><br></br></div>
       }})
   } else if (str.search(searchString) !== -1) {
     return str.split(searchString).map((string, index) => {
       if (index % 2 !== 0 && index !== 0) {
-        return <div><br></br><ReactPlayer controls url={string} /><br></br></div>
+        return <div><br></br><ReactPlayer className="postMedia" controls url={string} /><br></br></div>
       } else {
         return <ReactMarkdown source={string}/>
       }})

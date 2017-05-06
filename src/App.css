@@ -1,29 +1,28 @@
 
 .MainContent
 {
-    max-width: 1200px;
-
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    width: 100vw;
+    max-width: 1400px;
+    height: 100vh;
 }
 
 .ViewPort
 {
-    width: inherit;
-    padding-top: 10em;
-    padding-right: .5em;
-    padding-left: 9em;
+    width: 100%;
+    padding-top: 9em;
+    padding-left: 8em;
+    padding-right: 3em;
 }
 
 /*MAGIC*/
 
 .elementFloat
 {
-    -webkit-transition: all .8s;
-       -moz-transition: all .8s;
-        -ms-transition: all .8s;
-         -o-transition: all .8s;
-            transition: all .8s;
+    -webkit-transition: all 1.3s;
+       -moz-transition: all 1.3s;
+        -ms-transition: all 1.3s;
+         -o-transition: all 1.3s;
+            transition: all 1.3s;
     -webkit-transition-timing-function: ease-out;
        -moz-transition-timing-function: ease-out;
          -o-transition-timing-function: ease-out;
@@ -60,12 +59,17 @@
 
 .LogoTop
 {
+    padding-left: 8em;
     position: fixed;
+    width: 100%;
     z-index: 7;
-
-    width: 100%;
-    width: 100%;
+    max-width: 1400px;
     padding-top: 2em;
+    padding-right: 3em;
+}
+.LogoTop img
+{
+    height: 5em;
 }
 
 .LoginLogo
@@ -96,7 +100,7 @@
     z-index: 8;
 
     width: 8%;
-    padding: 1.5em;
+    padding: 1em;
     padding-top: 1.5em;
 
     opacity: .7;
@@ -105,7 +109,7 @@
 
 .menuActive
 {
-    background-color: red;
+    background-color: rgba(222,218,237,1);
 }
 
 .DtMenu a
@@ -134,16 +138,12 @@
 
 .DtSubMenu
 {
-    color: black;
-}
-
-.DtSubMenu
-{
     line-height: 120%;
-
+    color: black;
     margin: 0;
     padding-top: 5em;
     padding-left: 0;
+    left: -3em;
 
     list-style: none;
 }
@@ -186,6 +186,125 @@ menu
     color: black;
 }
 
+.sideActive
+{
+    text-decoration: underline;
+
+    color: red;
+}
+
+/*TITLE*/
+
+
+.TitleThumb
+{
+    width: 100%;
+    height: auto;
+}
+.TitleThumb:hover .TitlePlayer
+{
+    opacity: 1;
+}
+
+.TitleThumb img
+{
+    width: 100%;
+}
+
+.thumbDetails
+{
+    position: relative;
+    z-index: -1;
+
+    display: inline;
+
+    text-align: right;
+
+    color: black;
+}
+
+.thumbDetails h2
+{
+    font-size: 1em;
+    line-height: .2em;
+
+    margin-top: .8em;
+
+    color: black;
+}
+
+/*PLAYER*/
+
+.pseudoAbs
+{
+    position: relative;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+.TitlePlayer
+{
+    position: absolute;
+
+    display: inline;
+
+    width: 100%;
+    height: inherit;
+
+    opacity: .9;
+}
+.gone
+{
+    display: none;
+}
+.sb-soundplayer-play-btn
+{
+    z-index: 300;
+
+    width: 2em;
+    height: 3em;
+
+    color: black;
+    border: 0 solid white;
+    border-radius: 50%;
+    background-color: rgba(255,0,255,.0);
+}
+
+.sb-soundplayer-progress-container
+{
+    position: absolute;
+
+    opacity: 10;
+}
+.sb-soundplayer-progress-container.prog
+{
+    position: absolute;
+
+    display: inline;
+
+    width: 100%;
+    height: .2em;
+
+    background-color: red;
+}
+.sb-soundplayer-progress-container.prog:hover
+{
+    height: .4em;
+
+    cursor: pointer;
+
+    background-color: red;
+}
+
+.sb-soundplayer-progress-inner
+{
+    top: .3em;
+    left: .3em;
+
+    height: inherit;
+
+    background: rgb(250, 128, 114);
+}
 /*BLOG*/
 
 .blogNew
@@ -198,14 +317,53 @@ menu
 
 .PostThumb
 {
-    /*padding: .2em;
-  margin: 2em;
-  width: 95%;*/
+    width: 100%;
+    padding: 2em;
+
+    background-color: rgba(222,218,237,.4)
 }
-.Post h1
+.PostThumb h1
 {
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: bold;
+
+    letter-spacing: .3em;
+}
+.PostThumb h1 a
+{
+    font-size: 2em;
+    font-weight: bold;
+
+    color: black;
+}
+.PostThumb a:hover
+{
+    text-decoration: none;
+}
+.PostThumb  a
+{
+    text-decoration: underline;
+
+    color: black;
+}
+.PostThumb  img
+{
+    float: left;
+
+    width: 20em;
+    margin-right: 1em;
+
+    border: white 1.5em solid;
+}
+.postMedia
+{
+    float: left;
+
+    height: 25em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+    border: white 1.5em solid;
 }
 
 textarea.form-control
@@ -213,116 +371,31 @@ textarea.form-control
     height: 100%;
 }
 
-/*PLAYER*/
 
-/*TITLE*/
 
-.TitleThumb
-{
-    width: 95%;
-    height: auto;
-    margin: 2.4em;
-    padding: .2em;
-}
-.TitleThumb:hover .TitlePlayer
-{
-    opacity: 1;
-}
-.TitleThumb:hover
-{
-    cursor: pointer;
 
-    background-color: yellow;
-}
-.TitleThumb img
+/*ABOUT*/
+.About
 {
-    width: 100%;
+    width: 90%;
+    padding-top: 3em;
+    padding-left: 6em;
 }
-.pseudoAbs
+.frame
+{
+    padding: 2vh;
+
+    -webkit-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
+       -moz-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
+            box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
+}
+
+.About img
 {
     position: relative;
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-.TitlePlayer
-{
-    width: 100%;
-    height: inherit;
-    display: inline;
-    position: absolute;
-    opacity: .9;
-}
-.gone {
-  display: none;
-}
-.sb-soundplayer-play-btn
-{
 
-    z-index: 300;
-    width: 2em;
-    height: 3em;
-    color: black;
-    border: 0px solid white;
-    border-radius: 50%;
-    background-color: rgba(255,0,255,.0);
-}
+    float: left;
 
-.sb-soundplayer-progress-container
-{
-    opacity: 10;
-    position: absolute;
-}
-
-.sb-soundplayer-progress-container.prog
-{
-    position: absolute;
-  display: inline;
-    width: 100%;
-    height: .2em;
-
-    background-color: red;
-}
-
-.sb-soundplayer-progress-inner
-{
-    top: .3em;
-    left: .3em;
-
-    height: inherit;
-
-    background: repeating-linear-gradient(
-    45deg,
-    #606dbc,
-    #c3c8e2 10px,
-    #7589ff 10px,
-    #465298 20px
-    );
-}
-
-
-
-
-.thumbDetails
-{
-    position: relative;
-    text-align: right;
-    display: inline;
-
-    width: inherit;
-
-    z-index: -1;
-    color: black;
-}
-.thumbImage
-{
-    width: 100%;
-}
-
-.thumbDetails h2
-{
-    font-size: 1em;
-    margin-top: .8em;
-    line-height: .2em;
-    color: black;
+    height: 100%;
+    margin: 1em;
 }

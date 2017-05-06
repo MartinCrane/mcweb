@@ -20,11 +20,9 @@ export default class TitleContainer extends React.Component {
   render() {
     let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <TitleThumb title={title} key={index}></TitleThumb>)
     return (
-       <Grid className="TitleContainer ">
          <Row >
              {this.props.children || portfolio}
          </Row>
-      </Grid>
     );
   }
 }

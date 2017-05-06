@@ -20,10 +20,6 @@ class Post extends Component {
 
   render() {
     const post = (
-      <Row>
-        <Col sm={0} md={1} lg={2}>
-        </Col>
-        <Col sm={12} md={10} lg={8}>
           <div className="Post">
             <h1>CASDFGSDFG</h1>
             <SoundPlayerContainer
@@ -44,15 +40,11 @@ class Post extends Component {
             <hr>
             </hr>
           </div>
-        </Col>
-        <Col sm={0} md={1} lg={2}>
-        </Col>
-      </Row>
     )
     return (
-      <div>
+      <Row>
         {post}
-      </div>
+      </Row>
     );
   }
 
