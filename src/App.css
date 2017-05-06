@@ -99,7 +99,7 @@
     position: fixed;
     z-index: 7;
 
-    width: 8%;
+    width: 4%;
     padding: 1em;
     padding-top: 1.5em;
 
@@ -141,9 +141,8 @@
     line-height: 120%;
     color: black;
     margin: 0;
-    padding-top: 5em;
+    padding-top: 2em;
     padding-left: 0;
-    left: -3em;
     background-color: pink;
     list-style: none;
 }
