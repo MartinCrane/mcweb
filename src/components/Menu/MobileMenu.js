@@ -1,48 +1,50 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-import { elementFloat } from '../../actions/mouse'
+import NavLink from './NavLink'
 
 class MobileMenu extends React.Component {
   constructor() {
     super()
     this.state = {
-      left: 0,
-      right: 0,
-      top: 0,
-      bottom: 0,
-      menu: 'Mlogo'
+      show:false
     }
-    this.elementFloat = elementFloat.bind(this)
+
     this.handleClick = this.handleClick.bind(this)
   }
 
-  componentDidMount() {
-    let specs = this.refs.MobileMenu.getBoundingClientRect()
-    this.setState({
-      left: specs.left,
-      right: specs.right,
-      top: specs.top,
-      bottom: specs.bottom
-    })
-  }
 
   handleClick(e) {
     this.setState({
-      menu: e.target.dataset.id
+      show: !this.state.show
     })
   }
 
   render() {
     return (
-      <div id="menu" style={this.elementFloat()}
-                     ref='MobileMenu'
-                     className={`MobileMenu elementFloat ${this.state.menu}`}
-                     onClick={e => this.handleClick(e)}>
-        <div className='MobileMenuItem' key={1}><Link to='/titles' data-id='Mwork'>Work</Link></div>
-        <div className='MobileMenuItem' key={2}><Link to='/logo' data-id='Mlogo' >Logo</Link></div>
-        <div className='MobileMenuItem' key={3}><Link to='/news' data-id='Mnews'>News</Link></div>
-        <div className='MobileMenuItem' key={4}><Link to='/about' data-id='Mabout'>About</Link></div>
+      <div className="MobileMenu">
+      <div
+        onClick={e => this.handleClick(e)}>
+        {`click for menu ${this.state.show}`}
+        </div>
+        <div className={`MobileSub ${this.state.show ? 'on': 'off'}`}>
+          <div className='MobileMenuItem' key={1}>
+            <NavLink to='/' data-id='mNow'>NOW</NavLink>
+          </div>
+          <div className='MobileMenuItem' key={2}>
+            <NavLink
+              ref='titleMenu'
+              to='/titles'
+              data-id='mWork'>Work</NavLink>
+          </div>
+          <div className='MobileMenuItem' key={3}>
+            <NavLink to='/news' data-id='mNews'>News</NavLink>
+          </div>
+          <div className='MobileMenuItem' key={4}>
+            <NavLink to='/about' data-id='mAbout'>About</NavLink>
+          </div>
+        </div>
+
       </div>
     );
   }

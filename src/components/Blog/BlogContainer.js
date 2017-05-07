@@ -8,12 +8,12 @@ export default class BlogContainer extends React.Component {
   render() {
 
     let blogList = this.props.blog.map((blog, index) =>
-                                            <div>
-                                              <PostThumb blog={blog} key={index}/>
-                                            </div>)
+                                              <PostThumb blog={blog} key={index}>
+                                              </PostThumb>
+                                            )
 
     return (
-         <Row>
+         <Row style={{width:'100%'}}>
              {this.props.children || blogList}
          </Row>
     );

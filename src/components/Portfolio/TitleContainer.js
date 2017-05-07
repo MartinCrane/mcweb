@@ -1,9 +1,9 @@
 import React from 'react';
-import TitleThumb from './TitleThumb'
+import { ConnectedTitleThumb } from './TitleThumb'
 import { Row, Grid } from 'react-bootstrap';
-import { connect } from 'react-redux'
 import { Route } from 'react-router';
 import { filterDisplay } from '../../actions/filter'
+import { connect } from 'react-redux'
 import { elementFloat } from '../../actions/mouse'
 
 export default class TitleContainer extends React.Component {
@@ -30,10 +30,10 @@ export default class TitleContainer extends React.Component {
   }
 
   render() {
-    let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <TitleThumb title={title} key={index}></TitleThumb>)
+    let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <ConnectedTitleThumb title={title} key={index}></ConnectedTitleThumb>)
     return (
-         <Row>
-           <div ref='TitleContainer' className="elementFloat" style={this.elementFloat()} >
+         <Row ref='TitleContainer' >
+           <div >
              {this.props.children || portfolio}
             </div>
          </Row>
@@ -44,7 +44,9 @@ export default class TitleContainer extends React.Component {
 const mapStateToProps = (state) =>{
   return{
     portfolio: state.portfolio,
-    filter: state.filter
+    filter: state.filter,
+    x: state.mouse.x,
+    y: state.mouse.y
   }
 }
 
