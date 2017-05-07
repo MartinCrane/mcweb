@@ -7,7 +7,7 @@ class MobileMenu extends React.Component {
   constructor() {
     super()
     this.state = {
-      show:false
+      show:true
     }
 
     this.handleClick = this.handleClick.bind(this)
@@ -23,28 +23,27 @@ class MobileMenu extends React.Component {
   render() {
     return (
       <div className="MobileMenu">
-      <div
-        onClick={e => this.handleClick(e)}>
-        {`click for menu ${this.state.show}`}
-        </div>
+        
         <div className={`MobileSub ${this.state.show ? 'on': 'off'}`}>
-          <div className='MobileMenuItem' key={1}>
+          <button className='MobileMenuItem' key={1}>
             <NavLink to='/' data-id='mNow'>NOW</NavLink>
-          </div>
-          <div className='MobileMenuItem' key={2}>
+          </button>
+          <button className='MobileMenuItem' key={2}>
             <NavLink
               ref='titleMenu'
               to='/titles'
               data-id='mWork'>Work</NavLink>
-          </div>
-          <div className='MobileMenuItem' key={3}>
+          </button>
+          <button className='MobileMenuItem' key={3}>
             <NavLink to='/news' data-id='mNews'>News</NavLink>
-          </div>
-          <div className='MobileMenuItem' key={4}>
+          </button>
+          <button className='MobileMenuItem' key={4}>
             <NavLink to='/about' data-id='mAbout'>About</NavLink>
-          </div>
+          </button>
+          <button className='MobileMenuItemBoom' key={4} onClick={e => this.handleClick(e)}>
+            {`${this.state.show}`}
+          </button>
         </div>
-
       </div>
     );
   }

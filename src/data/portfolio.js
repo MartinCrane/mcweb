@@ -149,13 +149,13 @@ export const portfolioData = [{
   "slug": "lasker-prizes",
   "scId": 320972701
 }, {
-  "name": "How saber-toothed cats grew their mouth swords, Flu - The Great Migration",
+  "name": "Flu - The Great Migration",
   "imageUrl": "vox-saber.png",
   "credit": "Original Score",
   "year": 2015,
   "body": null,
   "tags": ["short", "originalScore", "documentary"],
-  "author": "Flora Lichtman and Sharon Shattuck",
+  "author": "Flora Lichtman, Sharon Shattuck",
   "slug": "how-saber-toothed-cats-grew-their-mouth-swords-flu-the-great-migration",
   "scId": 320972692
 }, {

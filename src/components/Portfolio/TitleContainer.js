@@ -1,6 +1,6 @@
 import React from 'react';
 import { ConnectedTitleThumb } from './TitleThumb'
-import { Row, Grid } from 'react-bootstrap';
+import { Row, Grid, Clearfix } from 'react-bootstrap';
 import { Route } from 'react-router';
 import { filterDisplay } from '../../actions/filter'
 import { connect } from 'react-redux'
@@ -32,10 +32,10 @@ export default class TitleContainer extends React.Component {
   render() {
     let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <ConnectedTitleThumb title={title} key={index}></ConnectedTitleThumb>)
     return (
-         <Row ref='TitleContainer' >
-           <div >
+         <Row ref='TitleContainer Clearfix' >
+
              {this.props.children || portfolio}
-            </div>
+              
          </Row>
     );
   }

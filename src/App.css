@@ -170,8 +170,8 @@
     width: 100%;
 
     opacity: 1;
-    color: white;
-    background-color: blue;
+    color: black;
+
 }
 
 .Mwork
@@ -219,7 +219,6 @@ menu
 {
     position: relative;
     z-index: -1;
-
     display: inline;
 
     text-align: right;
@@ -417,8 +416,7 @@ textarea.form-control
 
     .ViewPort
     {
-    padding: 0;
-        padding-top: 4em;
+        padding: 0;
         width: 100%;
 
         margin: 0;
@@ -453,7 +451,6 @@ textarea.form-control
     .sb-soundplayer-play-btn
     {
         z-index: 300;
-
         width: 3em;
         height: 3em;
     }
@@ -478,13 +475,59 @@ textarea.form-control
         top:-1em;
         background-color: red;
     }
+    .sb-soundplayer-progress-container
+    {
+        position: absolute;
+
+        opacity: 10;
+    }
+    .TitleThumb:hover .sb-soundplayer-progress-container.prog
+    {
+        height: 1em;
+    }
+
+    .sb-soundplayer-progress-inner
+    {
+        top: .3em;
+        left: .3em;
+
+        height: inherit;
+
+        background: rgb(250, 128, 114);
+    }
     .MobileMenu {
-      top:0;
+      bottom:0;
       z-index: 1000;
       display:block;
     }
+    .MobileMenuItem {
+      display:inline;
+
+      width: 20%;
+      height: 70px;
+      background-color: white;
+      border: 0px solid white;
+    }
+    .MobileMenuItemBoom{
+      display:inline;
+      width: 20%;
+      height: 70px;
+      background-color: white;
+      border: 0px solid white;
+    }
+    .MobileMenuItemBoom img{
+      height: 100%;
+
+    }
+    .menuActive{
+      background-color: pink;
+    }
     .MobileSub.on{
       display: inline;
+    }
+    .row {
+      padding: 0;
+      margin: 0
     }
     .MobileSub.off{
       display: none;

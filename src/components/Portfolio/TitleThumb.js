@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col } from 'react-bootstrap';
+import { Col, Clearfix } from 'react-bootstrap';
 import { Link } from 'react-router'
 import TitlePlayer from './TitlePlayer'
 import { PlayButton, Progress, Icons } from 'react-soundplayer/components';
@@ -34,7 +34,7 @@ export default class TitleThumb extends Component {
 
   render() {
     const test = (
-        <div className="TitleThumb elementFloat" ref={this.props.key} >
+        <div className="TitleThumb elementFloat" >
           <div className='thumbImage'>
             <img
               src={`https://s3.amazonaws.com/www.martincrane.net/image/${this.props.title.imageUrl}`}
@@ -57,6 +57,7 @@ export default class TitleThumb extends Component {
     return (
       <Col sm={12} md={6} lg={6}>
         {test}
+        
       </Col>
     );
   }
