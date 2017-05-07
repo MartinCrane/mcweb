@@ -30,12 +30,11 @@ class App extends Component {
       <div
         className="MainContent"
         onMouseMove={e => this.handleMouse(e)}>
+        <ConnectedMobileMenu/>
         <ConnectedDtMenu/>
-
           <Grid className="ViewPort">
           {this.props.children}
           </Grid>
-
       </div>
     )
   }

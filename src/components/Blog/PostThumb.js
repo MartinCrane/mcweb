@@ -11,25 +11,19 @@ class PostThumb extends Component {
   render() {
     const postText = `# ${this.props.blog.title} \r\n ${this.props.blog.body}`
 
-    const post = (
-        <Col sm={12} md={12} lg={12}>
-
-          <div className="PostThumb clearfix">
-            <h1>
-              <Link to={`news/${this.props.blog.slug}`}>
-              </Link>
-            </h1>
-            {this.formatMarkdown(postText)}
-            <p>
-              {this.props.blog.date}
-            </p>
-          </div>
-          <hr></hr>
-        </Col>
-    )
     return (
       <div>
-        {post}
+        <div className="PostThumb clearfix">
+          <h1>
+            <Link to={`news/${this.props.blog.slug}`}>
+            </Link>
+          </h1>
+          {this.formatMarkdown(postText)}
+          <p>
+            {this.props.blog.date}
+          </p>
+        </div>
+        <hr></hr>
       </div>
     );
   }

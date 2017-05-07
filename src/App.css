@@ -112,6 +112,10 @@
     background-color: rgba(222,218,237,1);
 }
 
+.MobileMenu {
+  display: none;
+}
+
 .DtMenu a
 {
     z-index: 7;
@@ -154,17 +158,18 @@
     transform: skewX(10deg) rotate(45deg);
 }
 
+/*MobileMenu*/
+
 .MobileMenu
 {
-    font-size: 3em;
+    font-size: 3vh;
 
     position: fixed;
     z-index: 2;
 
     width: 100%;
-    padding: 2em;
 
-    opacity: .7;
+    opacity: 1;
     color: white;
     background-color: blue;
 }
@@ -198,7 +203,7 @@ menu
 {
     width: 100%;
     height: auto;
-    padding: 2em;
+    padding: 3em;
 }
 .TitleThumb:hover .TitlePlayer
 {
@@ -225,7 +230,7 @@ menu
 .thumbDetails h2
 {
     font-size: 1em;
-    line-height: .2em;
+
 
     margin-top: .8em;
 
@@ -317,10 +322,8 @@ menu
 .PostThumb
 {
     width: 100%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding: 2em;
+
     background-color: rgba(222,218,237,.4)
 }
 .PostThumb h1
@@ -360,7 +363,9 @@ menu
 {
     float: left;
 
-    height: 25em;
+    width: 100%    !important;
+    height: auto   !important;
+
     margin-right: 1em;
     margin-bottom: 1em;
 
@@ -400,3 +405,91 @@ textarea.form-control
     height: 100%;
     margin: 1em;
 }
+
+@media only screen and (max-width: 800px)  {
+    .MainContent
+    {
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ViewPort
+    {
+    padding: 0;
+        padding-top: 4em;
+        width: 100%;
+
+        margin: 0;
+    }
+    .LogoTop
+    {
+        display: none
+    }
+    h1 {
+      font-size: 2vh;
+    }
+    .TitleThumb
+    {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .About
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .PostThumb
+    {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        background-color: rgba(222,218,237,.4)
+    }
+    .sb-soundplayer-play-btn
+    {
+        z-index: 300;
+
+        width: 3em;
+        height: 3em;
+    }
+    .postMedia {
+      width: 100%;
+    }
+    .PostThumb  img
+    {
+        float: left;
+        box-sizing: border-box;
+        width: 100%;
+        border: white 1.5em solid;
+    }
+    .sb-soundplayer-progress-container.prog
+    {
+        position: absolute;
+
+        display: inline;
+
+        width: 100%;
+        height: 1em;
+        top:-1em;
+        background-color: red;
+    }
+    .MobileMenu {
+      top:0;
+      z-index: 1000;
+      display:block;
+    }
+    .MobileSub.on{
+      display: inline;
+    }
+    .MobileSub.off{
+      display: none;
+    }
+    .DtMenu {
+      display: none;
+    }
+	}

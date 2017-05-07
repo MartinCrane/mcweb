@@ -49,15 +49,35 @@ class DtMenu extends React.Component {
   render() {
     const dtSubMenu = (
       <div className='DtSubMenu'>
-         <h2 data-filter='fAll' className={this.state.filter === 'fAll' ? 'sideActive' : null}>all</h2>
-         <h2 className={this.state.filter === 'fScoring' ? 'sideActive' : null}><b data-filter='fScoring'>scoring</b></h2>
-         <h2 data-filter='fNarrative' className={this.state.filter === 'fNarrative' ? 'sideActive' : null}>narrative</h2>
-         <h2 data-filter='fDocumentary' className={this.state.filter === 'fDocumentary' ? 'sideActive' : null}>documentary</h2>
-         <h2 data-filter='fCommercial' className={this.state.filter === 'fCommercial' ? 'sideActive' : null}>commercial</h2>
-         <h2 className={this.state.filter === 'fOriginalMusic' ? 'sideActive' : null}><b data-filter='fOriginalMusic'>original music</b></h2>
-         <h2 data-filter='fProduction' className={this.state.filter === 'fProduction' ? 'sideActive' : null}>production</h2>
-         <h2 data-filter='fMixing' className={this.state.filter === 'fMixing' ? 'sideActive' : null}>mixing</h2>
-         <h2 data-filter='fSongwriting' className={this.state.filter === 'fSongwriting' ? 'sideActive' : null}>songwriting</h2>
+        <h2
+          data-filter='fAll'
+          className={this.state.filter === 'fAll' ? 'sideActive' : null}>all</h2>
+        <h2 className={this.state.filter === 'fScoring' ? 'sideActive' : null}>
+          <b data-filter='fScoring'>scoring</b>
+        </h2>
+        <h2
+          data-filter='fNarrative'
+          className={this.state.filter === 'fNarrative' ? 'sideActive' : null}>narrative</h2>
+        <h2
+          data-filter='fDocumentary'
+          className={this.state.filter === 'fDocumentary' ? 'sideActive' : null}>documentary</h2>
+        <h2
+          data-filter='fCommercial'
+          className={this.state.filter === 'fCommercial' ? 'sideActive' : null}>commercial</h2>
+        <h2 className={this.state.filter === 'fOriginalMusic' ? 'sideActive' : null}>
+          <b data-filter='fOriginalMusic'>
+            original music
+          </b>
+        </h2>
+        <h2
+          data-filter='fProduction'
+          className={this.state.filter === 'fProduction' ? 'sideActive' : null}>production</h2>
+        <h2
+          data-filter='fMixing'
+          className={this.state.filter === 'fMixing' ? 'sideActive' : null}>mixing</h2>
+        <h2
+          data-filter='fSongwriting'
+          className={this.state.filter === 'fSongwriting' ? 'sideActive' : null}>songwriting</h2>
       </div>
     )
 
@@ -91,7 +111,6 @@ class DtMenu extends React.Component {
     return (
       <div>
         <LogoTop/>
-
         {dtMenu}
       </div>
     );
