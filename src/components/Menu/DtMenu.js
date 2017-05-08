@@ -89,17 +89,25 @@ class DtMenu extends React.Component {
         className={`DtMenu elementFloat ${this.state.menu}`}
         onClick={e => this.handleClick(e)}>
         <div className='DtMenuItem' key={1}>
-          <NavLink to='/' data-id='mNow'>NOW</NavLink>
+          <NavLink to='/' data-id='mNow'>O</NavLink>
         </div>
         <div className='DtMenuItem' key={2}>
           <NavLink
-            ref='titleMenu'
             to='/titles'
             data-id='mWork'>Work</NavLink>
+        </div>
+        <div className='DtMenuItem' key={5}>
+          <NavLink
+            to='/library'
+            data-id='mLib'>Library</NavLink>
         </div>
         <div className='DtMenuItem' key={3}>
           <NavLink to='/news' data-id='mNews'>News</NavLink>
         </div>
+        <div className='DtMenuItem' key={6}>
+          o
+        </div>
+
         <div className='DtMenuItem' key={4}>
           <NavLink to='/about' data-id='mAbout'>About</NavLink>
         </div>

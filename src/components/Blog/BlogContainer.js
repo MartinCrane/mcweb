@@ -6,16 +6,14 @@ import { connect } from 'react-redux'
 export default class BlogContainer extends React.Component {
 
   render() {
-
     let blogList = this.props.blog.map((blog, index) =>
                                               <PostThumb blog={blog} key={index}>
                                               </PostThumb>
                                             )
-
     return (
-         <Row style={{width:'100%'}}>
-             {this.props.children || blogList}
-         </Row>
+      <Row >
+        {this.props.children || blogList}
+      </Row>
     );
   }
 }

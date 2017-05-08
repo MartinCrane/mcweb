@@ -8,6 +8,8 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 import { ConnectedApp } from './App';
 import { ConnectedLogo } from './components/Logo/Logo';
+import { ConnectedSplash } from './components/Splash';
+import { ConnectedLibraryContainer } from './components/Library/LibraryContainer';
 import { ConnectedBlogContainer } from './components/Blog/BlogContainer';
 import { ConnectedTitleContainer } from './components/Portfolio/TitleContainer';
 import Title from './components/Portfolio/Title';
@@ -29,8 +31,9 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route component={ConnectedApp}>
-        <Route path="/" component={ConnectedLogo} />
+        <Route path="/" component={ConnectedSplash} />
         <Route path="logo" component={ConnectedLogo} />
+        <Route path="library" component={ConnectedLibraryContainer} />
         <Route path="news" component={ConnectedBlogContainer}>
           <Route path=":postName" component={Post} />
         </Route>

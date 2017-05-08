@@ -9,22 +9,14 @@ class PostThumb extends Component {
     this.formatMarkdown = formatMarkdown.bind(this)
   }
   render() {
-    const postText = `# ${this.props.blog.title} \r\n ${this.props.blog.body}`
+    const postText = `# ${this.props.blog.title} \r\n ${this.props.blog.body} \r\n  #### _${this.props.blog.date_format}_`
 
     return (
-      <div>
-        <div className="PostThumb clearfix">
-          <h1>
-            <Link to={`news/${this.props.blog.slug}`}>
-            </Link>
-          </h1>
+      <Col xs={12} xsOffset={0} sm={12} md={12} lg={10} lgOffset={1}>
+        <div className="PostThumb elementFloat">
           {this.formatMarkdown(postText)}
-          <p>
-            {this.props.blog.date}
-          </p>
         </div>
-        <hr></hr>
-      </div>
+      </Col>
     );
   }
 

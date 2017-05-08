@@ -55,9 +55,9 @@ export default class TitleThumb extends Component {
         </div>
     )
     return (
-      <Col sm={12} md={6} lg={6}>
+      <Col sm={12} md={12} lg={6}>
         {test}
-        
+
       </Col>
     );
   }

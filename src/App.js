@@ -7,6 +7,8 @@ import { updateSize } from './actions/screen'
 import { ConnectedDtMenu } from './components/Menu/DtMenu'
 import { ConnectedMobileMenu } from './components/Menu/MobileMenu'
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 import './App.css';
 
 class App extends Component {
@@ -32,10 +34,17 @@ class App extends Component {
         onMouseMove={e => this.handleMouse(e)}>
 
         <ConnectedDtMenu/>
-          <Grid className="ViewPort">
-          {this.props.children}
-          </Grid>
-          <ConnectedMobileMenu/>
+        <Grid className="ViewPort">
+          <ReactCSSTransitionGroup
+            transitionName="pageSlider"
+            transitionEnterTimeout={600}
+            transitionLeaveTimeout={600}>
+            {this.props.children}
+          </ReactCSSTransitionGroup>
+
+
+        </Grid>
+        <ConnectedMobileMenu/>
       </div>
     )
   }

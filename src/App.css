@@ -1,4 +1,5 @@
 
+
 .MainContent
 {
     width: 100vw;
@@ -10,8 +11,8 @@
 {
     width: 100%;
     padding-top: 9em;
-    padding-left: 8em;
     padding-right: 3em;
+    padding-left: 8em;
 }
 
 /*MAGIC*/
@@ -59,13 +60,14 @@
 
 .LogoTop
 {
-    padding-left: 8em;
     position: fixed;
-    width: 100%;
     z-index: 7;
+
+    width: 100%;
     max-width: 1400px;
     padding-top: 2em;
     padding-right: 3em;
+    padding-left: 8em;
 }
 .LogoTop img
 {
@@ -112,8 +114,9 @@
     background-color: rgba(222,218,237,1);
 }
 
-.MobileMenu {
-  display: none;
+.MobileMenu
+{
+    display: none;
 }
 
 .DtMenu a
@@ -143,17 +146,22 @@
 .DtSubMenu
 {
     line-height: 120%;
-    color: black;
+
     margin: 0;
     padding-top: 2em;
     padding-left: 0;
+
     list-style: none;
+
+    color: black;
 }
 
 .DtSubMenu h2
 {
     font-size: .7em;
+
     z-index: 1;
+
     cursor: pointer;
     transform: skewX(10deg) rotate(45deg);
 }
@@ -171,7 +179,6 @@
 
     opacity: 1;
     color: black;
-
 }
 
 .Mwork
@@ -219,6 +226,7 @@ menu
 {
     position: relative;
     z-index: -1;
+
     display: inline;
 
     text-align: right;
@@ -229,7 +237,6 @@ menu
 .thumbDetails h2
 {
     font-size: 1em;
-
 
     margin-top: .8em;
 
@@ -321,17 +328,19 @@ menu
 .PostThumb
 {
     width: 100%;
-    padding: 2em;
+    padding-bottom: 2em;
 
-    background-color: rgba(222,218,237,.4)
+    background-color: white;
 }
 .PostThumb h1
 {
-    font-size: 1.9em;
+
+    font-size: 1.6em;
     font-weight: bold;
 
-    letter-spacing: .3em;
+    letter-spacing: .2em;
 }
+
 .PostThumb h1 a
 {
     font-size: 2em;
@@ -353,22 +362,22 @@ menu
 {
     float: left;
 
-    width: 20em;
-    margin-right: 1em;
+    width: 33%;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
 
-    border: white 1.5em solid;
+    border: rgba(222,218,237,.4) 1.5em solid;
 }
 .postMedia
 {
     float: left;
-
-    width: 100%    !important;
-    height: auto   !important;
-
-    margin-right: 1em;
+    width: 35.5em;
+    height: 20em;
+    margin-right: 2em;
     margin-bottom: 1em;
 
-    border: white 1.5em solid;
+    border: rgba(222,218,237,.4) 1.5em solid;
 }
 
 textarea.form-control
@@ -405,74 +414,96 @@ textarea.form-control
     margin: 1em;
 }
 
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 800px)
+{
     .MainContent
     {
-        width: 100vw;
         box-sizing: border-box;
-        padding: 0;
+        width: 100vw;
         margin: 0;
+        padding: 0;
     }
 
     .ViewPort
     {
-        padding: 0;
         width: 100%;
-
         margin: 0;
+        padding: 0;
+        padding-bottom: 5em;
     }
     .LogoTop
     {
-        display: none
+        display: none;
     }
-    h1 {
-      font-size: 2vh;
+    h1
+    {
+        font-size: 2vh;
     }
+
+    /*TITLE THUMB*/
+
     .TitleThumb
     {
         width: 100%;
-        padding: 0px;
-        margin: 0px;
+        margin: 0;
+        padding: 0;
     }
     .About
     {
         width: 100%;
         margin: 0;
         padding: 0;
-
     }
+
+    /*MOBILE BLOG*/
     .PostThumb
     {
-        width: 100%;
         box-sizing: border-box;
+        width: 100%;
         margin: 0;
-        background-color: rgba(222,218,237,.4)
+        padding: 1em;
+        background-color: rgba(222,218,237,.4);
     }
-    .sb-soundplayer-play-btn
+    .postMedia
     {
-        z-index: 300;
-        width: 3em;
-        height: 3em;
-    }
-    .postMedia {
       width: 100%;
     }
     .PostThumb  img
     {
-        float: left;
-        box-sizing: border-box;
-        width: 100%;
-        border: white 1.5em solid;
+      float: left;
+
+      box-sizing: border-box;
+      width: 100%;
+
+      border: white 1.5em solid;
+    }
+    .PostThumb  h1
+    {
+      font-size: 4em;
+    }
+    .PostThumb  p
+    {
+      font-size: 2em;
+    }
+    /*MOBILE PLAYER*/
+
+    .sb-soundplayer-play-btn
+    {
+        z-index: 300;
+
+        width: 3em;
+        height: 3em;
     }
     .sb-soundplayer-progress-container.prog
     {
         position: absolute;
+        top: -1em;
 
         display: inline;
 
         width: 100%;
         height: 1em;
-        top:-1em;
+
         background-color: red;
     }
     .sb-soundplayer-progress-container
@@ -495,44 +526,86 @@ textarea.form-control
 
         background: rgb(250, 128, 114);
     }
-    .MobileMenu {
-      bottom:0;
-      z-index: 1000;
-      display:block;
-    }
-    .MobileMenuItem {
-      display:inline;
 
-      width: 20%;
-      height: 70px;
-      background-color: white;
-      border: 0px solid white;
-    }
-    .MobileMenuItemBoom{
-      display:inline;
-      width: 20%;
-      height: 70px;
-      background-color: white;
-      border: 0px solid white;
-    }
-    .MobileMenuItemBoom img{
-      height: 100%;
+  /*MOBILE MENU*/
 
+    .MobileMenu
+    {
+        z-index: 1000;
+        bottom: 0;
+
+        display: block;
     }
-    .menuActive{
-      background-color: pink;
+    .MobileMenuItem
+    {
+        display: inline;
+
+        width: 20%;
+        height: 70px;
+
+        border: 0 solid white;
+        background-color: white;
     }
-    .MobileSub.on{
-      display: inline;
+    .MobileMenuItemBoom
+    {
+        display: inline;
+
+        width: 20%;
+        height: 70px;
+
+        border: 0 solid white;
+        background-color: white;
     }
-    .row {
-      padding: 0;
-      margin: 0
+    .MobileMenuItemBoom img
+    {
+        height: 100%;
     }
-    .MobileSub.off{
-      display: none;
+    .menuActive
+    {
+        text-decoration: overline;
     }
-    .DtMenu {
-      display: none;
+    .menuActive
+    {
+        background-color: pink;
     }
-	}
+    .MobileSub.on
+    {
+        display: inline;
+    }
+    .MobileMenuItem a
+    {
+        z-index: 7;
+
+        text-decoration: none;
+
+        color: black;
+    }
+
+    .MobileMenuItem img
+    {
+        width: 7em;
+        padding-bottom: 1em;
+    }
+
+    .DtMenuItem:hover
+    {
+        font-style: normal;
+
+        cursor: pointer;
+
+        color: black;
+    }
+    .row
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .MobileSub.off
+    {
+        display: none;
+    }
+    .DtMenu
+    {
+        display: none;
+    }
+}

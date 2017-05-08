@@ -6,6 +6,7 @@
     "axios": "^0.16.1",
     "markdown-to-jsx": "^5.3.3",
     "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
     "react-file-drop": "^0.1.8",

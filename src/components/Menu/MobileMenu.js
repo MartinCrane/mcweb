@@ -23,7 +23,7 @@ class MobileMenu extends React.Component {
   render() {
     return (
       <div className="MobileMenu">
-        
+
         <div className={`MobileSub ${this.state.show ? 'on': 'off'}`}>
           <button className='MobileMenuItem' key={1}>
             <NavLink to='/' data-id='mNow'>NOW</NavLink>
@@ -32,17 +32,21 @@ class MobileMenu extends React.Component {
             <NavLink
               ref='titleMenu'
               to='/titles'
-              data-id='mWork'>Work</NavLink>
+              data-id='mWork'>WORK</NavLink>
           </button>
           <button className='MobileMenuItem' key={3}>
-            <NavLink to='/news' data-id='mNews'>News</NavLink>
+            <NavLink to='/news' data-id='mNews'>NEWS</NavLink>
           </button>
           <button className='MobileMenuItem' key={4}>
-            <NavLink to='/about' data-id='mAbout'>About</NavLink>
+            <NavLink to='/about' data-id='mAbout'>ABOUT</NavLink>
           </button>
-          <button className='MobileMenuItemBoom' key={4} onClick={e => this.handleClick(e)}>
-            {`${this.state.show}`}
+          <button className='MobileMenuItem' key={5}>
+            <NavLink to='/about' data-id='mAbout'>LIBRARY</NavLink>
           </button>
+          <button className='MobileMenuItem' key={6}>
+            <NavLink to='/about' data-id='mAbout'>WEB</NavLink>
+          </button>
+
         </div>
       </div>
     );
