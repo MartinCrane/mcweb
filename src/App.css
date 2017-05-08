@@ -437,7 +437,7 @@ textarea.form-control
     }
     h1
     {
-        font-size: 2vh;
+        font-size: 1.5vw;
     }
 
     /*TITLE THUMB*/
@@ -479,7 +479,7 @@ textarea.form-control
     }
     .PostThumb  h1
     {
-      font-size: 4em;
+      font-size: 3em;
     }
     .PostThumb  p
     {
@@ -537,16 +537,6 @@ textarea.form-control
         display: block;
     }
     .MobileMenuItem
-    {
-        display: inline;
-
-        width: 20%;
-        height: 70px;
-
-        border: 0 solid white;
-        background-color: white;
-    }
-    .MobileMenuItemBoom
     {
         display: inline;
 

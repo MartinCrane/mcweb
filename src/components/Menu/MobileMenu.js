@@ -25,9 +25,6 @@ class MobileMenu extends React.Component {
       <div className="MobileMenu">
 
         <div className={`MobileSub ${this.state.show ? 'on': 'off'}`}>
-          <button className='MobileMenuItem' key={1}>
-            <NavLink to='/' data-id='mNow'>NOW</NavLink>
-          </button>
           <button className='MobileMenuItem' key={2}>
             <NavLink
               ref='titleMenu'
@@ -41,10 +38,10 @@ class MobileMenu extends React.Component {
             <NavLink to='/about' data-id='mAbout'>ABOUT</NavLink>
           </button>
           <button className='MobileMenuItem' key={5}>
-            <NavLink to='/about' data-id='mAbout'>LIBRARY</NavLink>
+            <NavLink to='/library' data-id='mLibrary'>LIBRARY</NavLink>
           </button>
-          <button className='MobileMenuItem' key={6}>
-            <NavLink to='/about' data-id='mAbout'>WEB</NavLink>
+          <button className='MobileMenuItem' key={1}>
+            <NavLink to='/web' data-id='mWeb'>WEB</NavLink>
           </button>
 
         </div>
