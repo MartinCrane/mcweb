@@ -392,13 +392,14 @@ textarea.form-control
 .About
 {
     width: 90%;
+    box-sizing: border-box;
     padding-top: 3em;
     padding-left: 6em;
 }
 .frame
 {
     padding: 2vh;
-
+    box-sizing: border-box;
     -webkit-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
        -moz-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
             box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
@@ -479,11 +480,35 @@ textarea.form-control
     }
     .PostThumb  h1
     {
-      font-size: 3em;
+      font-size: 1.5em;
     }
     .PostThumb  p
     {
-      font-size: 2em;
+      font-size: 1em;
+    }
+
+    /*ABOUT*/
+    .About
+    {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    .About img
+    {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    .frame
+    {
+        padding: 0vh;
+        box-sizing: border-box;
+        -webkit-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
+           -moz-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
+                box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
     }
     /*MOBILE PLAYER*/
 
@@ -538,43 +563,30 @@ textarea.form-control
     }
     .MobileMenuItem
     {
-        display: inline;
+        display: inline-flex;
 
         width: 20%;
         height: 70px;
-
-        border: 0 solid white;
+        font-size: .8em;
+        text-align: center;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+        text-decoration: none;
+        border: 0px solid black;
+        border-left: 2px solid black;
         background-color: white;
-    }
-    .MobileMenuItemBoom img
-    {
-        height: 100%;
-    }
-    .menuActive
-    {
-        text-decoration: overline;
     }
     .menuActive
     {
         background-color: pink;
     }
-    .MobileSub.on
-    {
-        display: inline;
-    }
     .MobileMenuItem a
     {
         z-index: 7;
-
+        text-align: center;
         text-decoration: none;
-
         color: black;
-    }
-
-    .MobileMenuItem img
-    {
-        width: 7em;
-        padding-bottom: 1em;
     }
 
     .DtMenuItem:hover

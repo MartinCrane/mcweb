@@ -57,7 +57,6 @@ export default class TitleThumb extends Component {
     return (
       <Col sm={12} md={12} lg={6}>
         {test}
-
       </Col>
     );
   }

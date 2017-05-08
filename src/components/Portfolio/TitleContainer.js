@@ -19,15 +19,15 @@ export default class TitleContainer extends React.Component {
     this.elementFloat = elementFloat.bind(this)
   }
 
-  componentDidMount() {
-    let specs = this.refs.TitleContainer.getBoundingClientRect()
-    this.setState({
-      left: specs.left,
-      right: specs.right,
-      top: specs.top,
-      bottom: specs.bottom
-    })
-  }
+  // componentDidMount() {
+  //   let specs = this.refs.TitleContainer.getBoundingClientRect()
+  //   this.setState({
+  //     left: specs.left,
+  //     right: specs.right,
+  //     top: specs.top,
+  //     bottom: specs.bottom
+  //   })
+  // }
 
   render() {
     let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <ConnectedTitleThumb title={title} key={title.slug}></ConnectedTitleThumb>)

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class About extends Component {
 
   render() {
@@ -14,7 +13,7 @@ class About extends Component {
               </div>
           )
     return (
-      <Row key='a'>
+      <Row>
         <div className="About">
           <div className='frame'>
             <div className='frame'>
