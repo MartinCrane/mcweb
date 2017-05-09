@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
-import { Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router'
 import  SoundCloudAudio  from 'soundcloud-audio'
-import Player from 'react-soundcloud-player'
-import Play from 'react-soundcloud-player'
-import { PlayButton, Progress, Icons } from 'react-soundplayer/components'
+import { PlayButton, Progress } from 'react-soundplayer/components'
 import { SoundPlayerContainer } from 'react-soundplayer/addons'
-const { SoundCloudLogoSVG } = Icons
 
 class TitlePlayer extends Component {
 
-  constructor() {
-    super()
-  }
 
   render() {
     let streamUrl = `https://api.soundcloud.com/tracks/${this.props.songUrl}/stream`;

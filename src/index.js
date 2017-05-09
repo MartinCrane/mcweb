@@ -5,13 +5,14 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import rootReducer from './reducers'
 import { syncHistoryWithStore } from 'react-router-redux'
-import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import { ConnectedApp } from './App';
 import { ConnectedLogo } from './components/Logo/Logo';
 import { ConnectedSplash } from './components/Splash';
 import { ConnectedLibraryContainer } from './components/Library/LibraryContainer';
 import { ConnectedBlogContainer } from './components/Blog/BlogContainer';
 import { ConnectedTitleContainer } from './components/Portfolio/TitleContainer';
+import { ConnectedWebContainer } from './components/Web/WebContainer';
 import Title from './components/Portfolio/Title';
 import Post from './components/Blog/Post';
 import NewBlog from './components/Blog/NewBlog';
@@ -31,7 +32,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route component={ConnectedApp}>
-        <Route path="/" component={ConnectedSplash} />
+        <Route path="/" component={ConnectedLogo} />
         <Route path="logo" component={ConnectedLogo} />
         <Route path="library" component={ConnectedLibraryContainer} />
         <Route path="news" component={ConnectedBlogContainer}>
@@ -44,6 +45,8 @@ ReactDOM.render(
         </Route>
         <Route path="about" component={About} />
       </Route>
+      <Route path="web" component={ConnectedWebContainer} />
+
     </Router>
   </Provider>,
   document.getElementById('root')

@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
 import NavLink from './NavLink'
 
 class MobileMenu extends React.Component {
@@ -23,7 +22,7 @@ class MobileMenu extends React.Component {
   render() {
     return (
       <div className="MobileMenu">
-        <div className="MobileLogo"><img className='center-block' src='https://s3.amazonaws.com/www.martincrane.net/image/logo-outlined-small.png'></img></div>
+        <div className="MobileLogo"><img alt={'logo'} className='center-block' src='https://s3.amazonaws.com/www.martincrane.net/image/logo-outlined-small.png'></img></div>
         <div className={`MobileSub`}>
           <button className='MobileMenuItem' key={1}>
             <NavLink to='/titles' data-id='mWork'>WORK</NavLink>

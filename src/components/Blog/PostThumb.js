@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { formatMarkdown } from '../../actions/blog'
-import { Link } from 'react-router'
 
 class PostThumb extends Component {
   constructor() {

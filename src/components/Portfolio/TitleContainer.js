@@ -1,7 +1,6 @@
 import React from 'react';
 import { ConnectedTitleThumb } from './TitleThumb'
-import { Row, Grid } from 'react-bootstrap';
-import { Route } from 'react-router';
+import { Row } from 'react-bootstrap';
 import { filterDisplay } from '../../actions/filter'
 import { connect } from 'react-redux'
 import { elementFloat } from '../../actions/mouse'

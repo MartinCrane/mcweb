@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
 import NavLink from './NavLink'
 import { elementFloat } from '../../actions/mouse'
+import { updateWeb } from '../../actions/web'
 import { bindActionCreators } from 'redux'
 import { updateFilter } from '../../actions/filter'
 import LogoTop  from '../Logo/LogoTop'
+
 
 class DtMenu extends React.Component {
   constructor() {
@@ -80,6 +81,18 @@ class DtMenu extends React.Component {
           className={this.state.filter === 'fSongwriting' ? 'sideActive' : null}>songwriting</h2>
       </div>
     )
+    const menuBit = (
+      <div>
+
+    <div
+      className='DtMenuItem'
+      key={7}>
+      <NavLink
+        to='/web'
+        data-id='mWeb'>web</NavLink>
+    </div>
+    </div>
+  )
 
     const dtMenu = (
       <div
@@ -88,30 +101,49 @@ class DtMenu extends React.Component {
         ref='DtMenu'
         className={`DtMenu elementFloat ${this.state.menu}`}
         onClick={e => this.handleClick(e)}>
-        <div className='DtMenuItem' key={1}>
-          <NavLink to='/' data-id='mNow'>O</NavLink>
-        </div>
-        <div className='DtMenuItem' key={2}>
+
+        <br>
+        </br>
+        <div className='DtMenuItem'
+          key={2}>
           <NavLink
             to='/titles'
             data-id='mWork'>Work</NavLink>
         </div>
-        <div className='DtMenuItem' key={5}>
+        <div
+          className='DtMenuItem'
+          key={5}>
           <NavLink
             to='/library'
             data-id='mLib'>Library</NavLink>
         </div>
-        <div className='DtMenuItem' key={3}>
-          <NavLink to='/news' data-id='mNews'>News</NavLink>
+        <div
+          className='DtMenuItem'
+          key={3}>
+          <NavLink
+            to='/news'
+            data-id='mNews'>News</NavLink>
         </div>
-        <div className='DtMenuItem' key={6}>
-          o
-        </div>
-
-        <div className='DtMenuItem' key={4}>
-          <NavLink to='/about' data-id='mAbout'>About</NavLink>
+        <div
+          className='DtMenuItem'
+          key={4}>
+          <NavLink
+            to='/about'
+            data-id='mAbout'>About</NavLink>
         </div>
         {window.location.pathname === '/titles' ? dtSubMenu : null}
+        <br>
+        </br><br>
+        </br><br>
+        </br><br>
+        </br><br>
+        </br><br>
+        </br><br>
+        </br><br>
+        </br><br>
+        </br><br>
+        </br>
+        {menuBit}
       </div>
     )
 
@@ -134,7 +166,8 @@ const mapStateToProps = (state) =>{
 }
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    updateFilter: updateFilter
+    updateFilter: updateFilter,
+    updateWeb: updateWeb
   }, dispatch)
 }
 

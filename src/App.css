@@ -3,8 +3,12 @@
 .MainContent
 {
     width: 100vw;
-    max-width: 1400px;
+
     height: 100vh;
+
+}
+h1{
+  font-size: 2em;
 }
 
 .ViewPort
@@ -13,8 +17,26 @@
     padding-top: 9em;
     padding-right: 3em;
     padding-left: 8em;
+    background-color: white;
 }
 
+/*WEB*/
+.WebContainer {
+
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+}
+.Project {
+  display: grid;
+
+}
+.screen {
+  width: 100vw;
+  background-color: black;
+  height: 100vh;
+}
 /*MAGIC*/
 
 .elementFloat
@@ -64,7 +86,7 @@
     z-index: 7;
 
     width: 100%;
-    max-width: 1400px;
+
     padding-top: 2em;
     padding-right: 3em;
     padding-left: 8em;
@@ -92,7 +114,7 @@
 }
 
 
-/*MENU*/
+/*DESKTOP MENU*/
 
 .DtMenu
 {
@@ -102,23 +124,22 @@
     z-index: 7;
 
     width: 4%;
-    padding: 1em;
-    padding-top: 1.5em;
+    padding-top: 6em;
+    padding-left: 2em;
 
-    opacity: .7;
+
     color: black;
 }
-
 .menuActive
 {
-    background-color: rgba(222,218,237,1);
+    font-weight: bold;
 }
-
-.MobileMenu
+.sideActive
 {
-    display: none;
-}
+    text-decoration: underline;
 
+    color: red;
+}
 .DtMenu a
 {
     z-index: 7;
@@ -127,13 +148,11 @@
 
     color: black;
 }
-
 .DtMenu img
 {
     width: 7em;
     padding-bottom: 1em;
 }
-
 .DtMenuItem:hover
 {
     font-style: normal;
@@ -142,7 +161,6 @@
 
     color: black;
 }
-
 .DtSubMenu
 {
     line-height: 120%;
@@ -155,7 +173,6 @@
 
     color: black;
 }
-
 .DtSubMenu h2
 {
     font-size: .7em;
@@ -165,8 +182,12 @@
     cursor: pointer;
     transform: skewX(10deg) rotate(45deg);
 }
+.MobileMenu
+{
+    display: none;
+}
 
-/*MobileMenu*/
+/*MOBILE MENU*/
 
 .MobileMenu
 {
@@ -180,7 +201,6 @@
     opacity: 1;
     color: black;
 }
-
 .Mwork
 {
     z-index: 1;
@@ -196,12 +216,6 @@ menu
     color: black;
 }
 
-.sideActive
-{
-    text-decoration: underline;
-
-    color: red;
-}
 
 /*TITLE*/
 
@@ -241,6 +255,13 @@ menu
     margin-top: .8em;
 
     color: black;
+}
+/*LIBRARY*/
+
+.LibraryContainer
+{
+    padding-right: 4em;
+    padding-left: 4em;
 }
 
 /*PLAYER*/
@@ -334,7 +355,6 @@ menu
 }
 .PostThumb h1
 {
-
     font-size: 1.6em;
     font-weight: bold;
 
@@ -363,21 +383,22 @@ menu
     float: left;
 
     width: 33%;
-    margin-right: 2em;
     margin-top: 1em;
+    margin-right: 2em;
     margin-bottom: 2em;
 
-    border: rgba(222,218,237,.4) 1.5em solid;
+    /*border: rgba(222,218,237,.4) 1.5em solid;*/
 }
 .postMedia
 {
     float: left;
+
     width: 35.5em;
     height: 20em;
     margin-right: 2em;
     margin-bottom: 1em;
 
-    border: rgba(222,218,237,.4) 1.5em solid;
+    /*border: rgba(222,218,237,.4) 1.5em solid;*/
 }
 
 textarea.form-control
@@ -391,15 +412,16 @@ textarea.form-control
 /*ABOUT*/
 .About
 {
-    width: 90%;
     box-sizing: border-box;
+    width: 90%;
     padding-top: 3em;
     padding-left: 6em;
 }
 .frame
 {
-    padding: 2vh;
     box-sizing: border-box;
+    padding: 2vh;
+
     -webkit-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
        -moz-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
             box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
@@ -420,7 +442,6 @@ textarea.form-control
     .MainContent
     {
         box-sizing: border-box;
-
         width: 100vw;
         margin: 0;
         padding: 0;
@@ -465,49 +486,51 @@ textarea.form-control
         width: 100%;
         margin: 0;
         padding: 1em;
+
         background-color: rgba(222,218,237,.4);
     }
     .postMedia
     {
-      width: 100%;
+        width: 100%;
     }
     .PostThumb  img
     {
-      float: left;
+        float: left;
 
-      box-sizing: border-box;
-      width: 100%;
+        box-sizing: border-box;
+        width: 100%;
 
-      border: white 1.5em solid;
+        border: white 1.5em solid;
     }
     .PostThumb  h1
     {
-      font-size: 1.5em;
+        font-size: 1.5em;
     }
     .PostThumb  p
     {
-      font-size: 1em;
+        font-size: 1em;
     }
 
     /*ABOUT*/
     .About
     {
+        box-sizing: border-box;
         width: 100%;
         margin: 0;
         padding: 1em;
-        box-sizing: border-box;
     }
     .About img
     {
+        box-sizing: border-box;
         width: 100%;
         margin: 0;
         padding: 1em;
-        box-sizing: border-box;
     }
     .frame
     {
-        padding: 0vh;
         box-sizing: border-box;
+        padding: 0vh;
+
         -webkit-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
            -moz-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
                 box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
@@ -554,7 +577,7 @@ textarea.form-control
         background: rgb(250, 128, 114);
     }
 
-  /*MOBILE MENU*/
+    /*MOBILE MENU*/
 
     .MobileMenu
     {
@@ -565,36 +588,42 @@ textarea.form-control
     }
     .MobileMenuItem
     {
+        font-size: .8em;
+
         display: inline-flex;
 
         width: 20%;
         height: 70px;
-        font-size: .8em;
-        text-align: center;
-        -ms-transform: rotate(45deg); /* IE 9 */
+
         -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-        transform: rotate(45deg);
+            -ms-transform: rotate(45deg); /* IE 9 */
+                transform: rotate(45deg);
+        text-align: center;
         text-decoration: none;
-        border: 0px solid black;
+
+        border: 0 solid black;
         border-left: 2px solid black;
         background-color: white;
     }
     .MobileLogo
     {
-      width: 100vw;
-      margin-top: 1vh;
-      padding-bottom: 1vh;
-      height: 5vh;
-      align-items: center;
-      position: fixed;
-      background-color: rgba(255, 255, 255, .41);
-      top: 0;
+        position: fixed;
+        top: 0;
+
+        width: 100vw;
+        height: 5vh;
+        margin-top: 1vh;
+        padding-bottom: 1vh;
+
+        background-color: rgba(255, 255, 255, .41);
+
+        align-items: center;
     }
     .MobileLogo img
     {
-      height: inherit;
+        top: 0;
 
-      top: 0;
+        height: inherit;
     }
     .menuActive
     {
@@ -603,8 +632,10 @@ textarea.form-control
     .MobileMenuItem a
     {
         z-index: 7;
+
         text-align: center;
         text-decoration: none;
+
         color: black;
     }
 

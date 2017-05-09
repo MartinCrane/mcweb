@@ -16,6 +16,7 @@ class Logo extends React.Component {
   }
 
   componentDidMount() {
+
     let specs = this.refs.Logo.getBoundingClientRect()
     this.setState({
       left: specs.left,

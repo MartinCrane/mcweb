@@ -1,36 +1,22 @@
 import React from 'react';
-import { Row, Grid, Clearfix } from 'react-bootstrap';
-import { Route } from 'react-router';
-
+import { Row, Col } from 'react-bootstrap';
+import PlaylistThumb from './PlaylistThumb.js'
 import { connect } from 'react-redux'
 import { elementFloat } from '../../actions/mouse'
+import { playlists } from '../../data/playlists'
 
 export default class LibraryContainer extends React.Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     left: 0,
-  //     right: 0,
-  //     top: 0,
-  //     bottom: 0
-  //   }
-  //   this.elementFloat = elementFloat.bind(this)
-  // }
-  //
-  // componentDidMount() {
-  //   let specs = this.refs.LibraryContainer.getBoundingClientRect()
-  //   this.setState({
-  //     left: specs.left,
-  //     right: specs.right,
-  //     top: specs.top,
-  //     bottom: specs.bottom
-  //   })
-  // }
+
 
   render() {
+
+    const playlistsComp = playlists.map((playlist, i) => <PlaylistThumb playlist={playlist}></PlaylistThumb>)
+
     return (
-         <Row className='LibraryContainer'>
-         LIBRARY
+         <Row className='LibraryContainer elementFloat'>
+           <Col xs={12} xsOffset={0} sm={12} md={10} mdOffset={1} lg={8} lgOffset={2} className='elementFloat'>
+           {playlistsComp}
+           </Col>
          </Row>
     );
   }
@@ -39,7 +25,7 @@ export default class LibraryContainer extends React.Component {
 const mapStateToProps = (state) =>{
   return{
     x: state.mouse.x,
-    y: state.mouse.y
+    y: state.mouse.y,
   }
 }
 

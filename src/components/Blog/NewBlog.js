@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Radio, Col, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
-import ReactPlayer from 'react-player'
-import ReactMarkdown  from 'react-markdown'
-import Markdown from 'markdown-to-jsx';
+import { Row, Col, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import { formatMarkdown, submitBlog } from '../../actions/blog'
 
 
@@ -72,7 +69,7 @@ class NewBlog extends Component {
     const postWithTitle = `# ${this.state.title} \r\n ${this.state.post}`
 
     return (
-      <Row>    
+      <Row>
         <Col sm={6} md={6} lg={6}>
           {formBoot}
         </Col>
