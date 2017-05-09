@@ -22,23 +22,29 @@ class MobileMenu extends React.Component {
   render() {
     return (
       <div className="MobileMenu">
-        <div className="MobileLogo"><img alt={'logo'} className='center-block' src='https://s3.amazonaws.com/www.martincrane.net/image/logo-outlined-small.png'></img></div>
+        <div className="MobileLogo">
+          <img
+            alt={'logo'}
+            className='center-block'
+            src='https://s3.amazonaws.com/www.martincrane.net/image/logo-outlined-small.png'>
+          </img>
+        </div>
         <div className={`MobileSub`}>
-          <button className='MobileMenuItem' key={1}>
-            <NavLink to='/titles' data-id='mWork'>WORK</NavLink>
-          </button>
-          <button className='MobileMenuItem' key={2}>
-            <NavLink to='/news' data-id='mNews'>NEWS</NavLink>
-          </button>
-          <button className='MobileMenuItem' key={3}>
-            <NavLink to='/about' data-id='mAbout'>ABOUT</NavLink>
-          </button>
-          <button className='MobileMenuItem' key={4}>
-            <NavLink to='/library' data-id='mLibrary'>LIBRARY</NavLink>
-          </button>
-          <button className='MobileMenuItem' key={5}>
-            <NavLink to='/web' data-id='mWeb'>WEB</NavLink>
-          </button>
+          <NavLink to='/work' data-id='mWork'>
+            <button className='MobileMenuItem' key={1}>WORK</button>
+          </NavLink>
+          <NavLink to='/news' data-id='mNews'>
+            <button className='MobileMenuItem' key={2}>NEWS</button>
+          </NavLink>
+          <NavLink to='/about' data-id='mAbout'>
+            <button className='MobileMenuItem' key={3}>ABOUT</button>
+          </NavLink>
+          <NavLink to='/library' data-id='mLibrary'>
+            <button className='MobileMenuItem' key={4}>LIBRARY</button>
+          </NavLink>
+          <NavLink to='/web' data-id='mWeb'>
+            <button className='MobileMenuItem' key={5}>WEB</button>
+          </NavLink>
         </div>
       </div>
     );

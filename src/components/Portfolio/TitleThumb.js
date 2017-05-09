@@ -31,7 +31,7 @@ export default class TitleThumb extends Component {
           </div>
           <div className="thumbDetails">
             <h2>
-              {this.props.title.name}
+              <b>{this.props.title.name}</b>
             </h2>
             <h2>
               {this.props.title.credit} / {this.props.title.year} / {this.props.title.author}

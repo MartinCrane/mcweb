@@ -89,7 +89,7 @@ class DtMenu extends React.Component {
         <div className='DtMenuItem'
           key={2}>
           <NavLink
-            to='/titles'
+            to='/work'
             data-id='mWork'>Work</NavLink>
         </div>
         <div
@@ -113,7 +113,7 @@ class DtMenu extends React.Component {
             to='/about'
             data-id='mAbout'>About</NavLink>
         </div>
-        {window.location.pathname === '/titles' ? dtSubMenu : null}
+        {window.location.pathname === '/work' ? dtSubMenu : null}
       </div>
     );
   }

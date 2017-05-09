@@ -31,8 +31,9 @@ store.dispatch({type: "LOAD_BLOG", payload: blogData.reverse()})
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
+      <Route path="/" component={ConnectedLogo} />
+      <Route path="player" component={ConnectedLogo} />
       <Route component={ConnectedApp}>
-        <Route path="/" component={ConnectedLogo} />
         <Route path="logo" component={ConnectedLogo} />
         <Route path="library" component={ConnectedLibraryContainer} />
         <Route path="news" component={ConnectedBlogContainer}>
@@ -40,7 +41,7 @@ ReactDOM.render(
         </Route>
         <Route path="newblog" component={NewBlog} />
         <Route path="login" component={Login} />
-        <Route path="titles" component={ConnectedTitleContainer} >
+        <Route path="work" component={ConnectedTitleContainer} >
           <Route path=":titleName" component={Title} />
         </Route>
         <Route path="about" component={About} />

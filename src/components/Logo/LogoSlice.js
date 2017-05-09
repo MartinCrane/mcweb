@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { elementFloat } from '../../actions/mouse'
+import { elementFloatY } from '../../actions/mouse'
 
 class LogoSlice extends React.Component {
   constructor() {
@@ -11,7 +11,7 @@ class LogoSlice extends React.Component {
       top: 0,
       bottom: 0
     }
-    this.elementFloat = elementFloat.bind(this)
+    this.elementFloatY = elementFloatY.bind(this)
   }
 
   componentDidMount() {
@@ -27,13 +27,15 @@ class LogoSlice extends React.Component {
   render() {
     return (
       <div
-        className='Logo elementFloat'
-        style={this.elementFloat()}>
+        className='LogoSlice elementFloat'
+        style={this.elementFloatY()}>
+        <a href='/work'>
         <img
-          ref={`Logo${this.props.key}`}
+          ref={`Logo`}
           alt='Martin Crane Logo'
-          src={require(`../../images/logo/${this.props.file}`)}>
+          src={this.props.link}>
         </img>
+        </a>
       </div>
     );
   }

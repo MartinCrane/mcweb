@@ -1,6 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { elementFloat } from '../../actions/mouse'
+import { updateMouse, elementFloat } from '../../actions/mouse'
+// import { elementFloat } from './actions/mouse'
+import { bindActionCreators } from 'redux'
+import { Clearfix } from 'react-bootstrap';
+import { ConnectedLogoSlice } from './LogoSlice'
+import { logoSliceLink } from '../../data/logoSliceLink'
+
 // import { ConnectedLogoSlice } from './LogoSlice'
 
 class Logo extends React.Component {
@@ -12,12 +18,20 @@ class Logo extends React.Component {
       top: 0,
       bottom: 0
     }
+    this.handleMouse = this.handleMouse.bind(this)
     this.elementFloat = elementFloat.bind(this)
   }
 
-  componentDidMount() {
+  handleMouse(e) {
+    this.props.updateMouse({
+      x: e.clientX,
+      y: e.clientY
+    })
+  }
 
+  componentDidMount() {
     let specs = this.refs.Logo.getBoundingClientRect()
+
     this.setState({
       left: specs.left,
       right: specs.right,
@@ -27,16 +41,29 @@ class Logo extends React.Component {
   }
 
   render() {
-    return (
-      <div
-        className='Logo elementFloat'
-        style={this.elementFloat()}>
+    const blinds = logoSliceLink.map((link, index) => <ConnectedLogoSlice link={link} key={index}/>)
+
+    const logo = (<div
+      className='Logo elementFloat'
+      style={this.elementFloat()}>
+      <a href="/work">
         <img
           ref='Logo'
           alt='Martin Crane Logo'
           src={require(`../../images/logo.jpg`)}>
         </img>
-      </div>
+      </a>
+    </div>)
+
+    return (
+      <div
+        className="MainContent"
+        onMouseMove={e => this.handleMouse(e)}>
+        <div className="centeredBlinds">
+        {blinds}
+        </div>
+      <Clearfix/>
+    </div>
     );
   }
 }
@@ -47,5 +74,10 @@ const mapStateToProps = (state) =>{
     y: state.mouse.y
   }
 }
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    updateMouse: updateMouse
+  }, dispatch)
+}
 
-export const ConnectedLogo = connect(mapStateToProps)(Logo)
+export const ConnectedLogo = connect(mapStateToProps, mapDispatchToProps)(Logo)

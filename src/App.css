@@ -1,11 +1,8 @@
-
-
 .MainContent
 {
     width: 100vw;
     height: 100vh;
 }
-
 .ViewPort
 {
     width: 100%;
@@ -19,6 +16,7 @@
     padding-left: 6em;
     padding-right: 1em;
 }
+
 /*WEB*/
 .WebContainer
 {
@@ -29,8 +27,6 @@
 
     color: white;
 }
-
-
 .screen
 {
     width: 100vw;
@@ -38,14 +34,13 @@
 
     background-color: black;
 }
-
 .row
 {
     margin: 0;
     padding: 0;
 }
-/*MAGIC*/
 
+/*MAGIC*/
 .elementFloat
 {
     -webkit-transition: all 1.3s;
@@ -58,13 +53,11 @@
          -o-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
 }
-
 .leftFace
 {
     -webkit-transform: matrix3d(1, 0, .00, .00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
             transform: matrix3d(1, 0, .00, .00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
-
 .rightface
 {
     -webkit-transform: matrix3d(1, 0, .00, -.00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -72,21 +65,14 @@
 }
 
 /*LOGO*/
-
 .Logo
 {
-    position: fixed;
-
-    width: 90%;
-    height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-
+    width: 98%;
+    padding-top: 10vh;
+    margin: auto;
     color: black;
-
-    flex-grow: 1;
+    top:3em;
 }
-
 .LogoTop
 {
     position: fixed;
@@ -100,20 +86,27 @@
 {
     height: 4em;
 }
-
 .Logo img
 {
-    display: inline;
-
     width: inherit;
-
     color: black;
     box-shadow: 100px 100px 30px #888;
 }
+.Logo a
+{
+    width: inherit;
 
+}
+.LogoSlice img
+{
+  width: 50%;
+}
+.centeredBlinds
+{
+  padding-top: 25vh;
+}
 
 /*DESKTOP MENU*/
-
 .DtMenu
 {
     font-size: 1.5em;
@@ -188,7 +181,6 @@
 }
 
 /*MOBILE MENU*/
-
 .MobileMenu
 {
     font-size: 3vh;
@@ -210,16 +202,12 @@
     width: 15%;
     height: 30%;
 }
-
 menu
 {
     color: black;
 }
 
-
 /*TITLE*/
-
-
 .TitleThumb
 {
     width: 100%;
@@ -231,7 +219,6 @@ menu
 {
     opacity: 1;
 }
-
 .TitleThumb img
 {
     width: 100%;
@@ -253,7 +240,6 @@ menu
 
     color: black;
 }
-
 .thumbDetails h2
 {
     font-size: 1em;
@@ -262,17 +248,15 @@ menu
 
     color: black;
 }
-/*LIBRARY*/
 
+/*LIBRARY*/
 .LibraryContainer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-
 /*PLAYER*/
-
 .pseudoAbs
 {
     position: relative;
@@ -299,15 +283,14 @@ menu
 {
     z-index: 300;
 
-    width: 2em;
-    height: 3em;
+    width: 2.3em;
+    height: 4em;
 
     color: black;
     border: 0 solid white;
     border-radius: 50%;
     background-color: rgba(255,0,255,.0);
 }
-
 .sb-soundplayer-progress-container
 {
     position: absolute;
@@ -323,7 +306,7 @@ menu
     width: 100%;
     height: .2em;
 
-    background-color: red;
+    background-color: rgba(255,196,255,1);
 }
 .TitleThumb:hover .sb-soundplayer-progress-container.prog
 {
@@ -331,9 +314,8 @@ menu
 
     cursor: pointer;
 
-    background-color: red;
+    background-color: rgba(255,196,255,1);
 }
-
 .sb-soundplayer-progress-inner
 {
     top: .3em;
@@ -343,8 +325,8 @@ menu
 
     background: rgb(250, 128, 114);
 }
-/*BLOG*/
 
+/*BLOG*/
 .blogNew
 {
     width: 80%;
@@ -352,16 +334,15 @@ menu
 
     align-items: center;
 }
-.case {
+.case
+{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     border: 1px black solid;
     box-sizing: border-box;
     margin-bottom: 3em;
-
 }
-
 .PostThumb
 {
     width: 100%;
@@ -376,7 +357,6 @@ menu
 
     letter-spacing: .1em;
 }
-
 .PostThumb h1 a
 {
     font-size: 2em;
@@ -414,14 +394,10 @@ menu
 
     /*border: rgba(222,218,237,.4) 1.5em solid;*/
 }
-
 textarea.form-control
 {
     height: 100%;
 }
-
-
-
 
 /*ABOUT*/
 .About
@@ -429,16 +405,6 @@ textarea.form-control
     box-sizing: border-box;
     padding: 5em;
 }
-.frame
-{
-    box-sizing: border-box;
-    padding: 2vh;
-
-    -webkit-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
-       -moz-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
-            box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
-}
-
 .About img
 {
     position: relative;
@@ -459,7 +425,6 @@ textarea.form-control
         padding: 0;
         padding-top: 7vh;
     }
-
     .ViewPort
     {
         width: 100%;
@@ -471,13 +436,9 @@ textarea.form-control
     {
         display: none;
     }
-    h1
-    {
-        font-size: 1.5vw;
-    }
+
 
     /*TITLE THUMB*/
-
     .TitleThumb
     {
         width: 100%;
@@ -545,8 +506,8 @@ textarea.form-control
            -moz-box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
                 box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
     }
-    /*MOBILE PLAYER*/
 
+    /*MOBILE PLAYER*/
     .sb-soundplayer-play-btn
     {
         z-index: 300;
@@ -576,7 +537,6 @@ textarea.form-control
     {
         height: 1em;
     }
-
     .sb-soundplayer-progress-inner
     {
         top: .3em;
@@ -586,9 +546,14 @@ textarea.form-control
 
         background: rgb(250, 128, 114);
     }
+    .TitleContainer
+    {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     /*MOBILE MENU*/
-
     .MobileMenu
     {
         z-index: 1000;
@@ -640,16 +605,14 @@ textarea.form-control
 
         font-weight: bold;
     }
-    .MobileMenuItem a
+    .MobileMenuItem
     {
         z-index: 7;
 
         text-align: center;
         text-decoration: none;
-
         color: black;
     }
-
     .DtMenuItem:hover
     {
         font-style: normal;
@@ -673,7 +636,7 @@ textarea.form-control
     }
     .Content
     {
-        margin: 0;
-        padding: 0;
+        margin: 0em;
+        padding: 0em;
     }
 }
