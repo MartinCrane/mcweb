@@ -61,7 +61,7 @@ class DtMenu extends React.Component {
           className={this.state.filter === 'fNarrative' ? 'sideActive' : null}>narrative</h2>
         <h2
           data-filter='fDocumentary'
-          className={this.state.filter === 'fDocumentary' ? 'sideActive' : null}>documentary</h2>
+          className={this.state.filter === 'fDocumentary' ? 'sideActive' : null}>doc</h2>
         <h2
           data-filter='fCommercial'
           className={this.state.filter === 'fCommercial' ? 'sideActive' : null}>commercial</h2>
@@ -74,36 +74,18 @@ class DtMenu extends React.Component {
           data-filter='fProduction'
           className={this.state.filter === 'fProduction' ? 'sideActive' : null}>production</h2>
         <h2
-          data-filter='fMixing'
-          className={this.state.filter === 'fMixing' ? 'sideActive' : null}>mixing</h2>
-        <h2
           data-filter='fSongwriting'
           className={this.state.filter === 'fSongwriting' ? 'sideActive' : null}>songwriting</h2>
       </div>
     )
-    const menuBit = (
-      <div>
 
-    <div
-      className='DtMenuItem'
-      key={7}>
-      <NavLink
-        to='/web'
-        data-id='mWeb'>web</NavLink>
-    </div>
-    </div>
-  )
-
-    const dtMenu = (
+    return (
       <div
         id="menu"
         style={this.elementFloat()}
         ref='DtMenu'
         className={`DtMenu elementFloat ${this.state.menu}`}
         onClick={e => this.handleClick(e)}>
-
-        <br>
-        </br>
         <div className='DtMenuItem'
           key={2}>
           <NavLink
@@ -132,26 +114,6 @@ class DtMenu extends React.Component {
             data-id='mAbout'>About</NavLink>
         </div>
         {window.location.pathname === '/titles' ? dtSubMenu : null}
-        <br>
-        </br><br>
-        </br><br>
-        </br><br>
-        </br><br>
-        </br><br>
-        </br><br>
-        </br><br>
-        </br><br>
-        </br><br>
-        </br>
-        {menuBit}
-      </div>
-    )
-
-
-    return (
-      <div>
-        <LogoTop/>
-        {dtMenu}
       </div>
     );
   }

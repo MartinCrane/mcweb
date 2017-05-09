@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col } from 'react-bootstrap';
+import { Col, Clearfix } from 'react-bootstrap';
 import { formatMarkdown } from '../../actions/blog'
 
 class PostThumb extends Component {
@@ -11,11 +11,15 @@ class PostThumb extends Component {
     const postText = `# ${this.props.blog.title} \r\n ${this.props.blog.body} \r\n  #### _${this.props.blog.date_format}_`
 
     return (
-      <Col xs={12} xsOffset={0} sm={12} md={12} lg={10} lgOffset={1}>
-        <div className="PostThumb elementFloat">
-          {this.formatMarkdown(postText)}
-        </div>
-      </Col>
+      <div className="case">
+        <Col xs={12} xsOffset={0} sm={12} md={12} lg={10} lgOffset={1}>
+          <div className="PostThumb elementFloat">
+            {this.formatMarkdown(postText)}
+            <Clearfix/>
+          </div>
+        </Col>
+        <Clearfix/>
+      </div>
     );
   }
 

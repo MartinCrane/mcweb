@@ -3,39 +3,46 @@
 .MainContent
 {
     width: 100vw;
-
     height: 100vh;
-
-}
-h1{
-  font-size: 2em;
 }
 
 .ViewPort
 {
     width: 100%;
-    padding-top: 9em;
-    padding-right: 3em;
-    padding-left: 8em;
-    background-color: white;
+    padding-top: 5em;
 }
-
+.Content
+{
+    box-sizing: border-box;
+    margin-left: 2em;
+    padding-top: 3em;
+    padding-left: 6em;
+    padding-right: 1em;
+}
 /*WEB*/
-.WebContainer {
+.WebContainer
+{
+    overflow: hidden;
 
-  width: 100%;
-  height: 100%;
-  color: white;
-  overflow: hidden;
-}
-.Project {
-  display: grid;
+    width: 100%;
+    height: 100%;
 
+    color: white;
 }
-.screen {
-  width: 100vw;
-  background-color: black;
-  height: 100vh;
+
+
+.screen
+{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+}
+
+.row
+{
+    margin: 0;
+    padding: 0;
 }
 /*MAGIC*/
 
@@ -86,21 +93,12 @@ h1{
     z-index: 7;
 
     width: 100%;
-
-    padding-top: 2em;
-    padding-right: 3em;
-    padding-left: 8em;
+    padding-top: 1.5em;
+    padding-left: 7em;
 }
 .LogoTop img
 {
-    height: 5em;
-}
-
-.LoginLogo
-{
-    position: absolute;
-    top: 30%;
-    left: 90%;
+    height: 4em;
 }
 
 .Logo img
@@ -122,13 +120,17 @@ h1{
 
     position: fixed;
     z-index: 7;
-
-    width: 4%;
-    padding-top: 6em;
-    padding-left: 2em;
-
-
+    top:5em;
+    width: 1em;
+    padding-left: 1em;
+    left:2%;
     color: black;
+}
+.DtMenuItem
+{
+    display: inline-block;
+
+    text-align: center;
 }
 .menuActive
 {
@@ -166,8 +168,6 @@ h1{
     line-height: 120%;
 
     margin: 0;
-    padding-top: 2em;
-    padding-left: 0;
 
     list-style: none;
 
@@ -224,7 +224,8 @@ menu
 {
     width: 100%;
     height: auto;
-    padding: 3em;
+    margin: 0;
+    padding: 0;
 }
 .TitleThumb:hover .TitlePlayer
 {
@@ -235,7 +236,12 @@ menu
 {
     width: 100%;
 }
-
+.TitleContainer
+{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .thumbDetails
 {
     position: relative;
@@ -258,11 +264,12 @@ menu
 }
 /*LIBRARY*/
 
-.LibraryContainer
-{
-    padding-right: 4em;
-    padding-left: 4em;
+.LibraryContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 /*PLAYER*/
 
@@ -345,20 +352,29 @@ menu
 
     align-items: center;
 }
+.case {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+    box-sizing: border-box;
+    margin-bottom: 3em;
+
+}
 
 .PostThumb
 {
     width: 100%;
-    padding-bottom: 2em;
 
-    background-color: white;
+    padding: 2em;
+    margin-bottom: 2em;
 }
 .PostThumb h1
 {
     font-size: 1.6em;
     font-weight: bold;
 
-    letter-spacing: .2em;
+    letter-spacing: .1em;
 }
 
 .PostThumb h1 a
@@ -382,12 +398,10 @@ menu
 {
     float: left;
 
-    width: 33%;
+    width: 20%;
     margin-top: 1em;
-    margin-right: 2em;
-    margin-bottom: 2em;
-
-    /*border: rgba(222,218,237,.4) 1.5em solid;*/
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 .postMedia
 {
@@ -413,9 +427,7 @@ textarea.form-control
 .About
 {
     box-sizing: border-box;
-    width: 90%;
-    padding-top: 3em;
-    padding-left: 6em;
+    padding: 5em;
 }
 .frame
 {
@@ -486,8 +498,6 @@ textarea.form-control
         width: 100%;
         margin: 0;
         padding: 1em;
-
-        background-color: rgba(222,218,237,.4);
     }
     .postMedia
     {
@@ -627,7 +637,8 @@ textarea.form-control
     }
     .menuActive
     {
-        background-color: pink;
+
+        font-weight: bold;
     }
     .MobileMenuItem a
     {
@@ -659,5 +670,10 @@ textarea.form-control
     .DtMenu
     {
         display: none;
+    }
+    .Content
+    {
+        margin: 0;
+        padding: 0;
     }
 }

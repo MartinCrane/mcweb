@@ -6,6 +6,7 @@ import { updateMouse } from './actions/mouse'
 import { ConnectedDtMenu } from './components/Menu/DtMenu'
 import { ConnectedMobileMenu } from './components/Menu/MobileMenu'
 import { elementFloat } from './actions/mouse'
+import LogoTop  from './components/Logo/LogoTop'
 
 import './App.css';
 
@@ -44,12 +45,13 @@ class App extends Component {
       <div
         className="MainContent"
         onMouseMove={e => this.handleMouse(e)}>
-        <ConnectedDtMenu/>
-        <div ref='Port'>
-          <Grid className='elementFloat ViewPort' >
-              {this.props.children}
-          </Grid>
-        </div>
+        <LogoTop/>
+          <div className='elementFloat ViewPort' >
+            <ConnectedDtMenu/>
+              <div className='Content'>
+                {this.props.children}
+              </div>
+          </div>
         <ConnectedMobileMenu/>
       </div>
     )

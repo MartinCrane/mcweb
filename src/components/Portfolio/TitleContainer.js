@@ -1,6 +1,6 @@
 import React from 'react';
 import { ConnectedTitleThumb } from './TitleThumb'
-import { Row } from 'react-bootstrap';
+import { Row, Clearfix } from 'react-bootstrap';
 import { filterDisplay } from '../../actions/filter'
 import { connect } from 'react-redux'
 import { elementFloat } from '../../actions/mouse'
@@ -18,22 +18,16 @@ export default class TitleContainer extends React.Component {
     this.elementFloat = elementFloat.bind(this)
   }
 
-  // componentDidMount() {
-  //   let specs = this.refs.TitleContainer.getBoundingClientRect()
-  //   this.setState({
-  //     left: specs.left,
-  //     right: specs.right,
-  //     top: specs.top,
-  //     bottom: specs.bottom
-  //   })
-  // }
 
   render() {
     let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <ConnectedTitleThumb title={title} key={title.slug}></ConnectedTitleThumb>)
     return (
-         <Row ref='TitleContainer' key='b'>
+         <div className='TitleContainer'>
+           <Row>
             {this.props.children || portfolio}
-         </Row>
+            <Clearfix/>
+            </Row>
+         </div>
     );
   }
 }

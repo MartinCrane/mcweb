@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row,Clearfix } from 'react-bootstrap';
 class About extends Component {
 
   render() {
@@ -14,18 +14,15 @@ class About extends Component {
           )
     return (
       <Row>
-        <div className="About">
-          <div className='frame'>
-            <div className='frame'>
-              <div className='frame'>
-                <img
-                  src={require(`../images/mc-head1.png`)}
-                  alt='title'>
-                </img>
-                {content}
-              </div>
-            </div>
+        <div className="case">
+          <div className="About">
+            <img
+              src={require(`../images/mc-head1.png`)}
+              alt='title'>
+            </img>
+              {content}
           </div>
+          <Clearfix/>
         </div>
       </Row>
     );

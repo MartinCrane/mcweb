@@ -14,9 +14,7 @@ export default class LibraryContainer extends React.Component {
 
     return (
          <Row className='LibraryContainer elementFloat'>
-           <Col xs={12} xsOffset={0} sm={12} md={10} mdOffset={1} lg={8} lgOffset={2} className='elementFloat'>
            {playlistsComp}
-           </Col>
          </Row>
     );
   }
