@@ -374,9 +374,9 @@ menu
 }
 .PostThumb h1 a
 {
-    font-size: 2em;
-    font-weight: bold;
 
+    font-weight: bold;
+    text-decoration: none;
     color: black;
 }
 .PostThumb a:hover
@@ -389,11 +389,12 @@ menu
 
     color: black;
 }
+
 .PostThumb  img
 {
     float: left;
 
-    width: 20%;
+    width: 30%;
     margin-top: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
@@ -408,6 +409,39 @@ menu
     margin-bottom: 1em;
 
     /*border: rgba(222,218,237,.4) 1.5em solid;*/
+}
+.Post
+{
+  width: 100%;
+  padding: 2em;
+}
+.Post  img
+{
+    float:none;
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    align-self: center;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4em;
+}
+.Post h1
+{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .1em;
+}
+.Post .postMedia {
+  display: block;
+  float: none;
+  width: 60vw;
+  height: 35vw;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 textarea.form-control
 {

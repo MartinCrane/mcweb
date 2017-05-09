@@ -14,7 +14,7 @@ import { ConnectedBlogContainer } from './components/Blog/BlogContainer';
 import { ConnectedTitleContainer } from './components/Portfolio/TitleContainer';
 import { ConnectedWebContainer } from './components/Web/WebContainer';
 import Title from './components/Portfolio/Title';
-import Post from './components/Blog/Post';
+import {ConnectedPost} from './components/Blog/Post';
 import NewBlog from './components/Blog/NewBlog';
 import { portfolioData } from './data/portfolio.js';
 import { blogData } from './data/blog.js';
@@ -37,7 +37,7 @@ ReactDOM.render(
         <Route path="logo" component={ConnectedLogo} />
         <Route path="library" component={ConnectedLibraryContainer} />
         <Route path="news" component={ConnectedBlogContainer}>
-          <Route path=":postName" component={Post} />
+          <Route path=":postName" component={ConnectedPost} />
         </Route>
         <Route path="newblog" component={NewBlog} />
         <Route path="login" component={Login} />

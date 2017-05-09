@@ -4,6 +4,7 @@ import { formatMarkdown } from '../../actions/blog'
 import { connect } from 'react-redux'
 import { shadowFloat, elementFloat, updateMouse } from '../../actions/mouse'
 import { bindActionCreators } from 'redux'
+import { Link } from 'react-router'
 
 export default class PostThumb extends Component {
   constructor() {
@@ -35,7 +36,7 @@ export default class PostThumb extends Component {
       <div className="case elementFloat" ref='Post' >
         <Col xs={12} xsOffset={0} sm={12} md={12} lg={10} lgOffset={1} >
           <div className="PostThumb elementFloat">
-            <h1>{this.props.blog.title}</h1>
+            <h1><Link to={`/news/${this.props.blog.slug}`}>{this.props.blog.title}</Link></h1>
             {this.formatMarkdown(postText)}
             <Clearfix/>
           </div>
