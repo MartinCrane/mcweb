@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux'
 import { Clearfix } from 'react-bootstrap';
 import { ConnectedLogoSlice } from './LogoSlice'
 import { logoSliceLink } from '../../data/logoSliceLink'
-
+import Spash from '../Splash'
 // import { ConnectedLogoSlice } from './LogoSlice'
 
 class Logo extends React.Component {
@@ -59,6 +59,7 @@ class Logo extends React.Component {
       <div
         className="MainContent"
         onMouseMove={e => this.handleMouse(e)}>
+        <Spash/>
         <div className="centeredBlinds">
         {blinds}
         </div>

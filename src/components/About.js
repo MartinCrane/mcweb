@@ -21,9 +21,11 @@ class About extends Component {
               alt='title'>
             </img>
               {content}
+              <Clearfix/>
           </div>
           <Clearfix/>
         </div>
+        <Clearfix/>
       </Row>
     );
   }

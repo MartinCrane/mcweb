@@ -16,7 +16,23 @@
     padding-left: 6em;
     padding-right: 1em;
 }
+/*SPASH*/
+.spash
+{
+  width: 40vw;
+  height: 40vw;
+  border: 3px solid black;
+  z-index: 4;
+  position: fixed;
+  top:10vh;
+  left: 50vw;
+  opacity: .8;
 
+}
+.spash img
+{
+width: 100%;
+}
 /*WEB*/
 .WebContainer
 {
@@ -341,21 +357,20 @@ menu
     margin-right: auto;
     border: 1px black solid;
     box-sizing: border-box;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 .PostThumb
 {
     width: 100%;
-
     padding: 2em;
-    margin-bottom: 2em;
+
 }
 .PostThumb h1
 {
     font-size: 1.6em;
     font-weight: bold;
 
-    letter-spacing: .1em;
+    letter-spacing: .04em;
 }
 .PostThumb h1 a
 {
@@ -389,7 +404,7 @@ menu
 
     width: 35.5em;
     height: 20em;
-    margin-right: 2em;
+    margin-right: 1em;
     margin-bottom: 1em;
 
     /*border: rgba(222,218,237,.4) 1.5em solid;*/

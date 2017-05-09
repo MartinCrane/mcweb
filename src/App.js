@@ -30,15 +30,6 @@ class App extends Component {
     })
   }
 
-  componentDidMount() {
-    let specs = this.refs.Port.getBoundingClientRect()
-    this.setState({
-      left: specs.left,
-      right: specs.right,
-      top: specs.top,
-      bottom: specs.bottom
-    })
-  }
 
   render() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import PostThumb from './PostThumb'
+import ConnectedPostThumb from './PostThumb'
 import { Row } from 'react-bootstrap';
 import { connect } from 'react-redux'
 
@@ -7,8 +7,8 @@ export default class BlogContainer extends React.Component {
 
   render() {
     let blogList = this.props.blog.map((blog, index) =>
-                                              <PostThumb blog={blog} key={index}>
-                                              </PostThumb>
+                                              <ConnectedPostThumb blog={blog} key={index}>
+                                              </ConnectedPostThumb>
                                             )
     return (
       <Row >
