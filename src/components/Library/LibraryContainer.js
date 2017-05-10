@@ -1,21 +1,23 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Clearfix, Grid } from 'react-bootstrap';
 import PlaylistThumb from './PlaylistThumb.js'
+import PlaylistPlayer from './PlaylistPlayer.js'
 import { connect } from 'react-redux'
 import { elementFloat } from '../../actions/mouse'
-import { playlists } from '../../data/playlists'
+import { playlist2 } from '../../data/playlist2'
 
 export default class LibraryContainer extends React.Component {
 
-
   render() {
 
-    const playlistsComp = playlists.map((playlist, i) => <PlaylistThumb playlist={playlist}></PlaylistThumb>)
+    const playlistsComp = playlist2.map((playlist, i) => <PlaylistPlayer key={i} playlist={playlist}></PlaylistPlayer>)
 
     return (
+      <Grid>
          <Row className='LibraryContainer elementFloat'>
            {playlistsComp}
          </Row>
+         </Grid>
     );
   }
 }

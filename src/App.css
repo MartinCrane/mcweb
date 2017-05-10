@@ -266,12 +266,7 @@ menu
     color: black;
 }
 
-/*LIBRARY*/
-.LibraryContainer {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /*PLAYER*/
 .pseudoAbs
@@ -432,41 +427,79 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #E3E3E3;
 }
+ul {
+    padding: 0;
+    list-style-type: none;
+}
 
+/*LIBRARY*/
+.LibraryContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+
+}
 .PlayerContainer
 {
-width:100;
-padding: 5vw;
-border: 1px black solid;
+box-sizing: border-box;
+padding: 4vw;
+min-height: 40vh;
+margin-bottom: 10vh;
 }
-.PlayerControls button {
+.PlayerLine
+{
+  border: 1px black solid;
+  width: 100%;
+  padding: 3vw;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.PlayerControls button
+{
   background-color: white;
   border: 0px solid black;
 }
-.PlayerControls {
-
+.PlayerControls
+{
+  width: inherit;
 }
 .PlayerContainer li
 {
-  font-size: 1.3em;
+  font-size: .9em;
   padding: .2em;
-  background-color: pink;
   width:100%;
   list-style: none;
 }
-.PlayerContainer .active {
-  background-color: red;
+.PlayerContainer .active
+{
+  background-color: rgba(255,196,255,1);
 }
 .PlayerContainer li:hover
 {
-  background-color: green;
+  background-color: rgba(255,196,255,1);
   cursor: pointer;
 }
+.SeekBar
+{
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  margin-left: 0;
+  padding: 0;
+}
+.SeekBar2
+{
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  margin-left: 0;
 
-.SeekBar{
-  width: 20vw;
-  padding-left: 1em;
-
+}
+.SeekBar input
+{
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
 }
 /*BLOG*/
 .blogNew
@@ -810,5 +843,19 @@ textarea.form-control
     {
         margin: 0em;
         padding: 0em;
+    }
+    .LibraryContainer {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*LIBRARY*/
+    .PlayerContainer li
+    {
+      font-size: 2em;
+      padding: .2em;
+      width:100%;
+      list-style: none;
     }
 }

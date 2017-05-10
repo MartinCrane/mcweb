@@ -6,10 +6,7 @@ export const updateMouse = (position) => {
 }
 
 export function elementFloat() {
-  if (this.state.alpha !== null) {
-    let style={"transform":`rotateX(${this.state.gamma/-1.5}deg) rotateY(${this.state.beta/1.5 }deg) scale(1)`}
-    return style
-  } else {
+
   let left = this.state.left
   let right = this.state.right
   let top = this.state.top
@@ -36,7 +33,7 @@ export function elementFloat() {
   }
   let style={"transform":`rotateX(${percentageY * -20}deg) rotateY(${percentageX * 20}deg) scale(1)`}
   return style
-  }
+
 }
 export function elementFloatX() {
   if (this.state.alpha !== null) {
