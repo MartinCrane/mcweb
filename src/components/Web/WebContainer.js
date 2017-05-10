@@ -14,10 +14,15 @@ export default class WebContainer extends React.Component {
       left: 0,
       right: 0,
       top: 0,
-      bottom: 0
+      bottom: 0,
+      alpha: 0,
+      beta: 0,
+      gamma: 0,
+      mobile:false
     }
     this.elementFloatX = elementFloatX.bind(this)
     this.handleMouse = this.handleMouse.bind(this)
+    this.handleOrientation = this.handleOrientation.bind(this)
   }
 
   handleMouse(e) {
@@ -27,15 +32,32 @@ export default class WebContainer extends React.Component {
     })
   }
 
+  handleOrientation(e) {
+    this.setState({
+      beta: event.beta,
+      gamma: event.gamma,
+      alpha: event.alpha,
+      mobile:true
+    })
+  }
+  componentDidMount() {
+    window.addEventListener("deviceorientation", this.handleOrientation)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("deviceorientation", this.handleOrientation)// React .14+
+  }
+
   render() {
     return (
       <div className='screen'>
         <div className='WebContainer' onMouseMove={e => this.handleMouse(e)}>
+
+
           <ConnectedProject1/>
           <ConnectedProject1/>
           <ConnectedProject1/>
           <ConnectedProject1/>
-          
         </div>
       </div>
     );

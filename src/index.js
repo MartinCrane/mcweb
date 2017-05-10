@@ -10,6 +10,7 @@ import { ConnectedApp } from './App';
 import { ConnectedLogo } from './components/Logo/Logo';
 import { ConnectedSplash } from './components/Splash';
 import { ConnectedLibraryContainer } from './components/Library/LibraryContainer';
+import xPlayer  from './components/Library/Player';
 import { ConnectedBlogContainer } from './components/Blog/BlogContainer';
 import { ConnectedTitleContainer } from './components/Portfolio/TitleContainer';
 import { ConnectedWebContainer } from './components/Web/WebContainer';
@@ -30,9 +31,9 @@ store.dispatch({type: "LOAD_BLOG", payload: blogData.reverse()})
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={history}>
+    <Router history={history} onUpdate={() => window.scrollTo(0, 0)}>
       <Route path="/" component={ConnectedLogo} />
-      <Route path="player" component={ConnectedLogo} />
+      <Route path="player" component={xPlayer} />
       <Route component={ConnectedApp}>
         <Route path="logo" component={ConnectedLogo} />
         <Route path="library" component={ConnectedLibraryContainer} />

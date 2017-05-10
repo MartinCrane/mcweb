@@ -134,6 +134,7 @@ width: 100%;
     padding-left: 1em;
     left:2%;
     color: black;
+    border-left: 1px solid black;
 }
 .DtMenuItem
 {
@@ -342,6 +343,131 @@ menu
     background: rgb(250, 128, 114);
 }
 
+/*PLAYER 2*/
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  display: inline;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E3E3E3;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 9px #000000;
+  border: 0px solid #000000;
+  height: 14px;
+  width: 14px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #E3E3E3;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E3E3E3;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 9px #000000;
+  border: 0px solid #000000;
+  height: 14px;
+  width: 14px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #E3E3E3;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #E3E3E3;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 9px #000000;
+  border: 0px solid #000000;
+  height: 14px;
+  width: 14px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #E3E3E3;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #E3E3E3;
+}
+
+.PlayerContainer
+{
+width:100;
+padding: 5vw;
+border: 1px black solid;
+}
+.PlayerControls button {
+  background-color: white;
+  border: 0px solid black;
+}
+.PlayerControls {
+
+}
+.PlayerContainer li
+{
+  font-size: 1.3em;
+  padding: .2em;
+  background-color: pink;
+  width:100%;
+  list-style: none;
+}
+.PlayerContainer .active {
+  background-color: red;
+}
+.PlayerContainer li:hover
+{
+  background-color: green;
+  cursor: pointer;
+}
+
+.SeekBar{
+  width: 20vw;
+  padding-left: 1em;
+
+}
 /*BLOG*/
 .blogNew
 {
@@ -612,22 +738,27 @@ textarea.form-control
     }
     .MobileMenuItem
     {
-        font-size: .8em;
+        font-size: 3.5vw;
 
         display: inline-flex;
 
         width: 20%;
         height: 70px;
 
-        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-            -ms-transform: rotate(45deg); /* IE 9 */
-                transform: rotate(45deg);
+        -webkit-transform: rotate(6deg); /* Chrome, Safari, Opera */
+            -ms-transform: rotate(6deg); /* IE 9 */
+                transform: rotate(6deg);
         text-align: center;
         text-decoration: none;
 
         border: 0 solid black;
         border-left: 2px solid black;
         background-color: white;
+        z-index: 7;
+
+        text-align: center;
+        text-decoration: none;
+        color: black;
     }
     .MobileLogo
     {
@@ -653,14 +784,6 @@ textarea.form-control
     {
 
         font-weight: bold;
-    }
-    .MobileMenuItem
-    {
-        z-index: 7;
-
-        text-align: center;
-        text-decoration: none;
-        color: black;
     }
     .DtMenuItem:hover
     {

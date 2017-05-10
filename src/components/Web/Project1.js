@@ -11,9 +11,14 @@ export default class Project1 extends Component {
       left: 0,
       right: 0,
       top: 0,
-      bottom: 0
+      bottom: 0,
+      alpha: null,
+      beta: 0,
+      gamma: 0,
+      mobile:true
     }
     this.elementFloatX = elementFloatX.bind(this)
+    this.handleOrientation = this.handleOrientation.bind(this)
   }
 
   componentDidMount() {
@@ -24,6 +29,22 @@ export default class Project1 extends Component {
       top: specs.top,
       bottom: specs.bottom
     })
+  }
+
+  handleOrientation(e) {
+    this.setState({
+      beta: event.beta,
+      gamma: event.gamma,
+      alpha: event.alpha,
+      mobile:true
+    })
+  }
+  componentDidMount() {
+    window.addEventListener("deviceorientation", this.handleOrientation)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("deviceorientation", this.handleOrientation)// React .14+
   }
 
   render() {
