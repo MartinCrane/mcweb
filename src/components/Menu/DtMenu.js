@@ -49,7 +49,7 @@ class DtMenu extends React.Component {
 
   render() {
     const dtSubMenu = (
-      <div className='DtSubMenu'>
+      <div className='DtSubMenu fadeIn'>
         <h2
           data-filter='fAll'
           className={this.state.filter === 'fAll' ? 'sideActive' : null}>all</h2>
@@ -84,7 +84,7 @@ class DtMenu extends React.Component {
         id="menu"
         style={this.elementFloat()}
         ref='DtMenu'
-        className={`DtMenu elementFloat ${this.state.menu}`}
+        className={`DtMenu fadeIn elementFloat ${this.state.menu}`}
         onClick={e => this.handleClick(e)}>
         <div className='DtMenuItem'
           key={2}>
