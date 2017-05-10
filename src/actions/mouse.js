@@ -7,7 +7,7 @@ export const updateMouse = (position) => {
 
 export function elementFloat() {
   if (this.state.alpha !== null) {
-    let style={"transform":`rotateX(${this.state.alpha/-1.5}deg) rotateY(${this.state.beta/1.5 }deg) scale(1)`}
+    let style={"transform":`rotateX(${this.state.gamma/-1.5}deg) rotateY(${this.state.beta/1.5 }deg) scale(1)`}
     return style
   } else {
   let left = this.state.left
@@ -40,7 +40,7 @@ export function elementFloat() {
 }
 export function elementFloatX() {
   if (this.state.alpha !== null) {
-    let style={"transform":`rotateX(${this.state.alpha/-1.5}deg) rotateY(${this.state.beta/1.5 }deg) scale(${6})`}
+    let style={"transform":`rotateX(${this.state.gamma/-1.5}deg) rotateY(${this.state.beta/1.5 }deg) scale(${6})`}
     return style
   } else {
     let left = this.state.left
@@ -73,7 +73,7 @@ export function elementFloatX() {
 }
 export function elementFloatY() {
   if (this.state.alpha !== null) {
-    let style={"transform":`rotateX(${this.state.alpha/-2}deg) rotateY(${this.state.beta/2 }deg) scale(${1})`, "boxShadow": `${this.state.alpha/-2}px ${this.state.beta/2 }px 62px -1px rgba(255,196,255,1)`}
+    let style={"transform":`rotateX(${this.state.gamma/-2}deg) rotateY(${this.state.beta/2 }deg) scale(${1})`, "boxShadow": `${this.state.gamma/-2}px ${this.state.beta/2 }px 62px -1px rgba(255,196,255,1)`}
     return style
   } else {
   let left = this.state.left
