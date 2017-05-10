@@ -11,23 +11,22 @@ body {
 }
 .MainContent
 {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'myfont';
-
+  width: 100vw;
+  height: 100vh;
+  font-family: 'myfont';
 }
 .ViewPort
 {
-    width: 100%;
-    padding-top: 5em;
+  width: 100%;
+  padding-top: 5em;
 }
 .Content
 {
-    box-sizing: border-box;
-    margin-left: 2em;
-    padding-top: 3em;
-    padding-left: 6em;
-    padding-right: 1em;
+  box-sizing: border-box;
+  margin-left: 2em;
+  padding-top: 3em;
+  padding-left: 6em;
+  padding-right: 1em;
 }
 /*SPASH*/
 .spash
@@ -40,7 +39,12 @@ body {
   top:10vh;
   left: 50vw;
   opacity: .8;
+    margin-top: 5vh;
 
+}
+.centeredBlinds
+{
+  padding-top: 25vh;
 }
 .spash img
 {
@@ -688,10 +692,10 @@ textarea.form-control
         padding: 0;
     }
     .TitleThumbPlayer {
-    position: absolute;
-    width:100%;
-    padding:.3em;
-    background-color: rgba(255,255,255,.3);
+      position: absolute;
+      width:100%;
+      padding:.3em;
+      background-color: rgba(255,255,255,.3);
     }
     .pseudoAbs
     {
@@ -703,14 +707,15 @@ textarea.form-control
     /*MOBILE BLOG*/
     .PostThumb
     {
-        box-sizing: border-box;
-        width: 100%;
-        margin: 0;
-        padding: 1em;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 1em;
     }
     .postMedia
     {
-        width: 100%;
+      width: 100vw;
+      height: 56vw;
     }
     .PostThumb  img
     {
