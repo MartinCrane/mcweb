@@ -13,11 +13,11 @@ export default class LibraryContainer extends React.Component {
     const playlistsComp = playlist2.map((playlist, i) => <PlaylistPlayer key={i} playlist={playlist}></PlaylistPlayer>)
 
     return (
-      <Grid>
+
         <Row className='LibraryContainer elementFloat'>
           {playlistsComp}
         </Row>
-      </Grid>
+
     );
   }
 }

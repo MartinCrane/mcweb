@@ -51,12 +51,12 @@ class TitlePlayer extends Component {
       <div className="TitleThumbPlayer">
         <Media>
           <div className="media">
-            <div className="media-player">
+            <div className="media-player elementFloatQuick">
               <Player
 
                 src={`${this.props.songUrl}`}/>
             </div>
-            <div className="PlayerControls elementFloat">
+            <div className="PlayerControls elementFloatQuick">
               <Row>
                 <Col
                   xs={1}
@@ -71,7 +71,7 @@ class TitlePlayer extends Component {
                   sm={11}
                   md={11}
                   lg={11}
-                  className="SeekBar2 elementFloat">
+                  className="SeekBar2 elementFloatQuick">
                   <SeekBar />
                 </Col>
               </Row>

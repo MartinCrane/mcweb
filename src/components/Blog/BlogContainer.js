@@ -11,11 +11,11 @@ export default class BlogContainer extends React.Component {
                                               </ConnectedPostThumb>
                                             )
     return (
-      <Grid>
+    
         <Row className='BlogContainer elementFloat'>
           {this.props.children || blogList}
         </Row>
-      </Grid>
+
     );
   }
 }

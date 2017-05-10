@@ -26,10 +26,7 @@ export default class PostThumb extends Component {
 
     return (
 
-        <Col
-          sm={12}
-          md={12}
-          lg={12}
+        <div
           className="PostContainer">
           <div className="PostThumb elementFloat">
             <h1><Link to={`/news/${this.props.blog.slug}`}>{this.props.blog.title}</Link></h1>
@@ -37,7 +34,7 @@ export default class PostThumb extends Component {
             <Clearfix/>
           </div>
           <Clearfix/>
-        </Col>
+        </div>
 
     );
   }

@@ -1,5 +1,6 @@
 import ReactPlayer from 'react-player'
 import ReactMarkdown  from 'react-markdown'
+import { Col, Clearfix } from 'react-bootstrap';
 import React, { Component } from 'react';
 import axios from 'axios'
 
@@ -13,12 +14,12 @@ export function formatMarkdown(str) {
       if (index % 2 === 0) {
         return <ReactMarkdown source={string} key={Math.floor(Math.random() * 2000)}/>
       } else {
-        return <div><br></br><ReactPlayer className="postMedia elementFloat" controls url={string} /></div>
+        return <div><br></br><Col xs={12} sm={12} md={6} lg={5}><ReactPlayer className="video-responsive postMedia elementFloat" controls url={string} /></Col></div>
       }})
   } else if (str.search(searchString) !== -1) {
     return str.split(searchString).map((string, index) => {
       if (index % 2 !== 0 && index !== 0) {
-        return <div><br></br><ReactPlayer className="postMedia elementFloat" controls url={string} /><br></br></div>
+        return <div><br></br><Col xs={12} sm={12} md={6} lg={5}><ReactPlayer className="video-responsive postMedia elementFloat" controls url={string} /></Col><br></br></div>
       } else {
         return <ReactMarkdown source={string}/>
       }})

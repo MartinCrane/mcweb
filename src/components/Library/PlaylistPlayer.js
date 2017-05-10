@@ -63,10 +63,7 @@ export default class PlaylistPlayer extends Component {
 
   render() {
     return (
-      <Col
-        sm={12}
-        md={12}
-        lg={12}
+      <div
         className="PlayerContainer">
         <div className='PlayerLine'>
           <h2>
@@ -77,18 +74,17 @@ export default class PlaylistPlayer extends Component {
           </p>
 
           <ul onClick={e => this.handleClick(e)}>
-            {this.props.playlist.songs.map((item) =>
+            {this.props.playlist.songs.map((item, index) =>
               <li
                 className={this.state.current === item.number.toString() ? 'active' : null}
-                data-track={item.number}>
+                data-track={item.number}
+                key={index}>
                 {item.name}
               </li>
             )}
           </ul>
           <Media>
             <div className="media">
-
-
               <div className="media-player">
                 <Player
                   autoPlay={this.state.autoPlay}
@@ -102,6 +98,7 @@ export default class PlaylistPlayer extends Component {
                     sm={2}
                     md={1}
                     lg={1}
+                    key={2}
                     className="SeekBar">
                     <CustomPlayPause/>
                   </Col>
@@ -110,6 +107,7 @@ export default class PlaylistPlayer extends Component {
                     sm={10}
                     md={11}
                     lg={11}
+                    key={1}
                     className="SeekBar2 elementFloat">
                     <SeekBar />
                   </Col>
@@ -122,7 +120,7 @@ export default class PlaylistPlayer extends Component {
           </Media>
         </div>
         <Clearfix/>
-      </Col>
+      </div>
     );
   }
 }

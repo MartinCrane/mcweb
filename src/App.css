@@ -23,10 +23,11 @@ body {
 .Content
 {
   box-sizing: border-box;
-  margin-left: 2em;
+  margin-left: 1em;
   padding-top: 3em;
   padding-left: 6em;
   padding-right: 1em;
+  width: 100%;
 }
 /*SPASH*/
 .spash
@@ -97,6 +98,18 @@ width: 100%;
          -o-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
 }
+.elementFloatQuick
+{
+    -webkit-transition: all .3s;
+       -moz-transition: all 1.3s;
+        -ms-transition: all 1.3s;
+         -o-transition: all 1.3s;
+            transition: all 1.3s;
+    -webkit-transition-timing-function: ease-out;
+       -moz-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+}
 .leftFace
 {
     -webkit-transform: matrix3d(1, 0, .00, .00001, .00, 1, .00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -129,6 +142,7 @@ width: 100%;
 .LogoTop img
 {
   height: 4em;
+  z-index: 30000;
 }
 .Logo img
 {
@@ -322,52 +336,6 @@ menu
 {
   display: none;
 }
-.sb-soundplayer-play-btn
-{
-  z-index: 300;
-
-  width: 2.3em;
-  height: 4em;
-
-  color: black;
-  border: 0 solid white;
-  border-radius: 50%;
-  background-color: rgba(255,0,255,.0);
-}
-.sb-soundplayer-progress-container
-{
-  position: absolute;
-
-  opacity: 10;
-}
-.sb-soundplayer-progress-container.prog
-{
-  position: absolute;
-
-  display: inline;
-
-  width: 100%;
-  height: .2em;
-
-  background-color: rgba(255,196,255,1);
-}
-.TitleThumb:hover .sb-soundplayer-progress-container.prog
-{
-  height: .4em;
-
-  cursor: pointer;
-
-  background-color: rgba(255,196,255,1);
-}
-.sb-soundplayer-progress-inner
-{
-  top: .3em;
-  left: .3em;
-
-  height: inherit;
-
-  background: rgb(250, 128, 114);
-}
 
 /*PLAYER 2*/
 input[type=range] {
@@ -466,7 +434,7 @@ ul {
 
 /*LIBRARY*/
 .LibraryContainer {
-    width: 90%;
+    width: 81%;
     margin-left: auto;
     margin-right: auto;
     min-height: 200px;
@@ -478,6 +446,7 @@ ul {
   padding: 1vw;
   min-height: 40vh;
   margin-bottom: 10vh;
+  z-index: 200;
 }
 .PlayerLine
 {
@@ -547,12 +516,29 @@ ul {
 {
   box-sizing: border-box;
   padding: 1vw;
-  min-height: 40vh;
+  min-height: 20vh;
   margin-bottom: 10vh;
+}
+.video-responsive {
+  position: relative;
+  padding-bottom: 56%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed,
+.video-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .BlogContainer
 {
-  width: 90%;
+  width: 81%;
   margin-left: auto;
   margin-right: auto;
   min-height: 200px;
@@ -603,9 +589,9 @@ ul {
 .postMedia
 {
   float: left;
+  width: 100%;
+   height: auto   !important;
 
-  width: 35.5em;
-  height: 20em;
   margin-right: 1em;
   margin-bottom: 1em;
 }
@@ -684,6 +670,8 @@ textarea.form-control
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-bottom: 150px;
+        font-size: 1.5em;
     }
     .About
     {
@@ -704,6 +692,39 @@ textarea.form-control
         top: -50px;
         left: 0;
     }
+    .TitleThumbPlayer {
+      position: absolute;
+      width:100%;
+      padding:.3em;
+      background-color: rgba(255,255,255,.3);
+    }
+    .SeekBar2
+    {
+
+      align-items: center;
+      margin-left: 0;
+      top:-3px;
+      height: 100%;
+
+    }
+    .thumbDetails
+    {
+      position: relative;
+      z-index: -1;
+      top: 30px;
+      display: inline;
+
+      text-align: right;
+
+      color: black;
+    }
+    .pseudoAbs
+    {
+      position: relative;
+      z-index: 5;
+      top: -0px;
+      left: 0;
+    }
     /*MOBILE BLOG*/
     .PostThumb
     {
@@ -714,8 +735,8 @@ textarea.form-control
     }
     .postMedia
     {
-      width: 100vw;
-      height: 56vw;
+      width: 100%;
+      height: auto   !important;
     }
     .PostThumb  img
     {
@@ -733,6 +754,13 @@ textarea.form-control
     .PostThumb  p
     {
         font-size: 1em;
+    }
+    .BlogContainer
+    {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
     }
 
     /*ABOUT*/
@@ -760,45 +788,7 @@ textarea.form-control
                 box-shadow: -1px 9px 70px 24px rgba(222,218,237,1);
     }
 
-    /*MOBILE PLAYER*/
-    .sb-soundplayer-play-btn
-    {
-        z-index: 300;
 
-        width: 3em;
-        height: 3em;
-    }
-    .sb-soundplayer-progress-container.prog
-    {
-        position: absolute;
-        top: -1em;
-
-        display: inline;
-
-        width: 100%;
-        height: 1em;
-
-        background-color: red;
-    }
-    .sb-soundplayer-progress-container
-    {
-        position: absolute;
-
-        opacity: 10;
-    }
-    .TitleThumb:hover .sb-soundplayer-progress-container.prog
-    {
-        height: 1em;
-    }
-    .sb-soundplayer-progress-inner
-    {
-        top: .3em;
-        left: .3em;
-
-        height: inherit;
-
-        background: rgb(250, 128, 114);
-    }
     .TitleContainer
     {
       width: 100%;
