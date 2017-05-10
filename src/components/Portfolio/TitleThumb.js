@@ -27,7 +27,7 @@ export default class TitleThumb extends Component {
             </img>
           </div>
           <div className='pseudoAbs'>
-            {this.props.title.scId ? <TitlePlayer songUrl={this.props.title.scId}/> : <div className='none TitlePlayer'></div>}
+            {this.props.title.scId ? <TitlePlayer songUrl={`https://s3.amazonaws.com/www.martincrane.net/audio/${this.props.title.slug}.m4a`}/> : <div className='none TitlePlayer'></div>}
           </div>
           <div className="thumbDetails">
             <h2>

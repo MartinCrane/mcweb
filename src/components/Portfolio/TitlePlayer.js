@@ -1,34 +1,87 @@
 import React, { Component } from 'react';
 import  SoundCloudAudio  from 'soundcloud-audio'
-import { PlayButton, Progress } from 'react-soundplayer/components'
-import { SoundPlayerContainer } from 'react-soundplayer/addons'
+import { Col, Row, Clearfix } from 'react-bootstrap';
+import CustomPlayPause from '../Library/CustomPlayPause'
+import { Media, Player, controls, utils } from 'react-media-player'
+const { PlayPause, CurrentTime, Progress, SeekBar, Duration, MuteUnmute, Volume, Fullscreen, withMediaProps } = controls
+
 
 class TitlePlayer extends Component {
-
-
-  render() {
-    let streamUrl = `https://api.soundcloud.com/tracks/${this.props.songUrl}/stream`;
-
-    return (
-      <div className="TitlePlayer">
-        <SoundPlayerContainer
-          streamUrl={streamUrl}
-          clientId={'c5a171200f3a0a73a523bba14a1e0a29'}>
-          <Progress
-            className='prog'
-            value={(this.props.currentTime / this.props.duration) * 100 || 0}
-            {...this.props}
-            />
-          <PlayButton
-            playing={false}
-            seeking={true}
-            soundCloudAudio={new SoundCloudAudio('c5a171200f3a0a73a523bba14a1e0a29')}
-            />
-        </SoundPlayerContainer>
-      </div>
-    );
+  constructor() {
+    super()
+      this.state ={
+        current: '1',
+        next: '2',
+        previous: '1',
+        autoPlay: false,
+        currentDuration: 0,
+        currentTime: 0
+      }
+      this.handleClick = this.handleClick.bind(this)
+      this.checkProgress = this.checkProgress.bind(this)
   }
 
+  handleClick(e) {
+  }
+
+  checkProgress(object) {
+    if (object.currentTime >=(object.duration - .5) &&
+        object.duration !== 0) {
+
+      let previous = this.state.current
+      let current = this.state.next
+      let next = this.props.playlist.songs.filter((item) => (item.number - 1).toString() === this.state.next)
+      if (next.length > 0) {
+        next = next[0].number.toString()
+      } else {
+        next = 'end'
+      }
+      this.setState({
+        current: current,
+        previous: previous,
+        next: next,
+        autoPlay: true
+      })
+
+    }
+  }
+
+  render() {
+
+    return (
+      <div className="TitleThumbPlayer">
+        <Media>
+          <div className="media">
+            <div className="media-player">
+              <Player
+
+                src={`${this.props.songUrl}`}/>
+            </div>
+            <div className="PlayerControls elementFloat">
+              <Row>
+                <Col
+                  xs={1}
+                  sm={1}
+                  md={1}
+                  lg={1}
+                  className="SeekBar">
+                  <CustomPlayPause/>
+                </Col>
+                <Col
+                  xs={11}
+                  sm={11}
+                  md={11}
+                  lg={11}
+                  className="SeekBar2 elementFloat">
+                  <SeekBar />
+                </Col>
+              </Row>
+            </div>
+          </div>
+        </Media>
+        </div>
+    );
+  }
 }
 
 export default TitlePlayer;

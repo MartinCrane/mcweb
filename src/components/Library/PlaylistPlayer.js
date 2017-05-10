@@ -64,8 +64,7 @@ export default class PlaylistPlayer extends Component {
   render() {
 
     return (
-      <Col sm={12} md={12} lg={12} className="PlayerContainer"
-      style={{backgroundImage: `url("${this.props.playlist.image}")`, backgroundPosition: 'center' }}>
+      <Col sm={12} md={12} lg={12} className="PlayerContainer">
       <div className='PlayerLine'>
         <h2>
           {this.props.playlist.name}
@@ -85,6 +84,8 @@ export default class PlaylistPlayer extends Component {
         </ul>
         <Media>
           <div className="media">
+
+
             <div className="media-player">
               <Player
                 autoPlay={this.state.autoPlay}
