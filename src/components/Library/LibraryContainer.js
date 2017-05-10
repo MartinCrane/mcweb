@@ -14,10 +14,10 @@ export default class LibraryContainer extends React.Component {
 
     return (
       <Grid>
-         <Row className='LibraryContainer elementFloat'>
-           {playlistsComp}
-         </Row>
-         </Grid>
+        <Row className='LibraryContainer elementFloat'>
+          {playlistsComp}
+        </Row>
+      </Grid>
     );
   }
 }

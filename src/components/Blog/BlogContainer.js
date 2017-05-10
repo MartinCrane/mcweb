@@ -1,6 +1,6 @@
 import React from 'react';
 import ConnectedPostThumb from './PostThumb'
-import { Row } from 'react-bootstrap';
+import { Row, Grid } from 'react-bootstrap';
 import { connect } from 'react-redux'
 
 export default class BlogContainer extends React.Component {
@@ -11,9 +11,11 @@ export default class BlogContainer extends React.Component {
                                               </ConnectedPostThumb>
                                             )
     return (
-      <Row >
-        {this.props.children || blogList}
-      </Row>
+      <Grid>
+        <Row className='BlogContainer elementFloat'>
+          {this.props.children || blogList}
+        </Row>
+      </Grid>
     );
   }
 }

@@ -6,6 +6,7 @@ import { updateMouse } from '../../actions/mouse'
 import { elementFloatX } from '../../actions/mouse'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import { Link } from 'react-router'
 
 export default class WebContainer extends React.Component {
   constructor() {
@@ -53,7 +54,10 @@ export default class WebContainer extends React.Component {
       <div className='screen'>
         <div className='WebContainer' onMouseMove={e => this.handleMouse(e)}>
 
-
+          <div className="WebProjects">
+            <h1>A SERIES OF WEB PROJECTS</h1>
+            <h1><Link to='/'>BACK</Link></h1>
+          </div>
           <ConnectedProject1/>
           <ConnectedProject1/>
           <ConnectedProject1/>

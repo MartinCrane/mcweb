@@ -113,6 +113,13 @@ class DtMenu extends React.Component {
             to='/about'
             data-id='mAbout'>About</NavLink>
         </div>
+        <div
+          className='DtMenuItem'
+          key={6}>
+          <NavLink
+            to='/web'
+            data-id='mWeb'>Web</NavLink>
+        </div>
         {window.location.pathname === '/work' ? dtSubMenu : null}
       </div>
     );

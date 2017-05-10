@@ -19,30 +19,26 @@ export default class PostThumb extends Component {
     this.shadowFloat = shadowFloat.bind(this)
   }
 
-  componentDidMount() {
-    let specs = this.refs.Post.getBoundingClientRect()
-    this.setState({
-      left: specs.left,
-      right: specs.right,
-      top: specs.top,
-      bottom: specs.bottom
-    })
-  }
+
 
   render() {
     const postText = `${this.props.blog.body} \r\n  ###### _${this.props.blog.date_format}_`
 
     return (
-      <div className="case elementFloat" ref='Post' >
-        <Col xs={12} xsOffset={0} sm={12} md={12} lg={10} lgOffset={1} >
+
+        <Col
+          sm={12}
+          md={12}
+          lg={12}
+          className="PostContainer">
           <div className="PostThumb elementFloat">
             <h1><Link to={`/news/${this.props.blog.slug}`}>{this.props.blog.title}</Link></h1>
             {this.formatMarkdown(postText)}
             <Clearfix/>
           </div>
+          <Clearfix/>
         </Col>
-        <Clearfix/>
-      </div>
+
     );
   }
 }

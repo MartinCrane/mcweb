@@ -11,9 +11,9 @@ export function formatMarkdown(str) {
   if (str.search(searchString) === 0) {
     return str.split(searchString).map((string, index) => {
       if (index % 2 === 0) {
-        return <ReactMarkdown source={string}/>
+        return <ReactMarkdown source={string} key={Math.floor(Math.random() * 2000)}/>
       } else {
-        return <div><br></br><ReactPlayer className="postMedia elementFloat" controls url={string} /><br></br></div>
+        return <div><br></br><ReactPlayer className="postMedia elementFloat" controls url={string} /></div>
       }})
   } else if (str.search(searchString) !== -1) {
     return str.split(searchString).map((string, index) => {

@@ -53,20 +53,31 @@ width: 100%;
 
     width: 100%;
     height: 100%;
-
+    font-family: 'myfont';
     color: white;
+}
+.WebProjects {
+  width:50vw;
+  height:50vh;
+  top:25vh;
+  left: 25vw;
+  padding: 3vh;
+  text-align: center;
+  background-color: black;
+  position: fixed;
+  z-index: 3000;
 }
 .screen
 {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    background-color: black;
+  background-color: black;
 }
 .row
 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*MAGIC*/
@@ -96,35 +107,34 @@ width: 100%;
 /*LOGO*/
 .Logo
 {
-    width: 98%;
-    padding-top: 10vh;
-    margin: auto;
-    color: black;
-    top:3em;
+  width: 98%;
+  padding-top: 10vh;
+  margin: auto;
+  color: black;
+  top:3em;
 }
 .LogoTop
 {
-    position: fixed;
-    z-index: 7;
+  position: fixed;
+  z-index: 7;
 
-    width: 100%;
-    padding-top: 1.5em;
-    padding-left: 7em;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-left: 7em;
 }
 .LogoTop img
 {
-    height: 4em;
+  height: 4em;
 }
 .Logo img
 {
-    width: inherit;
-    color: black;
-    box-shadow: 100px 100px 30px #888;
+  width: inherit;
+  color: black;
+  box-shadow: 100px 100px 30px #888;
 }
 .Logo a
 {
-    width: inherit;
-
+  width: inherit;
 }
 .LogoSlice img
 {
@@ -138,120 +148,120 @@ width: 100%;
 /*DESKTOP MENU*/
 .DtMenu
 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 
-    position: fixed;
-    z-index: 7;
-    top:5em;
-    width: 1em;
-    padding-left: 1em;
-    left:2%;
-    color: black;
-    border-left: 1px solid black;
+  position: fixed;
+  z-index: 7;
+  top:5em;
+  width: 1em;
+  padding-left: 1em;
+  left:2%;
+  color: black;
+  border-left: 1px solid black;
 }
 .DtMenuItem
 {
-    display: inline-block;
-
-    text-align: center;
+  display: inline-block;
+  margin-bottom: .5em;
+  text-align: center;
 }
 .menuActive
 {
-    font-weight: bold;
+  font-weight: bold;
 }
 .sideActive
 {
-    text-decoration: underline;
+  text-decoration: underline;
 
-    color: red;
+  color: red;
 }
 .DtMenu a
 {
-    z-index: 7;
+  z-index: 7;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    color: black;
+  color: black;
 }
 .DtMenu img
 {
-    width: 7em;
-    padding-bottom: 1em;
+  width: 7em;
+  padding-bottom: 1em;
 }
 .DtMenuItem:hover
 {
-    font-style: normal;
+  font-style: normal;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    color: black;
+  color: black;
 }
 .DtSubMenu
 {
-    line-height: 120%;
+  line-height: 120%;
 
-    margin: 0;
+  margin: 0;
 
-    list-style: none;
+  list-style: none;
 
-    color: black;
+  color: black;
 }
 .DtSubMenu h2
 {
-    font-size: .7em;
+  font-size: .7em;
 
-    z-index: 1;
+  z-index: 1;
 
-    cursor: pointer;
-    transform: skewX(10deg) rotate(45deg);
+  cursor: pointer;
+  transform: skewX(10deg) rotate(45deg);
 }
 .MobileMenu
 {
-    display: none;
+  display: none;
 }
 
 /*MOBILE MENU*/
 .MobileMenu
 {
-    font-size: 3vh;
+  font-size: 3vh;
 
-    position: fixed;
-    z-index: 2;
+  position: fixed;
+  z-index: 2;
 
-    width: 100%;
+  width: 100%;
 
-    opacity: 1;
-    color: black;
+  opacity: 1;
+  color: black;
 }
 .Mwork
 {
-    z-index: 1;
+  z-index: 1;
 
-    display: inline;
+  display: inline;
 
-    width: 15%;
-    height: 30%;
+  width: 15%;
+  height: 30%;
 }
 menu
 {
-    color: black;
+  color: black;
 }
 
 /*TITLE*/
 .TitleThumb
 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 .TitleThumb:hover .TitlePlayer
 {
-    opacity: 1;
+  opacity: 1;
 }
 .TitleThumb img
 {
-    width: 100%;
+  width: 100%;
 }
 .TitleContainer
 {
@@ -261,98 +271,98 @@ menu
 }
 .thumbDetails
 {
-    position: relative;
-    z-index: -1;
+  position: relative;
+  z-index: -1;
 
-    display: inline;
+  display: inline;
 
-    text-align: right;
+  text-align: right;
 
-    color: black;
+  color: black;
 }
 .thumbDetails h2
 {
-    font-size: 1em;
+  font-size: 1em;
 
-    margin-top: .8em;
+  margin-top: .8em;
 
-    color: black;
+  color: black;
 }
 .TitleThumbPlayer {
-position: absolute;
-width:100%;
-padding:.3em;
-background-color: rgba(255,255,255,.3);
+  position: absolute;
+  width:100%;
+  padding:.3em;
+  background-color: rgba(255,255,255,.3);
 }
 
 /*PLAYER*/
 .pseudoAbs
 {
-    position: relative;
-    z-index: 5;
-    top: -38px;
-    left: 0;
+  position: relative;
+  z-index: 5;
+  top: -38px;
+  left: 0;
 }
 .TitlePlayer
 {
-    position: absolute;
+  position: absolute;
 
-    display: inline;
+  display: inline;
 
-    width: 100%;
-    height: inherit;
+  width: 100%;
+  height: inherit;
 
-    opacity: .9;
+  opacity: .9;
 }
 .gone
 {
-    display: none;
+  display: none;
 }
 .sb-soundplayer-play-btn
 {
-    z-index: 300;
+  z-index: 300;
 
-    width: 2.3em;
-    height: 4em;
+  width: 2.3em;
+  height: 4em;
 
-    color: black;
-    border: 0 solid white;
-    border-radius: 50%;
-    background-color: rgba(255,0,255,.0);
+  color: black;
+  border: 0 solid white;
+  border-radius: 50%;
+  background-color: rgba(255,0,255,.0);
 }
 .sb-soundplayer-progress-container
 {
-    position: absolute;
+  position: absolute;
 
-    opacity: 10;
+  opacity: 10;
 }
 .sb-soundplayer-progress-container.prog
 {
-    position: absolute;
+  position: absolute;
 
-    display: inline;
+  display: inline;
 
-    width: 100%;
-    height: .2em;
+  width: 100%;
+  height: .2em;
 
-    background-color: rgba(255,196,255,1);
+  background-color: rgba(255,196,255,1);
 }
 .TitleThumb:hover .sb-soundplayer-progress-container.prog
 {
-    height: .4em;
+  height: .4em;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    background-color: rgba(255,196,255,1);
+  background-color: rgba(255,196,255,1);
 }
 .sb-soundplayer-progress-inner
 {
-    top: .3em;
-    left: .3em;
+  top: .3em;
+  left: .3em;
 
-    height: inherit;
+  height: inherit;
 
-    background: rgb(250, 128, 114);
+  background: rgb(250, 128, 114);
 }
 
 /*PLAYER 2*/
@@ -456,16 +466,14 @@ ul {
     margin-left: auto;
     margin-right: auto;
     min-height: 200px;
-
 }
-
 
 .PlayerContainer
 {
-box-sizing: border-box;
-padding: 1vw;
-min-height: 40vh;
-margin-bottom: 10vh;
+  box-sizing: border-box;
+  padding: 1vw;
+  min-height: 40vh;
+  margin-bottom: 10vh;
 }
 .PlayerLine
 {
@@ -522,74 +530,80 @@ margin-bottom: 10vh;
   margin-bottom: auto;
   align-items: center;
 }
+
 /*BLOG*/
 .blogNew
 {
-    width: 80%;
-    padding-left: 2em;
+  width: 80%;
+  padding-left: 2em;
 
-    align-items: center;
+  align-items: center;
 }
-.case
+.PostContainer
 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px black solid;
-    box-sizing: border-box;
-    margin-bottom: 6em;
+  box-sizing: border-box;
+  padding: 1vw;
+  min-height: 40vh;
+  margin-bottom: 10vh;
 }
+.BlogContainer
+{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 200px;
+}
+
 .PostThumb
 {
-    width: 100%;
-    padding: 3em;
-    padding-bottom: 4em;
 
+  border: 1px black solid;
+  width: 100%;
+  padding: 3vw;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .PostThumb h1
 {
-    font-size: 1.6em;
-    font-weight: bold;
+  font-size: 1.6em;
+  font-weight: bold;
 
-    letter-spacing: .04em;
+  letter-spacing: .04em;
 }
 .PostThumb h1 a
 {
 
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 .PostThumb a:hover
 {
-    text-decoration: none;
+  text-decoration: none;
 }
 .PostThumb  a
 {
-    text-decoration: underline;
+  text-decoration: underline;
 
-    color: black;
+  color: black;
 }
 
 .PostThumb  img
 {
-    float: left;
+  float: left;
 
-    width: 30%;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em;
+  width: 30%;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 .postMedia
 {
-    float: left;
+  float: left;
 
-    width: 35.5em;
-    height: 20em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-
-    /*border: rgba(222,218,237,.4) 1.5em solid;*/
+  width: 35.5em;
+  height: 20em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 .Post
 {
@@ -598,66 +612,44 @@ margin-bottom: 10vh;
 }
 .Post  img
 {
-    float:none;
-    display: block;
-    width: 50vw;
-    height: 50vw;
-    align-self: center;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 4em;
+  float:none;
+  display: block;
+  width: 50vw;
+  height: 50vw;
+  align-self: center;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4em;
 }
 .Post h1
 {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: .1em;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: .1em;
 }
-.Post .postMedia {
-  display: block;
-  float: none;
-  width: 60vw;
-  height: 35vw;
-  margin-left: auto;
-  margin-right: auto;
 
-}
 textarea.form-control
 {
-    height: 100%;
+  height: 100%;
 }
 
 /*ABOUT*/
 .About
 {
-    box-sizing: border-box;
-    padding: 5em;
+  box-sizing: border-box;
+  padding: 5em;
 }
 .About img
 {
-    position: relative;
+  position: relative;
 
-    float: left;
+  float: left;
 
-    height: 100%;
-    margin: 1em;
+  height: 100%;
+  margin: 1em;
 }
-.fadeIn {
-  animation-name: fadeIn;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-
 
 @media only screen and (max-width: 800px)
 {

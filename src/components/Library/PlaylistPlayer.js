@@ -62,61 +62,64 @@ export default class PlaylistPlayer extends Component {
   }
 
   render() {
-
     return (
-      <Col sm={12} md={12} lg={12} className="PlayerContainer">
-      <div className='PlayerLine'>
-        <h2>
-          {this.props.playlist.name}
-        </h2>
-        <p>
-          {this.props.playlist.description}
-        </p>
+      <Col
+        sm={12}
+        md={12}
+        lg={12}
+        className="PlayerContainer">
+        <div className='PlayerLine'>
+          <h2>
+            {this.props.playlist.name}
+          </h2>
+          <p>
+            {this.props.playlist.description}
+          </p>
 
-        <ul onClick={e => this.handleClick(e)}>
-          {this.props.playlist.songs.map((item) =>
-            <li
-              className={this.state.current === item.number.toString() ? 'active' : null}
-              data-track={item.number}>
-              {item.name}
-            </li>
-          )}
-        </ul>
-        <Media>
-          <div className="media">
+          <ul onClick={e => this.handleClick(e)}>
+            {this.props.playlist.songs.map((item) =>
+              <li
+                className={this.state.current === item.number.toString() ? 'active' : null}
+                data-track={item.number}>
+                {item.name}
+              </li>
+            )}
+          </ul>
+          <Media>
+            <div className="media">
 
 
-            <div className="media-player">
-              <Player
-                autoPlay={this.state.autoPlay}
-                onTimeUpdate={this.checkProgress}
-                src={`${this.props.playlist.songs.filter((item) => item.number.toString() === this.state.current)[0].link}`}/>
+              <div className="media-player">
+                <Player
+                  autoPlay={this.state.autoPlay}
+                  onTimeUpdate={this.checkProgress}
+                  src={`${this.props.playlist.songs.filter((item) => item.number.toString() === this.state.current)[0].link}`}/>
+              </div>
+              <div className="PlayerControls elementFloat">
+                <Row>
+                  <Col
+                    xs={2}
+                    sm={2}
+                    md={1}
+                    lg={1}
+                    className="SeekBar">
+                    <CustomPlayPause/>
+                  </Col>
+                  <Col
+                    xs={10}
+                    sm={10}
+                    md={11}
+                    lg={11}
+                    className="SeekBar2 elementFloat">
+                    <SeekBar />
+                  </Col>
+                </Row>
+                <h4>
+                  <CurrentTime/> / <Duration/>
+                </h4>
+              </div>
             </div>
-            <div className="PlayerControls elementFloat">
-              <Row>
-                <Col
-                  xs={2}
-                  sm={2}
-                  md={1}
-                  lg={1}
-                  className="SeekBar">
-                  <CustomPlayPause/>
-                </Col>
-                <Col
-                  xs={10}
-                  sm={10}
-                  md={11}
-                  lg={11}
-                  className="SeekBar2 elementFloat">
-                  <SeekBar />
-                </Col>
-              </Row>
-              <h4>
-                <CurrentTime/> / <Duration/>
-              </h4>
-            </div>
-          </div>
-        </Media>
+          </Media>
         </div>
         <Clearfix/>
       </Col>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import  SoundCloudAudio  from 'soundcloud-audio'
-import { Col, Row, Clearfix } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import CustomPlayPause from '../Library/CustomPlayPause'
-import { Media, Player, controls, utils } from 'react-media-player'
-const { PlayPause, CurrentTime, Progress, SeekBar, Duration, MuteUnmute, Volume, Fullscreen, withMediaProps } = controls
+import { Media, Player, controls } from 'react-media-player'
+const {  SeekBar } = controls
 
 
 class TitlePlayer extends Component {
