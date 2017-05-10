@@ -14,7 +14,7 @@ export default class LibraryContainer extends React.Component {
 
     return (
 
-        <Row className='LibraryContainer elementFloat'>
+        <Row className='LibraryContainer elementFloatQuick'>
           {playlistsComp}
         </Row>
 

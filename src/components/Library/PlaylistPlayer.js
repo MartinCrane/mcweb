@@ -91,7 +91,7 @@ export default class PlaylistPlayer extends Component {
                   onTimeUpdate={this.checkProgress}
                   src={`${this.props.playlist.songs.filter((item) => item.number.toString() === this.state.current)[0].link}`}/>
               </div>
-              <div className="PlayerControls elementFloat">
+              <div className="PlayerControls elementFloatQuick">
                 <Row>
                   <Col
                     xs={2}
@@ -108,7 +108,7 @@ export default class PlaylistPlayer extends Component {
                     md={11}
                     lg={11}
                     key={1}
-                    className="SeekBar2 elementFloat">
+                    className="SeekBar2 elementFloatQuick">
                     <SeekBar />
                   </Col>
                 </Row>

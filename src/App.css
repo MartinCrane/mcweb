@@ -516,7 +516,7 @@ ul {
 {
   box-sizing: border-box;
   padding: 1vw;
-  min-height: 20vh;
+  min-height: 10vh;
   margin-bottom: 10vh;
 }
 .video-responsive {
@@ -629,6 +629,9 @@ textarea.form-control
 .About
 {
   box-sizing: border-box;
+  width: 81%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 5em;
 }
 .About img

@@ -28,7 +28,7 @@ export default class PostThumb extends Component {
 
         <div
           className="PostContainer">
-          <div className="PostThumb elementFloat">
+          <div className="PostThumb elementFloatQuick">
             <h1><Link to={`/news/${this.props.blog.slug}`}>{this.props.blog.title}</Link></h1>
             {this.formatMarkdown(postText)}
             <Clearfix/>

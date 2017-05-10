@@ -11,8 +11,8 @@ export default class BlogContainer extends React.Component {
                                               </ConnectedPostThumb>
                                             )
     return (
-    
-        <Row className='BlogContainer elementFloat'>
+
+        <Row className='BlogContainer elementFloatQuick'>
           {this.props.children || blogList}
         </Row>
 
