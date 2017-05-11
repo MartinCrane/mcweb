@@ -21,6 +21,9 @@ class TitlePlayer extends Component {
   }
 
   handleClick(e) {
+    this.setState({
+      autoPlay: true
+    })
   }
 
   checkProgress(object) {
@@ -48,13 +51,13 @@ class TitlePlayer extends Component {
   render() {
 
     return (
-      <div className="TitleThumbPlayer">
+      <div className="TitleThumbPlayer" onClick={e => this.handleClick(e)}>
         <Media>
           <div className="media">
             <div className="media-player elementFloatQuick">
               <Player
-
-                src={`${this.props.songUrl}`}/>
+                src={`${this.state.autoPlay ? this.props.songUrl : 'https://s3.amazonaws.com/www.martincrane.net/audio/silence.m4a'}`}
+                autoPlay={this.state.autoPlay}/>
             </div>
             <div className="PlayerControls elementFloatQuick">
               <Row>

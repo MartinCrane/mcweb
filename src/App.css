@@ -590,7 +590,7 @@ ul {
 {
   float: left;
   width: 100%;
-   height: auto   !important;
+  height: auto   !important;
 
   margin-right: 1em;
   margin-bottom: 1em;
@@ -882,6 +882,7 @@ textarea.form-control
         margin: 0em;
         padding: 0em;
     }
+
     .LibraryContainer {
         width: 95%;
         margin-left: auto;
@@ -896,4 +897,5 @@ textarea.form-control
       width:100%;
       list-style: none;
     }
+    
 }

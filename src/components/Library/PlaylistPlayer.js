@@ -16,9 +16,11 @@ export default class PlaylistPlayer extends Component {
         previous: '1',
         autoPlay: false,
         currentDuration: 0,
-        currentTime: 0
+        currentTime: 0,
+        played: false
       }
       this.handleClick = this.handleClick.bind(this)
+      this.firstPlay = this.firstPlay.bind(this)
       this.checkProgress = this.checkProgress.bind(this)
   }
 
@@ -35,6 +37,12 @@ export default class PlaylistPlayer extends Component {
       current: e.target.dataset.track,
       previous: previous,
       next: next,
+      autoPlay: true
+    })
+  }
+  firstPlay() {
+    this.setState({
+      played: true,
       autoPlay: true
     })
   }
@@ -64,7 +72,7 @@ export default class PlaylistPlayer extends Component {
   render() {
     return (
       <div
-        className="PlayerContainer">
+        className="PlayerContainer" onClick={e => this.firstPlay()}>
         <div className='PlayerLine'>
           <h2>
             {this.props.playlist.name}
@@ -89,7 +97,9 @@ export default class PlaylistPlayer extends Component {
                 <Player
                   autoPlay={this.state.autoPlay}
                   onTimeUpdate={this.checkProgress}
-                  src={`${this.props.playlist.songs.filter((item) => item.number.toString() === this.state.current)[0].link}`}/>
+                  src={`${this.state.played ?
+                    this.props.playlist.songs.filter((item) => item.number.toString() === this.state.current)[0].link :
+                    'https://s3.amazonaws.com/www.martincrane.net/audio/silence.m4a'}`}/>
               </div>
               <div className="PlayerControls elementFloatQuick">
                 <Row>
