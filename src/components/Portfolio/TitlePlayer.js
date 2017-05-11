@@ -51,7 +51,7 @@ class TitlePlayer extends Component {
   render() {
 
     return (
-      <div className="TitleThumbPlayer" onClick={e => this.handleClick(e)}>
+      <div className="TitleThumbPlayer" onClick={e => this.handleClick(e)} onTouchStart={e => this.handleClick(e)}>
         <Media>
           <div className="media">
             <div className="media-player elementFloatQuick">

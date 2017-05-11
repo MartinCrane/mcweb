@@ -46,6 +46,7 @@ export default class PlaylistPlayer extends Component {
       played: true,
       autoPlay: true
     })
+    this.forceUpdate()
   }
 
   checkProgress(object) {
@@ -82,7 +83,7 @@ export default class PlaylistPlayer extends Component {
             {this.props.playlist.description}
           </p>
 
-          <ul onClick={e => this.handleClick(e)}>
+          <ul onClick={e => this.handleClick(e)} onTouchStart={e => this.handleClick(e)}>
             {this.props.playlist.songs.map((item, index) =>
               <li
                 className={this.state.current === item.number.toString() ? 'active' : null}
@@ -100,7 +101,8 @@ export default class PlaylistPlayer extends Component {
                   onTimeUpdate={this.checkProgress}
                   src={`${this.state.played ?
                     this.props.playlist.songs.filter((item) => item.number.toString() === this.state.current)[0].link :
-                    'https://s3.amazonaws.com/www.martincrane.net/audio/silence.m4a'}`}/>
+                    'https://s3.amazonaws.com/www.martincrane.net/audio/silence.m4a'}`}
+                  />
               </div>
               <div className="PlayerControls elementFloatQuick">
                 <Row>
