@@ -25,6 +25,7 @@ export default class PlaylistPlayer extends Component {
   }
 
   handleClick(e) {
+    if (e.target.dataset.track !== null) {
     let current = e.target.dataset.track
     let previous = this.state.current
     let next = this.props.playlist.songs.filter((item) => (item.number - 1).toString() === e.target.dataset.track)
@@ -37,17 +38,18 @@ export default class PlaylistPlayer extends Component {
       current: e.target.dataset.track,
       previous: previous,
       next: next,
+      played: true,
       autoPlay: true
     })
-  }
-
-  firstPlay() {
+    } else {
     this.setState({
       played: true,
       autoPlay: true
     })
-    this.forceUpdate()
+    }
   }
+
+
 
   checkProgress(object) {
     if (object.currentTime >=(object.duration - .5) &&
