@@ -74,7 +74,7 @@ export default class PlaylistPlayer extends Component {
   render() {
     return (
       <div
-        className="PlayerContainer" onClick={e => this.firstPlay()}>
+        className="PlayerContainer" >
         <div className='PlayerLine'>
           <h2>
             {this.props.playlist.name}
@@ -113,7 +113,7 @@ export default class PlaylistPlayer extends Component {
                     lg={1}
                     key={2}
                     className="SeekBar">
-                    <CustomPlayPause/>
+                    <CustomPlayPause onTouchStart={e => this.firstPlay()}/>
                   </Col>
                   <Col
                     xs={10}
