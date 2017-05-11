@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux'
-import { Grid } from 'react-bootstrap';
 import { connect } from 'react-redux'
 import { updateMouse } from './actions/mouse'
 import { ConnectedDtMenu } from './components/Menu/DtMenu'

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Clearfix, Col } from 'react-bootstrap';
+import { Clearfix, Col } from 'react-bootstrap';
 import { formatMarkdown } from '../../actions/blog'
 import { connect } from 'react-redux'
 

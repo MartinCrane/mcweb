@@ -4,7 +4,6 @@ import screenReducer from './screenReducer'
 import portfolioReducer from './portfolioReducer'
 import blogReducer from './blogReducer'
 import filterReducer from './filterReducer'
-import webReducer from './webReducer'
 import { routerReducer } from 'react-router-redux'
 
 
@@ -15,5 +14,4 @@ export default combineReducers({
   filter: filterReducer,
   blog: blogReducer,
   screen: screenReducer,
-  web: webReducer
 })

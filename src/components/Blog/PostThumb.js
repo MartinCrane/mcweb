@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Col, Clearfix } from 'react-bootstrap';
+import { Clearfix } from 'react-bootstrap';
 import { formatMarkdown } from '../../actions/blog'
 import { connect } from 'react-redux'
-import { shadowFloat, elementFloat, updateMouse } from '../../actions/mouse'
-import { bindActionCreators } from 'redux'
+import { shadowFloat } from '../../actions/mouse'
 import { Link } from 'react-router'
 
 export default class PostThumb extends Component {

@@ -1,9 +1,7 @@
 import React from 'react';
-import { Row, Col, Clearfix, Grid } from 'react-bootstrap';
-import PlaylistThumb from './PlaylistThumb.js'
+import { Row } from 'react-bootstrap';
 import PlaylistPlayer from './PlaylistPlayer.js'
 import { connect } from 'react-redux'
-import { elementFloat } from '../../actions/mouse'
 import { playlist2 } from '../../data/playlist2'
 
 export default class LibraryContainer extends React.Component {

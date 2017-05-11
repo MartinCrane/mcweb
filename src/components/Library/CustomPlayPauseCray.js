@@ -13,8 +13,8 @@ class CustomPlayPause extends Component {
 
   render() {
     const { className, style, media } = this.props
-    const pause = (<img src='https://s3.amazonaws.com/www.martincrane.net/icon/pause.svg' alt="pause" style={{width:'10vw', maxWidth: '30px'}}></img>)
-    const play = (<img src='https://s3.amazonaws.com/www.martincrane.net/icon/play.svg' alt="play" style={{width:'10vw', maxWidth: '30px'}}></img>)
+    const pause = (<img src='https://s3.amazonaws.com/www.martincrane.net/icon/pause.svg' style={{width:'10vw', maxWidth: '30px'}}></img>)
+    const play = (<img src='https://s3.amazonaws.com/www.martincrane.net/icon/play.svg' style={{width:'10vw', maxWidth: '30px'}}></img>)
     return (
       <div
         className={className}

@@ -8,7 +8,6 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import { Router, Route, browserHistory } from 'react-router';
 import { ConnectedApp } from './App';
 import { ConnectedLogo } from './components/Logo/Logo';
-import { ConnectedSplash } from './components/Splash';
 import { ConnectedLibraryContainer } from './components/Library/LibraryContainer';
 import PlaylistPlayer  from './components/Library/PlaylistPlayer';
 import { ConnectedBlogContainer } from './components/Blog/BlogContainer';

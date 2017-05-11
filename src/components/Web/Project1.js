@@ -29,6 +29,7 @@ export default class Project1 extends Component {
       top: specs.top,
       bottom: specs.bottom
     })
+    window.addEventListener("deviceorientation", this.handleOrientation)
   }
 
   handleOrientation(e) {
@@ -38,9 +39,6 @@ export default class Project1 extends Component {
       alpha: event.alpha,
       mobile:true
     })
-  }
-  componentDidMount() {
-    window.addEventListener("deviceorientation", this.handleOrientation)
   }
 
   componentWillUnmount() {

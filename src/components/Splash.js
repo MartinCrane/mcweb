@@ -7,7 +7,7 @@ export default class Splash extends Component {
   render() {
     return (
       <div className="spash">
-        <img src="https://s3.amazonaws.com/www.martincrane.net/image/string-quartets.png"></img>
+        <img alt="String Quartets Splash" src="https://s3.amazonaws.com/www.martincrane.net/image/string-quartets.png"></img>
       </div>
     );
   }

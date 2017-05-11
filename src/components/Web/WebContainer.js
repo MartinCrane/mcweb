@@ -1,9 +1,6 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
-import { Route } from 'react-router';
 import { ConnectedProject1 } from './Project1';
-import { updateMouse } from '../../actions/mouse'
-import { elementFloatX } from '../../actions/mouse'
+import { updateMouse, elementFloatX } from '../../actions/mouse'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'

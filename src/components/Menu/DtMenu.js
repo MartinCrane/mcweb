@@ -5,7 +5,6 @@ import { elementFloat } from '../../actions/mouse'
 import { updateWeb } from '../../actions/web'
 import { bindActionCreators } from 'redux'
 import { updateFilter } from '../../actions/filter'
-import LogoTop  from '../Logo/LogoTop'
 
 
 class DtMenu extends React.Component {
