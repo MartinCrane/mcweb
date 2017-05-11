@@ -113,7 +113,7 @@ export default class PlaylistPlayer extends Component {
                     lg={1}
                     key={2}
                     className="SeekBar">
-                    <CustomPlayPause onTouchStart={e => this.firstPlay()}/>
+                    <CustomPlayPause />
                   </Col>
                   <Col
                     xs={10}
