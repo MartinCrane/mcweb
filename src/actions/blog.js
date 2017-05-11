@@ -3,6 +3,9 @@ import ReactMarkdown  from 'react-markdown'
 import { Col } from 'react-bootstrap';
 import React from 'react';
 import axios from 'axios'
+import { Media, Player, controls, utils } from 'react-media-player'
+const { PlayPause, CurrentTime, Progress, SeekBar, Duration, MuteUnmute, Volume, Fullscreen, withMediaProps } = controls
+
 
 export function formatMarkdown(str) {
   str = str.replace(/\\n/g, '<br></br>')
@@ -14,22 +17,29 @@ export function formatMarkdown(str) {
       if (index % 2 === 0) {
         return <ReactMarkdown source={string} key={Math.floor(Math.random() * 2000)}/>
       } else {
+        let vendor = vendorSet(string)
         return <div>
           <br></br>
-            <Col xs={12} sm={12} md={6} lg={5}>
-              <ReactPlayer className="video-responsive postMedia elementFloat" controls url={string} />
+            <Col xs={12} sm={12} md={6} lg={5} className="video-responsive postMedia elementFloat" >
+              <Media>
+                <Player src={string} vendor={vendor}>
+                </Player>
+              </Media>
             </Col>
           </div>
       }})
   } else if (str.search(searchString) !== -1) {
     return str.split(searchString).map((string, index) => {
       if (index % 2 !== 0 && index !== 0) {
-        return <div>
-            <br></br>
-              <Col xs={12} sm={12} md={6} lg={5}>
-                <ReactPlayer className="video-responsive postMedia elementFloat" controls url={string} />
-              </Col>
-            <br></br>
+        let vendor = vendorSet(string)
+        return <div >
+          <br></br>
+            <Col xs={12} sm={12} md={6} lg={5} className="video-responsive postMedia elementFloat" >
+              <Media>
+                <Player src={string} vendor={vendor}>
+                </Player>
+              </Media>
+            </Col>
           </div>
       } else {
         return <ReactMarkdown source={string}/>
@@ -38,7 +48,16 @@ export function formatMarkdown(str) {
     return <ReactMarkdown source={str}/>
   }
 }
-
+function vendorSet(string) {
+  let vendor =''
+  if (string.search('vimeo') != -1) {
+    vendor = 'vimeo'
+  }
+  if (string.search('youtube')) {
+    vendor = 'vimeo'
+  }
+  return vendor
+}
 export function submitBlog() {
     axios.post('/posts',
     {post: {

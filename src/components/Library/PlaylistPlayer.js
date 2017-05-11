@@ -103,9 +103,9 @@ export default class PlaylistPlayer extends Component {
       <div
         className="PlayerContainer" onTouchStart={e => this.firstPlay(e)}>
         <div className='PlayerLine'>
-          <h2>
+          <h1>
             {this.props.playlist.name}
-          </h2>
+          </h1>
           <p>
             {this.props.playlist.description}
           </p>
@@ -154,7 +154,7 @@ export default class PlaylistPlayer extends Component {
                   </Col>
                 </Row>
                 <h4>
-                  <CurrentTime/> / <Duration/> 
+                  <CurrentTime/> / <Duration/>
                 </h4>
               </div>
             </div>
