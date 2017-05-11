@@ -21,7 +21,7 @@ export default class PostThumb extends Component {
 
 
   render() {
-    const postText = `${this.props.blog.body} \r\n  ###### _${this.props.blog.date_format}_`
+    const postText = `${this.props.blog.body} \r\n \r\n \r\n ###### _${this.props.blog.date_format}_`
 
     return (
 

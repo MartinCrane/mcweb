@@ -31,11 +31,11 @@ export default class TitleThumb extends Component {
           </div>
           <div className="thumbDetails">
             <h2>
-              <b>{this.props.title.name}</b>
+              <b><b>{this.props.title.name}</b></b>
             </h2>
-            <h2>
+            <h3>
               {this.props.title.credit} / {this.props.title.year} / {this.props.title.author}
-            </h2>
+            </h3>
           </div>
         </div>
     )

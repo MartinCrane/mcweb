@@ -33,14 +33,14 @@ class MobileMenu extends React.Component {
           <NavLink to='/work' data-id='mWork'>
             <button className='MobileMenuItem' key={1}>WORK</button>
           </NavLink>
+          <NavLink to='/library' data-id='mLibrary'>
+            <button className='MobileMenuItem' key={4}>LIBRARY</button>
+          </NavLink>
           <NavLink to='/news' data-id='mNews'>
             <button className='MobileMenuItem' key={2}>NEWS</button>
           </NavLink>
           <NavLink to='/about' data-id='mAbout'>
             <button className='MobileMenuItem' key={3}>ABOUT</button>
-          </NavLink>
-          <NavLink to='/library' data-id='mLibrary'>
-            <button className='MobileMenuItem' key={4}>LIBRARY</button>
           </NavLink>
           <NavLink to='/web' data-id='mWeb'>
             <button className='MobileMenuItem' key={5}>WEB</button>

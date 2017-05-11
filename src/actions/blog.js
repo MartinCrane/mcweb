@@ -12,6 +12,7 @@ export function formatMarkdown(str) {
   str = str.replace(/xxximagehost/g, 'https://s3.amazonaws.com/www.martincrane.net/image/blog')
   str = str.replace(/xxxmp3host/g, 'http://www.brazosbrazos.com/audio')
   let searchString = '!!!rp!!!'
+
   if (str.search(searchString) === 0) {
     return str.split(searchString).map((string, index) => {
       if (index % 2 === 0) {
@@ -58,6 +59,10 @@ function vendorSet(string) {
   }
   return vendor
 }
+
+
+
+
 export function submitBlog() {
     axios.post('/posts',
     {post: {
