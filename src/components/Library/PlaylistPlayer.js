@@ -40,6 +40,7 @@ export default class PlaylistPlayer extends Component {
       autoPlay: true
     })
   }
+
   firstPlay() {
     this.setState({
       played: true,

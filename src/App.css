@@ -520,21 +520,21 @@ ul {
   margin-bottom: 10vh;
 }
 .video-responsive {
-  position: relative;
-  padding-bottom: 56%;
-  height: 0;
-  overflow: hidden;
+  position: relative !important;
+  padding-bottom: 56% !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 
 .video-responsive iframe,
 .video-responsive object,
 .video-responsive embed,
 .video-responsive video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 .BlogContainer
 {
@@ -897,5 +897,5 @@ textarea.form-control
       width:100%;
       list-style: none;
     }
-    
+
 }
