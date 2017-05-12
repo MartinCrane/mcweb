@@ -42,9 +42,6 @@ class MobileMenu extends React.Component {
           <NavLink to='/about' data-id='mAbout'>
             <button className='MobileMenuItem' key={3}>ABOUT</button>
           </NavLink>
-          <NavLink to='/web' data-id='mWeb'>
-            <button className='MobileMenuItem' key={5}>WEB</button>
-          </NavLink>
         </div>
       </div>
     );
