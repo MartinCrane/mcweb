@@ -38,23 +38,22 @@
 
 .MainContent,
 {
-    font-family: 'GillFaciaMTStd-RegDisplay';
+  font-family: 'GillFaciaMTStd-RegDisplay';
 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 h1, time, h6
 {
-    font-family: 'TradeGothicLTStd-Extended';
-    font-stretch:extra-condensed;
-    letter-spacing: 0em;
+  font-family: 'TradeGothicLTStd-Extended';
+  font-stretch:extra-condensed;
+  letter-spacing: 0em;
 }
 h2 {
   font-family: 'TradeGothicLTStd-Extended';
   font-stretch:extra-condensed;
   letter-spacing: 0em;
   font-size: 1.5em;
-
 }
 li
 {
@@ -62,10 +61,12 @@ li
   font-style: normal;
   font-size: 14pt;
 }
+
 p
 {
   font-family: 'GillFaciaMTStd-RegDisplay';
   font-style: normal;
+
   font-size: 14pt;
   margin-top: 2em;
 }
@@ -75,105 +76,122 @@ h3 {
 }
 .ViewPort
 {
-    width: 100%;
-    padding-top: 5em;
+  width: 100%;
+  padding-top: 0em;
 }
 .Content
 {
-    box-sizing: border-box;
-    width: 100%;
-    margin-left: 1em;
-    padding-top: 3em;
-    padding-right: 1em;
-    padding-left: 6em;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 1em;
+  padding-top: 2em;
+  padding-right: 1em;
+  padding-left: 6em;
 }
+
 /*SPASH*/
 .spash
 {
-    position: fixed;
-    z-index: 4;
-    top: 10vh;
-    left: 50vw;
+  position: fixed;
+  z-index: 4;
+  top: 10vh;
+  left: 50vw;
 
-    width: 40vw;
-    height: 40vw;
-    margin-top: 5vh;
+  width: 40vw;
+  height: 40vw;
+  margin-top: 5vh;
 
-    opacity: .8;
-    border: 3px solid black;
+  opacity: .8;
+  border: 3px solid black;
 }
 .centeredBlinds
 {
-    padding-top: 25vh;
+  padding-top: 25vh;
 }
 .spash img
 {
-    width: 100%;
+  width: 100%;
 }
+.WindowBorder {
+  width: 100vw;
+  height: 100vh;
+  border: black 1.5vh solid;
+  position: fixed;
+  z-index: -200
+}
+
 /*WEB*/
 .WebContainer
 {
-    font-family: 'web';
+  font-family: 'web';
 
-    overflow: hidden;
+  overflow: hidden;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    color: white;
+  color: white;
+}
+
+.WebContainer a
+{
+  font-family: 'web';
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
 }
 .WebProjects
 {
-    position: fixed;
-    z-index: 3000;
-    top: 25vh;
-    left: 25vw;
+  position: fixed;
+  z-index: 3000;
+  top: 25vh;
+  left: 25vw;
+  font-family: 'web';
+  width: 50vw;
+  height: 50vh;
+  padding: 3vh;
 
-    width: 50vw;
-    height: 50vh;
-    padding: 3vh;
+  text-align: center;
 
-    text-align: center;
-
-    background-color: black;
+  background-color: black;
 }
 .screen
 {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    background-color: black;
+  background-color: black;
 }
 .row
 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*MAGIC*/
 .elementFloat
 {
-    -webkit-transition: all 1.3s;
-       -moz-transition: all 1.3s;
-        -ms-transition: all 1.3s;
-         -o-transition: all 1.3s;
-            transition: all 1.3s;
-    -webkit-transition-timing-function: ease-out;
-       -moz-transition-timing-function: ease-out;
-         -o-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
+  -webkit-transition: all 1.3s;
+     -moz-transition: all 1.3s;
+      -ms-transition: all 1.3s;
+       -o-transition: all 1.3s;
+          transition: all 1.3s;
+  -webkit-transition-timing-function: ease-out;
+     -moz-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 .elementFloatQuick
 {
-    -webkit-transition: all .3s;
-       -moz-transition: all 1.3s;
-        -ms-transition: all 1.3s;
-         -o-transition: all 1.3s;
-            transition: all 1.3s;
-    -webkit-transition-timing-function: ease-out;
-       -moz-transition-timing-function: ease-out;
-         -o-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
+  -webkit-transition: all .3s;
+     -moz-transition: all 1.3s;
+      -ms-transition: all 1.3s;
+       -o-transition: all 1.3s;
+          transition: all 1.3s;
+  -webkit-transition-timing-function: ease-out;
+     -moz-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 .leftFace
 {
@@ -189,72 +207,72 @@ h3 {
 /*LOGO*/
 .Logo
 {
-    top: 3em;
+  top: 3em;
 
-    width: 98%;
-    margin: auto;
-    padding-top: 10vh;
+  width: 98%;
+  margin: auto;
+  padding-top: 10vh;
 
-    color: black;
+  color: black;
 }
 .LogoTop
 {
-    position: fixed;
-    z-index: 7;
+  position: relative;
+  z-index: 7;
 
-    width: 100%;
-    padding-top: 1.5em;
-    padding-left: 7em;
+  width: 100%;
+  padding-top: 3em;
+  padding-left: 7em;
 }
 .LogoTop img
 {
-    z-index: 30000;
+  z-index: 30000;
 
-    height: 4em;
+  height: 4em;
 }
 .Logo img
 {
-    width: inherit;
+  width: inherit;
 
-    color: black;
-    box-shadow: 100px 100px 30px #888;
+  color: black;
+  box-shadow: 100px 100px 30px #888;
 }
 .Logo a
 {
-    width: inherit;
+  width: inherit;
 }
 .LogoSlice img
 {
-    width: 50%;
+  width: 50%;
 }
 .centeredBlinds
 {
-    padding-top: 25vh;
+  padding-top: 25vh;
 }
 
 /*DESKTOP MENU*/
 .DtMenu
 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 
-    position: fixed;
-    z-index: 7;
-    top: 5em;
-    left: 2%;
+  position: fixed;
+  z-index: 7;
+  top: 5em;
+  left: 2%;
 
-    width: 1em;
-    padding-left: 1em;
+  width: 1em;
+  padding-left: 1em;
 
-    color: black;
-    border-left: 1px solid black;
+  color: black;
+  border-left: 2px solid black;
 }
 .DtMenuItem
 {
-    display: inline-block;
-    font-family: 'TradeGothicLTStd-Extended';
-    margin-bottom: .5em;
+  display: inline-block;
+  font-family: 'TradeGothicLTStd-Extended';
+  margin-bottom: .5em;
 
-    text-align: center;
+  text-align: center;
 }
 .menuActive
 {
@@ -345,7 +363,7 @@ menu
     height: auto;
     margin: 0;
     padding: 0;
-    min-height: 27vw;
+    min-height: 28vw;
 }
 .TitleThumb:hover .TitlePlayer
 {
@@ -360,6 +378,7 @@ menu
     width: 90%;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 1vw;
 }
 .thumbDetails
 {
@@ -377,12 +396,12 @@ menu
   font-size: 1.2em;
   margin-top: .8em;
   line-height: 1em;
-    color: black;
+  color: black;
 }
 .thumbDetails h3
 {
-    margin-top: .8em;
-    line-height: .2;
+    margin-top: 0em;
+    line-height: 1em;
     color: black;
     margin-bottom: 1em;
 }
@@ -571,7 +590,7 @@ ul
     width: 100%;
     padding: 3vw;
 
-    border: 1px black solid;
+    border: 2px black solid;
     background-color: rgba(255, 255, 255, .9);
 }
 .PlayerControls button
@@ -683,14 +702,11 @@ ul
     width: 100%;
     padding: 3vw;
 
-    border: 1px black solid;
+    border: 2px black solid;
     background-color: rgba(255, 255, 255, .9);
 }
 .PostThumb h1
 {
-
-
-
 
 }
 .PostThumb h1 a
@@ -987,9 +1003,10 @@ textarea.form-control
         width: 20%;
         height: 70px;
 
-        -webkit-transform: rotate(6deg); /* Chrome, Safari, Opera */
-            -ms-transform: rotate(6deg); /* IE 9 */
-                transform: rotate(6deg);
+        -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+            -ms-transform: rotate(5deg); /* IE 9 */
+                transform: rotate(5deg);
+
         text-align: center;
 
         text-decoration: none;
@@ -1004,11 +1021,12 @@ textarea.form-control
     {
         position: fixed;
         top: 0;
-
+        z-index: -200;
         width: 100vw;
         height: 5vh;
-        margin-top: 1vh;
+        margin-top: 0vh;
         padding-bottom: 1vh;
+        opacity: .4;
 
         background-color: rgba(255, 255, 255, .41);
 

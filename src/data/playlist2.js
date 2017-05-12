@@ -1,5 +1,5 @@
 export const playlist2 = [{
-      description: 'This is a series of ambient beds. Pretty self-explanatory and innocuous. These lean towards more organic textures that have a kind of earthiness to them which I like.',
+      description: 'This is a series of ambient beds. These lean towards more organic textures that have a kind of earthiness to them.',
       name: 'Drones',
       image: 'https://s3.amazonaws.com/www.martincrane.net/image/library/cell.jpg',
       songs: [{
@@ -32,7 +32,7 @@ export const playlist2 = [{
         number: 7,
       }]
     }, {
-      description: 'This began as drum soundtrack meant for a long chase. Midway through I stumbled upon the main theme which blew me over, so I had to follow that. I made an over the top mock up of an orchestral version of it just because the melody can hold that grand a scale. The other tracks lean more towards rhythm. I love how Johnny Greenwood creates percussive songs that feel lilting and menacing at the same time. The rhythm hits are off the beat. It’s as if each hit is like a sneak attack even when you expect it. I used a proprietary effect I designed to stack melodic layers of percussion, trumpet, and sampler instruments I created. ',
+      description: 'This began as drum soundtrack meant for a long chase. Midway through I stumbled upon the main theme, so I had to follow that. I made a mock up of an orchestral version of it because the melody can hold on a grand scale. The other tracks lean more towards off kilter rhythm. It’s as if each hit is a sneak attack even when you expect it. I used a proprietary effect I designed to stack melodic layers of percussion, trumpet, and sampler instruments I created.',
       name: 'Percolate',
       image: 'https://s3.amazonaws.com/www.martincrane.net/image/library/kahn2.jpg',
       songs: [{
@@ -62,7 +62,7 @@ export const playlist2 = [{
         }]
       },
       {
-        description: 'This is a dark, driving soundtrack for a documentary. I wanted it to feel at home in an Alex Gibney movie. Action in docs can be tricky because, with the exception of vérité docs, language is the primary vehicle of the action. How do you communicate that drama without overpowering it? I think this one keeps it suspenseful and low key. The more percussion based tunes are toward the end, but Holland 3 hits that magic, cerebral sweet spot.',
+        description: 'This is a dark, driving soundtrack for a documentary. I wanted it to feel at home in an Alex Gibney movie. Action in docs can be tricky because, with the exception of vérité docs, language is the primary vehicle of the action. How do you communicate that drama without overpowering it? The more percussion based songs are toward the end, but Holland 3 hits a cerebral sweet spot.',
         name: 'Holland Tunnel',
         image: 'https://s3.amazonaws.com/www.martincrane.net/image/library/kahn.jpg',
         songs: [{
@@ -104,7 +104,7 @@ export const playlist2 = [{
         }]
       },
       {
-        description: 'This is a modern, sweeping orchestral score inspired by hollywood action movies. It’s closest to Hans Zimmer in texture and size, but it has a different harmonic sensibility. I think of Hans Zimmer as a brutalist version of minimalism. His textures are monumental and his harmony is forceful in its simplicity. Current action sequences are so visually complex that there really isn’t that much room for melody. Though this is a large sounding, expensive score, it could be rerecorded with a smaller string section, as the rest of the sounds are custom sampler instruments I designed.',
+        description: 'This is a modern, sweeping orchestral score inspired by hollywood action movies. Current action sequences are so visually complex that there really isn’t room for melody. Though this is a large sounding, expensive score, it will be rerecorded with a smaller string section.',
         name: 'Maximal',
         image: 'https://s3.amazonaws.com/www.martincrane.net/image/library/cell.jpg',
         songs: [{
@@ -126,7 +126,7 @@ export const playlist2 = [{
         }]
       },
       {
-        description: 'This is my take on a comforting, domestic story. The palette is acoustic guitar run through a proprietary effect I designed I’m calling The Chutes that makes the familiar sound feel more modern. There is now a whole tradition of indie dramas that use acoustic textures as a way of communicating an unrefined authenticity, and as it’s entered the film vocabulary, it’s lost its meaning. This is my attempt to make that sound feel vital again.',
+        description: 'This is my take on a comforting, domestic story. The palette is acoustic guitar run through a proprietary effect I designed that makes the familiar sound feel new.',
         name: 'Woodsy',
         image: 'https://s3.amazonaws.com/www.martincrane.net/image/library/cell.jpg',
         songs: [{
@@ -156,7 +156,7 @@ export const playlist2 = [{
         }]
       },
       {
-        description: 'These are, you guessed it, solo piano pieces. I start almost all my harmonic writing on piano because it focuses attention on the fundamentals. There’s nothing to hide behind. And once the melody and harmony arrive, translating them to other textures always makes for a pleasant surprise. These can be rerecorded and adjusted as well as moved to other textures. I love Gonzales’ record “Solo Piano” (hence the title).',
+        description: 'These are solo piano pieces. I start almost all my harmonic writing on piano because it focuses attention on the fundamentals. Once the melody and harmony arrive, translating them to other textures always makes for a pleasant surprise. These can be rerecorded and adjusted as well as moved to other textures.',
         name: 'Solo Piano',
         image: 'https://s3.amazonaws.com/www.martincrane.net/image/library/cell.jpg',
         songs: [{

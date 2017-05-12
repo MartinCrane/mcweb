@@ -77,11 +77,13 @@ class Logo extends React.Component {
       <div
         className="MainContent"
         onMouseMove={e => this.handleMouse(e)}>
+        <div className="WindowBorder">
+        </div>
         <Spash/>
         <div className="centeredBlinds">
-        {blinds}
+          {blinds}
         </div>
-      <Clearfix/>
+        <Clearfix/>
     </div>
     );
   }
