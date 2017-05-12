@@ -795,7 +795,9 @@ textarea.form-control
     width: 81%;
     margin-right: auto;
     margin-left: auto;
-    padding: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
 }
 .About img
 {
