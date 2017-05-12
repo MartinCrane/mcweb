@@ -70,10 +70,11 @@ class NewBlog extends Component {
 
     return (
       <Row>
-        <Col sm={6} md={6} lg={6}>
+        <Col sm={6} md={6} lg={12}>
           {formBoot}
         </Col>
-        <Col sm={6} md={6} lg={6}>
+
+        <Col sm={6} md={6} lg={12} className="PostThumb">
           {postWithTitle.length > 0 ? this.formatMarkdown(postWithTitle) : null }
           {this.state.date}
         </Col>

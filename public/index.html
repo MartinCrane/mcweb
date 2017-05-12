@@ -12,6 +12,19 @@
 <body>
   <div id="root"></div>
 </body>
-<script src="bower_components/react-motion/build/react-motion.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAb2mhky3-gcvIdD9SQt9VRVs5JmZNBnNs",
+    authDomain: "martin-crane.firebaseapp.com",
+    databaseURL: "https://martin-crane.firebaseio.com",
+    projectId: "martin-crane",
+    storageBucket: "martin-crane.appspot.com",
+    messagingSenderId: "307565981714"
+  };
+  firebase.initializeApp(config);
+</script>
 
 </html>

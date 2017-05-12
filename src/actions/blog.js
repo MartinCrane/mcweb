@@ -64,7 +64,7 @@ function vendorSet(string) {
 
 
 export function submitBlog() {
-    axios.post('/posts',
+    axios.post('http://localhost:4000/posts',
     {post: {
       body: `${this.state.post}`,
       date: `${this.state.date}`,

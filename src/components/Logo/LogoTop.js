@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { elementFloat } from '../../actions/mouse'
+import { Link } from 'react-router'
 
 export default class LogoTop extends React.Component {
 
@@ -25,6 +26,7 @@ export default class LogoTop extends React.Component {
   render() {
     return (
       <div className='LogoTop elementFloat' ref='LogoTop'>
+        <Link to='/'>
           <img
             className='center-block'
             ref='Top'
@@ -32,6 +34,7 @@ export default class LogoTop extends React.Component {
             alt='Martin Crane Logo'
             src={require('../../images/logo-outlined.png')}>
           </img>
+          </Link>
       </div>
     );
   }
