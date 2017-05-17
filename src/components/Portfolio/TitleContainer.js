@@ -4,6 +4,7 @@ import { Row, Clearfix } from 'react-bootstrap';
 import { filterDisplay } from '../../actions/filter'
 import { connect } from 'react-redux'
 import { elementFloat } from '../../actions/mouse'
+import {Helmet} from "react-helmet";
 
 export default class TitleContainer extends React.Component {
   constructor() {
@@ -23,6 +24,11 @@ export default class TitleContainer extends React.Component {
     let portfolio = this.filterDisplay(this.props.filter).map((title, index) => <ConnectedTitleThumb title={title} key={title.slug}></ConnectedTitleThumb>)
     return (
          <div className='TitleContainer'>
+           <Helmet titleTemplate="%s | martincrane.net">
+             <title>Work</title>
+              <html lang="en" amp />
+             <meta name="description" content="Helmet application" />
+           </Helmet>
            <Row>
             {this.props.children || portfolio}
             <Clearfix/>

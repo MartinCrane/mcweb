@@ -3,6 +3,7 @@ import { Row } from 'react-bootstrap';
 import PlaylistPlayer from './PlaylistPlayer.js'
 import { connect } from 'react-redux'
 import { playlist2 } from '../../data/playlist2'
+import { Helmet } from "react-helmet";
 
 export default class LibraryContainer extends React.Component {
 
@@ -13,6 +14,11 @@ export default class LibraryContainer extends React.Component {
     return (
 
         <Row className='LibraryContainer elementFloatQuick'>
+          <Helmet titleTemplate="%s | martincrane.net">
+            <title>Library</title>
+             <html lang="en" amp />
+            <meta name="description" content="Helmet application" />
+          </Helmet>
           {playlistsComp}
         </Row>
 

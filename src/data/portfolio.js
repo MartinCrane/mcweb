@@ -15,49 +15,9 @@ export const portfolioData = [{
   "year": 2015,
   "body": "Streaming on NOWNESS .. Sundance 2015 Premier ",
   "tags": ["short", "originalScore", "narrative"],
-  "author": "Zarchary Heinzerling",
+  "author": "Zachary Heinzerling",
   "slug": "hugh-the-hunter",
   "scId": 320990236
-}, {
-  "name": "The Blue Dot",
-  "imageUrl": "the-blue-dot.png",
-  "credit": "Original Score",
-  "year": 2016,
-  "body": null,
-  "tags": ["short", "originalScore", "narrative"],
-  "author": "Pepi Ginsberg",
-  "slug": "the-blue-dot",
-  "scId": 320972692
-}, {
-  "name": "Airwick: Give the Gift of Home",
-  "imageUrl": "airwick-gift-of-home.png",
-  "credit": "Original Score",
-  "year": 2015,
-  "body": "Streaming on Youtube .. Adweek: Air Wick Captures the Scents of Individual Homes for the Seniors Who Are Leaving Them .. Forbes: Air Wick Smells Brand Success With New Power Of Scent Campaign",
-  "tags": ["short", "originalScore", "documentary", "commercial"],
-  "author": "Zarchary Heinzerling",
-  "slug": "airwick-give-the-gift-of-home",
-  "scId": 320972716
-}, {
-  "name": "Ian Chang - EP",
-  "imageUrl": "ian-chang-ep.png",
-  "credit": "Production, Mixing",
-  "year": 2017,
-  "body": null,
-  "tags": ["production", "mixing"],
-  "author": "Ian Chang",
-  "slug": "ian-chang-ep",
-  "scId": null
-}, {
-  "name": "Americana",
-  "imageUrl": "americana.png",
-  "credit": "Original Score",
-  "year": 2013,
-  "body": null,
-  "tags": ["short", "originalScore", "narrative"],
-  "author": "Zarchary Heinzerling",
-  "slug": "americana",
-  "scId": 320972715
 }, {
   "name": "Cutie and the Boxer",
   "imageUrl": "cutie-and-the-boxer.png",
@@ -69,13 +29,43 @@ export const portfolioData = [{
   "slug": "cutie-and-the-boxer",
   "scId": null
 }, {
+  "name": "Ian Chang - EP",
+  "imageUrl": "ian-chang-ep.png",
+  "credit": "Production, Mixing",
+  "year": 2017,
+  "body": null,
+  "tags": ["production", "mixing"],
+  "author": "Ian Chang",
+  "slug": "ian-chang-ep",
+  "scId": null
+}, {
+  "name": "Airwick: Give the Gift of Home",
+  "imageUrl": "airwick-gift-of-home.png",
+  "credit": "Original Score",
+  "year": 2015,
+  "body": "Streaming on Youtube .. Adweek: Air Wick Captures the Scents of Individual Homes for the Seniors Who Are Leaving Them .. Forbes: Air Wick Smells Brand Success With New Power Of Scent Campaign",
+  "tags": ["short", "originalScore", "documentary", "commercial"],
+  "author": "Zachary Heinzerling",
+  "slug": "airwick-give-the-gift-of-home",
+  "scId": 320972716
+}, {
+  "name": "The Blue Dot",
+  "imageUrl": "the-blue-dot.png",
+  "credit": "Original Score",
+  "year": 2016,
+  "body": null,
+  "tags": ["short", "originalScore", "narrative"],
+  "author": "Pepi Ginsberg",
+  "slug": "the-blue-dot",
+  "scId": 320972692
+}, {
   "name": "Mazda Rebels: Phil and the Mighty Mushroom",
   "imageUrl": "phil-mighty-mushroom.png",
   "credit": "Original Score",
   "year": 2015,
   "body": "Streaming at Mazda Rebels: Phil and the Mighty Mushroom",
   "tags": ["short", "originalScore", "documentary", "commercial"],
-  "author": "Zarchary Heinzerling",
+  "author": "Zachary Heinzerling",
   "slug": "mazda-rebels-phil-and-the-mighty-mushroom",
   "scId": 320972696
 }, {
@@ -85,7 +75,7 @@ export const portfolioData = [{
   "year": 2016,
   "body": null,
   "tags": ["short", "originalScore", "documentary"],
-  "author": "Zarchary Heinzerling",
+  "author": "Zachary Heinzerling",
   "slug": "vito-acconci-where-we-are-now-who-are-we-anyway",
   "scId": null
 }, {
@@ -99,15 +89,15 @@ export const portfolioData = [{
   "slug": "katharina-grosse-rockaway",
   "scId": null
 }, {
-  "name": "Carolina Herrera - Refined Irreverence",
-  "imageUrl": "carolina-herrera.png",
+  "name": "Every Little Thing Podcast",
+  "imageUrl": "every-little-thing.png",
   "credit": "Original Score",
-  "year": 2016,
+  "year": 2017,
   "body": null,
-  "tags": ["short", "originalScore", "commercial"],
-  "author": "Ryan Dickie",
-  "slug": "carolina-herrera-refined-irreverence",
-  "scId": 320972710
+  "tags": ["podcast", "originalScore", "documentary"],
+  "author": "Flora Lichtman",
+  "slug": "every-little-thing-podcast",
+  "scId": null
 }, {
   "name": "Animated Life: Mary Leakey",
   "imageUrl": "animated-life-mary-leakey.png",
@@ -119,6 +109,16 @@ export const portfolioData = [{
   "slug": "animated-life-mary-leakey",
   "scId": 320972712
 }, {
+  "name": "Carolina Herrera - Refined Irreverence",
+  "imageUrl": "carolina-herrera.png",
+  "credit": "Original Score",
+  "year": 2016,
+  "body": null,
+  "tags": ["short", "originalScore", "commercial"],
+  "author": "Ryan Dickie",
+  "slug": "carolina-herrera-refined-irreverence",
+  "scId": 320972710
+}, {
   "name": "Animated Life: The Living Fossil Fish",
   "imageUrl": "animated-life-fossil-fish.png",
   "credit": "Original Score",
@@ -128,6 +128,16 @@ export const portfolioData = [{
   "author": "Flora Lichtman and Sharon Shattuck",
   "slug": "animated-life-the-living-fossil-fish",
   "scId": 320972714
+}, {
+  "name": "Americana",
+  "imageUrl": "americana.png",
+  "credit": "Original Score",
+  "year": 2013,
+  "body": null,
+  "tags": ["short", "originalScore", "narrative"],
+  "author": "Zachary Heinzerling",
+  "slug": "americana",
+  "scId": 320972715
 }, {
   "name": "Kingdom",
   "imageUrl": "kingdom.png",
@@ -149,13 +159,13 @@ export const portfolioData = [{
   "slug": "lasker-prizes",
   "scId": 320972701
 }, {
-  "name": "Flu - The Great Migration",
+  "name": "How saber-toothed cats grew their mouth swords, Flu - The Great Migration",
   "imageUrl": "vox-saber.png",
   "credit": "Original Score",
   "year": 2015,
   "body": null,
   "tags": ["short", "originalScore", "documentary"],
-  "author": "Flora Lichtman, Sharon Shattuck",
+  "author": "Flora Lichtman and Sharon Shattuck",
   "slug": "how-saber-toothed-cats-grew-their-mouth-swords-flu-the-great-migration",
   "scId": 320972692
 }, {

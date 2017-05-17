@@ -6,6 +6,7 @@ import { ConnectedDtMenu } from './components/Menu/DtMenu'
 import { ConnectedMobileMenu } from './components/Menu/MobileMenu'
 import { elementFloat } from './actions/mouse'
 import { ConnectedLogoTop}  from './components/Logo/LogoTop'
+import {Helmet} from "react-helmet";
 
 import './App.css';
 
@@ -35,6 +36,12 @@ class App extends Component {
       <div
         className="MainContent"
         onMouseMove={e => this.handleMouse(e)}>
+        <Helmet titleTemplate="%s | martincrane.net"
+          meta={[{ property: 'og:description', content: 'Martin Crane, NY based composer for TV and Film' }]}>
+          <meta name="image" content="https://s3.amazonaws.com/www.martincrane.net/image/logo/logo.jpg"/>
+          <meta name="keywords" content={ 'composer', 'about'} />
+        </Helmet>
+
 
         <ConnectedLogoTop/>
           <div className='elementFloat ViewPort' >

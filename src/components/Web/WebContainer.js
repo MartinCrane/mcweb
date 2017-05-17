@@ -52,8 +52,8 @@ export default class WebContainer extends React.Component {
         <div className='WebContainer' onMouseMove={e => this.handleMouse(e)}>
 
           <div className="WebProjects">
-            <h1><a href={window.location.href}>X</a></h1>
-            <h1><Link to='/'>BACK</Link></h1>
+            <h1>404 PAGE NOT FOUND</h1>
+            <h1><Link to='/'>Home</Link></h1>
           </div>
           <ConnectedProject1/>
           <ConnectedProject1/>

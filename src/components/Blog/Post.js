@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Clearfix, Col } from 'react-bootstrap';
 import { formatMarkdown } from '../../actions/blog'
 import { connect } from 'react-redux'
+import DocumentMeta from 'react-document-meta';
+import {Helmet} from "react-helmet";
 
 class Post extends Component {
 
@@ -13,7 +15,15 @@ class Post extends Component {
 
   render() {
     let thisBlog = this.props.blog.filter((blog) => blog.slug === this.props.params.postName)[0]
-    return (
+    return (<div>
+      <Helmet meta={[
+             { property: 'og:image', content: thisBlog.image | 'https://s3.amazonaws.com/www.martincrane.net/image/logo/logo.jpg'},
+             { property: 'og:description', content: 'Martin Crane, NY based composer for TV and Film' },
+             { property: 'og:type', content: 'article' }]}>
+             <title>{thisBlog.title}</title>
+             <html lang="en" amp />
+    </Helmet>
+
       <div className="case elementFloat" ref='Post' >
         <Col xs={12} xsOffset={0} sm={12} md={12} lg={10} lgOffset={1} >
         <div className="Post">
@@ -27,6 +37,7 @@ class Post extends Component {
         </Col>
         <Clearfix/>
       </div>
+    </div>
     );
   }
 

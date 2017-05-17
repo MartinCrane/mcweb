@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import rootReducer from './reducers'
 import { syncHistoryWithStore } from 'react-router-redux'
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, browserHistory, Redirect } from 'react-router';
 import { ConnectedApp } from './App';
 import { ConnectedLogo } from './components/Logo/Logo';
 import { ConnectedLibraryContainer } from './components/Library/LibraryContainer';
@@ -19,6 +19,8 @@ import NewBlog from './components/Blog/NewBlog';
 import { portfolioData } from './data/portfolio.js';
 import { blogData } from './data/blog.js';
 import About from './components/About';
+import Quartets from './components/Library/Quartets';
+import Access from './components/Library/Access';
 import { Login } from './components/account/Login';
 
 import './index.css';
@@ -32,7 +34,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history} onUpdate={() => window.scrollTo(0, 0)}>
       <Route path="/" component={ConnectedLogo} />
-      <Route path="player" component={PlaylistPlayer} />
+      <Route path="quartets" component={Quartets} />
+      <Route path="access" component={Access} />
       <Route component={ConnectedApp}>
         <Route path="logo" component={ConnectedLogo} />
         <Route path="library" component={ConnectedLibraryContainer} />
@@ -46,7 +49,8 @@ ReactDOM.render(
         </Route>
         <Route path="about" component={About} />
       </Route>
-      <Route path="web" component={ConnectedWebContainer} />
+
+      <Redirect from='*' to='/' />
 
     </Router>
   </Provider>,

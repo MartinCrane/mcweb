@@ -2,6 +2,7 @@ import React from 'react';
 import ConnectedPostThumb from './PostThumb'
 import { Row } from 'react-bootstrap';
 import { connect } from 'react-redux'
+import { Helmet } from "react-helmet";
 
 export default class BlogContainer extends React.Component {
 
@@ -13,6 +14,11 @@ export default class BlogContainer extends React.Component {
     return (
 
         <Row className='BlogContainer elementFloatQuick'>
+          <Helmet titleTemplate="%s | martincrane.net">
+            <title>News</title>
+             <html lang="en" amp />
+            <meta name="description" content="Helmet application" />
+          </Helmet>
           {this.props.children || blogList}
         </Row>
 
