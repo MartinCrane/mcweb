@@ -77,7 +77,7 @@ class Logo extends React.Component {
       <div
         className="MainContent"
         onMouseMove={e => this.handleMouse(e)}>
-        <div className="WindowBorder">
+        <div>
         </div>
         <Spash/>
         <div className="centeredBlinds">

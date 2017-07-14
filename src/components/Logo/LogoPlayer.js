@@ -5,7 +5,7 @@ import { Media, Player, controls } from 'react-media-player'
 const {  SeekBar } = controls
 
 
-class TitlePlayer extends Component {
+class LogoPlayer extends Component {
   constructor() {
     super()
       this.state ={
@@ -29,6 +29,7 @@ class TitlePlayer extends Component {
   checkProgress(object) {
     if (object.currentTime >=(object.duration - .5) &&
         object.duration !== 0) {
+
       let previous = this.state.current
       let current = this.state.next
       let next = this.props.playlist.songs.filter((item) => (item.number - 1).toString() === this.state.next)
@@ -50,7 +51,7 @@ class TitlePlayer extends Component {
   render() {
 
     return (
-      <div className="TitleThumbPlayer" onClick={e => this.handleClick(e)} onTouchStart={e => this.handleClick(e)}>
+      <div className="LogoPlayer" onClick={e => this.handleClick(e)} onTouchStart={e => this.handleClick(e)}>
         <Media>
           <div className="media">
             <div className="media-player elementFloatQuick">
@@ -58,6 +59,7 @@ class TitlePlayer extends Component {
                 src={`${this.state.autoPlay ? this.props.songUrl : 'https://s3.amazonaws.com/www.martincrane.net/audio/silence.m4a'}`}
                 autoPlay={this.state.autoPlay}/>
             </div>
+            <h2>{this.props.title}</h2>
             <div className="PlayerControls elementFloatQuick">
               <Row>
                 <Col
@@ -85,4 +87,4 @@ class TitlePlayer extends Component {
   }
 }
 
-export default TitlePlayer;
+export default LogoPlayer;

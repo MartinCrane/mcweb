@@ -65,15 +65,19 @@ function vendorSet(string) {
 
 export function submitBlog() {
     axios.post('http://localhost:4000/posts',
-    {post: {
-      body: `${this.state.post}`,
-      date: `${this.state.date}`,
-      title: `${this.state.title}`,
-      archive: `${this.state.archive}`
-    }},
+    {
+      post:
+      {
+        body: `${this.state.post}`,
+        date: `${this.state.date}`,
+        title: `${this.state.title}`,
+        archive: `${this.state.archive}`
+      }
+    },
       {
       method: 'post',
-      headers: { Authorization: `${localStorage.mcjwt}` },
+      headers: { Authorization: `${localStorage.mcjwt}`
+      },
     }).then((response) => {
 
     }).catch((response) => {

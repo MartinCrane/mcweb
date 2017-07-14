@@ -38,7 +38,6 @@ class LogoSlice extends React.Component {
     window.removeEventListener("deviceorientation", this.handleOrientation)// React .14+
   }
 
-
   componentDidMount() {
     window.addEventListener("deviceorientation", this.handleOrientation)
     let specs = this.refs.Logo.getBoundingClientRect()
