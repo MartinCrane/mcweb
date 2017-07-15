@@ -30,8 +30,7 @@ class Logo extends React.Component {
 
   handlePlay() {
     this.setState({
-      videoPlay: !this.state.videoPlay,
-      top:window.scrollY
+      videoPlay: !this.state.videoPlay
     })
   }
 
