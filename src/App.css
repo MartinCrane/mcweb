@@ -317,6 +317,9 @@ h3 {
   height: 100vh;
 
 }
+.fifty {
+  width: 50%;
+}
 .noonCard {
   position: fixed;
   display:flex;
@@ -326,25 +329,21 @@ h3 {
 
 }
 .continue {
+  position: fixed;
 
-  position: relative;
-  width: 90vh;
-  text-align: center;
-  text-shadow: 0px -11px 9px rgba(196, 215, 255, 1);
-  transform:matrix(0.00,1.00,-1.00,0.00,0,0);
+  text-align: right;
+  right:0vw;
+  border: 0px solid black;
+  padding: 1em;
+  /*text-shadow: 0px -11px 9px rgba(196, 215, 255, 1);*/
+  /*transform:matrix(0.00,1.00,-1.00,0.00,0,0);
   -ms-transform:matrix(0.00,1.00,-1.00,0.00,0,0);
   -webkit-transform:matrix(0.00,1.00,-1.00,0.00,0,0);
-  transform-origin: top left;
+  transform-origin: top left;*/
 }
-.continueContainer {
-  width:1em;
-  height:0em;
-  right:0vw;
-  position:fixed;
 
-}
 .continue > h1 {
-  font-size: 2em;
+  font-size: 1em;
   display: inline;
 }
 .continue a:link {
@@ -364,6 +363,7 @@ h3 {
   justify-content: center;
   width: 100vw;
   cursor: pointer;
+  width:50%;
 }
 .noonArt < img {
   background-color: blue;
@@ -1060,6 +1060,150 @@ textarea.form-control
 
 @media only screen and (max-width: 800px)
 {
+    .continue {
+      position: relative;
+      top:1em;
+      display:block;
+    }
+    .noonWrap {
+      width: 95vw;
+      background-color: rgba(162, 150, 150, 0);
+
+      display:block;
+
+    }
+    .noonTitle {
+      text-align: center;
+    }
+    .noonTitle > h5 {
+      text-align: center;
+      font-family: 'GillFaciaMTStd-RegDisplay';
+      font-size: 2em;
+      padding-top: 1em;
+      /*text-shadow: 1px 5px 26px rgba(162, 150, 150, 1);*/
+    }
+    .noonPage {
+      display:block;
+
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+
+    }
+    .noonCard {
+      position: relative;
+      display:block;
+      width: 100%;
+
+    }
+    #tab {
+      display: none;
+    }
+    .noonPlayer {
+      width: 100%;
+      display:block;
+    }
+
+    .noonArt {
+      position: relative;
+      cursor: pointer;
+      width:100%;
+    }
+    .noonArt < img {
+      background-color: blue;
+      position: relative;
+    }
+    .fifty {
+      width: 100%;
+      display:block;
+    }
+    .blessed:hover {
+      filter: invert(100%);
+      cursor: pointer;
+      background-color: rgba(162, 150, 150, 0)
+    }
+    .slantL {
+      transform: matrix3d(1,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,1,0,1,0,0,1);
+      -webkit-transform: matrix3d(1,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,1,0,1,0,0,1);
+      -webkit-box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
+      -moz-box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
+      box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
+    }
+    .slantR {
+      transform: matrix3d(1,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,1,0,-1,0,0,1);
+    -webkit-transform: matrix3d(1,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,1,0,-1,0,0,1);
+    -webkit-box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
+    -moz-box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
+    box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
+    }
+
+    .credits {
+      position:relative;
+      padding: 2em;
+      display: block;
+
+      background-color: rgba(255, 255, 255, 0.0);
+      -webkit-box-shadow: 0px -63px 270px -59px rgba(0,0,0,0.43);
+      -moz-box-shadow: 0px -63px 270px -59px rgba(0,0,0,0.43);
+      box-shadow: 0px -63px 270px -59px rgba(0,0,0,0.43);
+    }
+    .cup {
+      position:relative;
+      -webkit-transition: all 0.7s ease-in;
+      -moz-transition: all 0.7s ease-in;
+      -o-transition: all 0.7s ease-in;
+      transition: all 0.7s ease-in;
+      bottom: inherit;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .cdown {
+      position:relative;
+      display: block;
+      top:inherit;
+    }
+
+    .creditsContainer {
+      display: block;
+      width: 100%;
+    }
+    .playing {
+      position: fixed;
+      top: 0vh;
+      width: 100vw;
+      height: 100vh;
+    }
+    .lightroom {
+      display: none;
+    }
+    .creditsContainer > div {
+      display: inline-block;
+    }
+    .cre {
+      align-self: flex-start;
+      margin-right: auto;
+      margin-left: 0;
+      display: inline;
+    }
+
+    .cre a:link {
+      color: black;
+    }
+
+    .cre a:visited {
+      color: black;
+    }
+
+    .cre a:hover {
+      color: black;
+    }
+    .notes {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      padding-left: 0em;
+      height: inherit;
+    }
     .MainContent
     {
         box-sizing: border-box;

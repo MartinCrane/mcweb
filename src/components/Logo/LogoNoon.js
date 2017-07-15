@@ -62,15 +62,19 @@ class Logo extends React.Component {
 
     return (
         <div className='noonPage'>
+          <div className="continue">
+            <h1><Link to={'/work'}>Continue to martincrane.net</Link></h1>
+            <img style={{'height':'20px', 'padding-left':'1em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/right.png'></img>
+        </div>
           <div className='noonWrap elementFloat '>
             <div className="noonTitle">
               <h5><b>NOON QUARTETS</b> (2017)</h5>
             </div>
             <div className='noonCard'>
-              <div className='noonArt'  style={{'width':'50%'}}>
+              <div className='noonArt' >
                 <img className='slantL blessed' style={{'width':'100%'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/SQ001.png'></img>
               </div>
-              <div style={{'width':'50%'}}>
+              <div className='fifty'>
                 <div className='noonPlayer slantR' style={{'width':'100%'}}>
                   <LogoPlayer
                     songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
@@ -86,7 +90,6 @@ class Logo extends React.Component {
                     />
                   <img className='blessed' onClick={this.handlePlay} style={{'width':'100%', 'padding-top':'2em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rav.png'></img>
                 </div>
-
               </div>
             </div>
             {video}
@@ -114,11 +117,9 @@ class Logo extends React.Component {
                 </div>
               </div>
             </div>
-            <div className='continueContainer'>
-              <div className="continue">
-                <h1><Link to={'/work'}>Continue to martincrane.net</Link></h1>
-              </div>
-            </div>
+
+
+
           </div>
     );
   }
