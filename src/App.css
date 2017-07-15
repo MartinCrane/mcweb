@@ -55,6 +55,11 @@ h2 {
   letter-spacing: 0em;
   font-size: 1.5em;
 }
+h4{
+  font-family: 'GillFaciaMTStd-RegDisplay';
+  letter-spacing: 0em;
+  line-height: .5em;
+}
 li
 {
   font-family: 'GillFaciaMTStd-RegDisplay';
@@ -254,40 +259,98 @@ h3 {
 .ravelin {
   width:100%;
   padding-top: 3em;
-
+  opacity: .4
+}
+.ravelin:hover {
+  opacity: 1
+}
+.dNone {
+  display: none;
+}
+.playing {
+  display: inline;
+  position: fixed;
+  float: left;
+  width: 90vw;
+  left:5vw;
+  height: auto   !important;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  z-index: 1001;
 }
 .noonPlayer {
-  height:100%;
   width:50%;
+  height:auto;
   display:block;
   padding: 2em;
 }
-.noonCard {
+.noonWrap {
   height:100%;
-  width:100vw;
+  max-height: 75vh;
+}
+
+.noonCard {
+  position: fixed;
   display:flex;
   padding: 2em;
 }
+.blessed:hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
 .slantL {
-  transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,0,0,1);
-  -webkit-transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,0,0,1);
+  transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,69,0,1);
+  -webkit-transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,69,0,1);
   -webkit-box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
   -moz-box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
   box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
 }
 .slantR {
-  transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,0,0,1);
--webkit-transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,0,0,1);
+  transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,69,0,1);
+-webkit-transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,69,0,1);
 -webkit-box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
 -moz-box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
 box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
 }
-.credits {
-  height:100%;
-  width:50vw;
 
-  padding: 2em;
+.lightroom {
+  top:0vh;
+  left: 0vw;
+  width: 100vw;
+  height:100vh;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: -100;
+  position: fixed;
 }
+
+.credits {
+  position:fixed;
+  bottom: 0vh;
+  width:100vw;
+  padding: 2em;
+  display: inline;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+.credits > div {
+  display: inline-block;
+}
+.cre {
+  align-self: flex-start;
+  margin-right: auto;
+}
+.notes {
+  margin-left: auto;
+  width: 60%;
+
+  height: inherit;
+}
+
 .LogoPlayer
 {
     display: inline;
