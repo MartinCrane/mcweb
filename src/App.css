@@ -58,7 +58,7 @@ h2 {
 h4{
   font-family: 'GillFaciaMTStd-RegDisplay';
   letter-spacing: 0em;
-  line-height: .5em;
+
 }
 li
 {
@@ -256,10 +256,12 @@ h3 {
   padding-top: 25vh;
 }
 
+/*NOONQUARTETS*/
+
 .ravelin {
   width:100%;
   padding-top: 3em;
-  opacity: .4
+  opacity: .4;
 }
 .ravelin:hover {
   opacity: 1
@@ -269,7 +271,6 @@ h3 {
 }
 
 .playing {
-  display: inline;
   position: fixed;
   float: left;
   width: 90vw;
@@ -278,6 +279,11 @@ h3 {
   margin-right: 1em;
   margin-bottom: 1em;
   z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+
 }
 .noonPlayer {
   width:50%;
@@ -286,29 +292,98 @@ h3 {
   padding: 2em;
 }
 .noonWrap {
-  height:100%;
-  max-height: 75vh;
-}
+  width: 95vw;
+  background-color: rgba(162, 150, 150, 0);
+  align-content: center;
+  justify-content: center;
 
+  display:flex;
+}
+.noonTitle {
+  text-align: center;
+}
+.noonTitle > h5 {
+  text-align: center;
+  font-family: 'GillFaciaMTStd-RegDisplay';
+  font-size: 2em;
+  padding-top: 1em;
+  /*text-shadow: 1px 5px 26px rgba(162, 150, 150, 1);*/
+}
+.noonPage {
+  display:flex;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+}
 .noonCard {
   position: fixed;
   display:flex;
   padding: 2em;
+  width: 100%;
+  align-self: center;
+
 }
+.continue {
+
+  position: relative;
+  width: 90vh;
+  text-align: center;
+  /*text-shadow: 0px -11px 9px rgba(196, 215, 255, 1);
+  transform:matrix(0.00,1.00,-1.00,0.00,0,0);
+  -ms-transform:matrix(0.00,1.00,-1.00,0.00,0,0);
+  -webkit-transform:matrix(0.00,1.00,-1.00,0.00,0,0);
+  transform-origin: top left;*/
+}
+.continueContainer {
+  width:1em;
+  height:0em;
+  right:0vw;
+  position:fixed;
+
+}
+.continue > h1 {
+  font-size: 2em;
+  display: inline;
+}
+.continue a:link {
+  color: black;
+}
+
+.continue a:visited {
+  color: black;
+}
+
+.continue a:hover {
+  color: black;
+}
+.noonArt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  cursor: pointer;
+}
+.noonArt < img {
+  background-color: blue;
+}
+
 .blessed:hover {
   filter: invert(100%);
   cursor: pointer;
+  background-color: rgba(162, 150, 150, 0)
 }
 .slantL {
-  transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,69,0,1);
-  -webkit-transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,69,0,1);
+  transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,0,0,1);
+  -webkit-transform: matrix3d(0.87,0,0.50,.0003,0.00,1,0.00,0,-0.5,0,0.87,0,30,0,0,1);
   -webkit-box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
   -moz-box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
   box-shadow: -78px 46px 243px -28px rgba(0,0,0,0.75);
 }
 .slantR {
-  transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,69,0,1);
--webkit-transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,69,0,1);
+  transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,0,0,1);
+-webkit-transform: matrix3d(0.87,0,0.50,-.0003,0.00,1,0.00,0,-0.5,0,0.87,0,-30,0,0,1);
 -webkit-box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
 -moz-box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
 box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
@@ -322,42 +397,92 @@ box-shadow: 78px 46px 243px -28px rgba(0,0,0,0.75);
   background-color: rgba(0, 0, 0, .5);
   z-index: -100;
   position: fixed;
+  cursor: pointer;
 }
 
 .credits {
   position:fixed;
-  bottom: 0vh;
-  width:100vw;
   padding: 2em;
-  display: inline;
-  float: left;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.0);
+  -webkit-box-shadow: 0px -63px 270px -59px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px -63px 270px -59px rgba(0,0,0,0.43);
+  box-shadow: 0px -63px 270px -59px rgba(0,0,0,0.43);
+}
+.cup {
+  -webkit-transition: all 0.7s ease-in;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+  bottom: 0vh;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cdown {
+  top: 100vh;
 
 }
 
-.credits > div {
+#tab {
+  top:-80px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  cursor: pointer;
+}
+#tab > * {
+  display: inline-block;
+}
+
+.creditsContainer {
+  display: inline-block;
+  width: 100vw;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.creditsContainer > div {
   display: inline-block;
 }
 .cre {
   align-self: flex-start;
   margin-right: auto;
+  margin-left: 10vw;
+  display: inline;
+}
+
+.cre a:link {
+  color: black;
+}
+
+.cre a:visited {
+  color: black;
+}
+
+.cre a:hover {
+  color: black;
 }
 .notes {
   margin-left: auto;
-  width: 60%;
-
+  margin-right: 10vw;
+  width: 50%;
+  padding-left: 1em;
   height: inherit;
 }
 
 .LogoPlayer
 {
     display: inline;
-    width: 100%;
+    width: inherit;
     height: inherit;
-    opacity: .9;
+}
+
+.mediaLogo > h2
+{
+    font-size: 2ex;
 }
 /*DESKTOP MENU*/
 .DtMenu
@@ -513,6 +638,12 @@ menu
     line-height: 1em;
     color: black;
     margin-bottom: 1em;
+}
+.thumbImage {
+  -webkit-box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.20);
+  -moz-box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.20);
+  box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.20);
+  border: 1px white solid;
 }
 .TitleThumbPlayer
 {
@@ -690,9 +821,13 @@ ul
     z-index: 200;
 
     box-sizing: border-box;
+    border: 20px rgba(255,255,255,.0);
     min-height: 40vh;
     margin-bottom: 10vh;
-    padding: 1vw;
+
+    -webkit-box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.10);
+    -moz-box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.10);
+    box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.10);
 }
 .PlayerLine
 {
@@ -710,6 +845,8 @@ ul
 .PlayerControls
 {
     width: inherit;
+
+
 }
 .SeekBar:hover
 {
@@ -813,6 +950,9 @@ ul
 
     border: 2px black solid;
     background-color: rgba(255, 255, 255, .9);
+    -webkit-box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.06);
+    -moz-box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.06);
+    box-shadow: 26px 24px 54px -6px rgba(0,0,0,0.06);
 }
 .PostThumb h1
 {
@@ -973,15 +1113,7 @@ textarea.form-control
         top: -50px;
         left: 0;
     }
-    .TitleThumbPlayer
-    {
-        position: absolute;
 
-        width: 100%;
-        padding: .3em;
-
-        background-color: rgba(255,255,255,.3);
-    }
     .SeekBar2
     {
         top: -3px;

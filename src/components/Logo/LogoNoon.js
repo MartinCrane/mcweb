@@ -9,8 +9,8 @@ import { logoSliceLink } from '../../data/logoSliceLink'
 import { Media, Player, controls } from 'react-media-player'
 import CustomPlayPause from '../Library/CustomPlayPause'
 import LogoPlayer from './LogoPlayer'
-import Waypoint from 'react-waypoint';
 const {  SeekBar } = controls
+import { Link } from 'react-router'
 import Spash from '../Splash'
 
 
@@ -22,10 +22,10 @@ class Logo extends React.Component {
       right: 0,
       top: 0,
       bottom: 0,
-      videoPlay: false
+      creditShow: false
     }
     this.handlePlay = this.handlePlay.bind(this)
-    this.handleScroll = this.handleScroll.bind(this)
+    this.creditShow = this.creditShow.bind(this)
   }
 
   handlePlay() {
@@ -35,19 +35,16 @@ class Logo extends React.Component {
     })
   }
 
-  handleScroll(event) {
-    alert("go")
+  creditShow() {
     this.setState({
-      top: event.currentTarget.scrollTop
+      creditShow: !this.state.creditShow,
     })
   }
 
   render() {
     const video = (
       <div className={this.state.videoPlay ? 'playing elementFloat': 'dNone '}>
-        <div style={{'height':'20vh'}}>
-        </div>
-          <Row className='video-responsive' >
+          <Row className='video-responsive'>
             <Media style={{'z-index':'10001', 'border':'3px white'}}>
               <div className="media">
                 <div className="media-player" >
@@ -65,52 +62,64 @@ class Logo extends React.Component {
     )
 
     return (
-        <div >
+        <div className='noonPage'>
           <div className='noonWrap elementFloat '>
+            <div className="noonTitle">
+              <h5><b>NOON QUARTETS</b> (2017)</h5>
+            </div>
             <div className='noonCard'>
-              <div style={{'width':'50%'}}>
+              <div className='noonArt'  style={{'width':'50%'}}>
                 <img className='slantL blessed' style={{'width':'100%'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/SQ001.png'></img>
               </div>
+              <div style={{'width':'50%'}}>
+                <div className='noonPlayer slantR' style={{'width':'100%'}}>
+                  <LogoPlayer
+                    songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
+                    title='Noon Quartet No.1'
+                    />
+                  <LogoPlayer
+                    songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
+                    title='Noon Quartet No.2'
+                    />
+                  <LogoPlayer
+                    songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
+                    title='Noon Quartet No.3'
+                    />
+                  <img className='blessed' onClick={this.handlePlay} style={{'width':'100%', 'padding-top':'2em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rav.png'></img>
+                </div>
 
-              <div className='noonPlayer slantR '>
-                <LogoPlayer
-                  songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
-                  title='Noon Quartet 1'
-                  />
-                <LogoPlayer
-                  songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
-                  title='Noon Quartet 2'
-                  />
-                <LogoPlayer
-                  songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
-                  title='Noon Quartet 3'
-                  />
-                <img className='blessed' onClick={this.handlePlay} style={{'width':'100%', 'padding-top':'2em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rav.png'></img>
               </div>
             </div>
             {video}
           </div>
-            <div className='credits'>
-              <div className="cre">
-                <h4><b>NOON QUARTETS</b> by Martin  Crane</h4>
-                <h4>-</h4>
-                <h4>Clarice Jensen - Cello</h4>
-                <h4>Ben Russell - Violin</h4>
-                <h4>Laura Lutzke - Violin</h4>
-                <h4>Isabel Hagen - Viola</h4>
-                <h4><b>American Contemporary Music Ensemble (ACME)</b></h4>
-                <h4>-</h4>
-                <h4>Engineered by Ryan Streber at Oktaven Audio</h4>
-                <h4>Mixed by Martin Crane</h4>
-                <h4>Mastered by Alex DeTurk</h4>
-                <h4>Art: Matthew Boblet</h4>
-              </div>
-              <div className="notes">
-                <p>These are notes on what Im writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whathese are notes on what Im writing and what  </p>
-                <h4>Art: Matthew Boblet</h4>
+          <div className={this.state.creditShow ? 'credits cup' : 'credits cdown'}>
+            <div id='tab' onClick={this.creditShow}>
+              <img src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rose-icon.png'></img>
+            </div>
+              <div className='creditsContainer'>
+                <div className="cre">
+                  <h4>Clarice Jensen - Cello </h4>
+                  <h4>Ben Russell - Violin</h4>
+                  <h4>Laura Lutzke - Violin</h4>
+                  <h4>Isabel Hagen - Viola</h4>
+                  <h4>of <a href="http://www.acmemusic.org/" target="_blank"><b>American Contemporary Music Ensemble (ACME)</b></a></h4>
+                  <h4>-</h4>
+                  <h4>Engineered by Ryan Streber at Oktaven Audio</h4>
+                  <h4>Mixed by Martin Crane</h4>
+                  <h4>Mastered by Alex DeTurk</h4>
+                  <h4>Art: Matthew Boblet</h4>
+                </div>
+                <div className="notes">
+                  <p>These are notes on what Im writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whathese are notes on what Im writing and what  </p>
+                  <h4>Art: Matthew Boblet</h4>
+                </div>
               </div>
             </div>
-
+            <div className='continueContainer'>
+              <div className="continue">
+                <h1><Link to={'/work'}>Continue to martincrane.net</Link></h1>
+              </div>
+            </div>
           </div>
     );
   }

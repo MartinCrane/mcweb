@@ -53,13 +53,16 @@ class LogoPlayer extends Component {
     return (
       <div className="LogoPlayer" onClick={e => this.handleClick(e)} onTouchStart={e => this.handleClick(e)}>
         <Media>
-          <div className="media">
+          <div className="mediaLogo">
+
             <div className="media-player elementFloatQuick">
               <Player
                 src={`${this.state.autoPlay ? this.props.songUrl : 'https://s3.amazonaws.com/www.martincrane.net/audio/silence.m4a'}`}
                 autoPlay={this.state.autoPlay}/>
             </div>
+
             <h2>{this.props.title}</h2>
+
             <div className="PlayerControls elementFloatQuick">
               <Row>
                 <Col
