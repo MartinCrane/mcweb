@@ -45,7 +45,7 @@ class Logo extends React.Component {
   render() {
     const video = (
       <div className={this.state.videoPlay ? 'playing elementFloat': 'dNone '}>
-        <div>
+        <div style={{'height':'20vh'}}>
         </div>
           <Row className='video-responsive' >
             <Media style={{'z-index':'10001', 'border':'3px white'}}>

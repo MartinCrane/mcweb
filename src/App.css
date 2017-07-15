@@ -267,6 +267,7 @@ h3 {
 .dNone {
   display: none;
 }
+
 .playing {
   display: inline;
   position: fixed;
