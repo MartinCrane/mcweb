@@ -18,7 +18,7 @@ class Post extends Component {
     return (<div>
       <Helmet meta={[
              { property: 'og:image', content: thisBlog.image | 'https://s3.amazonaws.com/www.martincrane.net/image/logo/logo.jpg'},
-             { property: 'og:description', content: 'Martin Crane, NY based composer for TV and Film' },
+             { property: 'og:description', content: 'blog post'},
              { property: 'og:type', content: 'article' }]}>
              <title>{thisBlog.title}</title>
              <html lang="en" amp />
