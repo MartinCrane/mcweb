@@ -38,7 +38,7 @@ class App extends Component {
         onMouseMove={e => this.handleMouse(e)}>
         <Helmet titleTemplate="%s | martincrane.net"
           meta={[{ property: 'og:description', content: 'Martin Crane, NY based composer for TV and Film' }]}>
-          <meta name="image" content="https://s3.amazonaws.com/www.martincrane.net/image/logo/logo.jpg"/>
+          <meta name="image" content="https://s3.amazonaws.com/www.martincrane.net/image/noon/logo.jpg"/>
           <meta name="keywords" content={ 'composer', 'about'} />
         </Helmet>
 
