@@ -3,6 +3,7 @@ import { Col } from 'react-bootstrap';
 import TitlePlayer from './TitlePlayer'
 import { connect } from 'react-redux'
 import { elementFloat } from '../../actions/mouse'
+import { formatMarkdown } from '../../actions/blog'
 
 
 export default class TitleThumb extends Component {
@@ -15,6 +16,7 @@ export default class TitleThumb extends Component {
       bottom: 0
     }
     this.elementFloat = elementFloat.bind(this)
+    this.formatMarkdown = formatMarkdown.bind(this)
   }
 
   render() {
@@ -25,6 +27,7 @@ export default class TitleThumb extends Component {
               src={`https://s3.amazonaws.com/www.martincrane.net/image/${this.props.title.imageUrl}`}
               alt='title'>
             </img>
+
           </div>
           <div className='pseudoAbs'>
             {this.props.title.scId ? <TitlePlayer songUrl={`https://s3.amazonaws.com/www.martincrane.net/audio/${this.props.title.slug}.m4a`}/> : <div className='none TitlePlayer'></div>}
@@ -37,6 +40,10 @@ export default class TitleThumb extends Component {
               {this.props.title.credit} / {this.props.title.year} / {this.props.title.author}
             </h3>
           </div>
+          <div className="thumbDeets elementFloatQuick">
+            <h2>{this.formatMarkdown(this.props.title.description)}</h2>
+          </div>
+
         </div>
     )
     return (

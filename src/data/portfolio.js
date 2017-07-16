@@ -9,7 +9,7 @@ export const portfolioData = [{
   "slug": "noon-quartets",
   "scId": null,
   "link": "www.google.com",
-  "description": "This is this is this"
+  "description": "2017 String Quartets \\n ACME \\n Ravelin video portrait"
 }, {
   "name": "East Hell",
   "imageUrl": "east-hell.png",
@@ -19,7 +19,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "narrative"],
   "author": "Callum Smith",
   "slug": "east-hell",
-  "scId": 320972706
+  "scId": 320972706,
+  "description": "![ASCAP](https://upload.wikimedia.org/wikipedia/en/5/53/ASCAP_logo_2016.png) \\n [2017 ASCAP Columbia University Scoring Workshop](https://www.ascap.com/news-events/events/2017/film-scoring-workshop/cu/participants) \\n Premiered 2017 Columbia University Film Festival"
 }, {
   "name": "Hugh the Hunter",
   "imageUrl": "hugh-the-hunter.png",
@@ -29,7 +30,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "narrative"],
   "author": "Zachary Heinzerling",
   "slug": "hugh-the-hunter",
-  "scId": 320990236
+  "scId": 320990236,
+  "description": "![sundance](https://s-media-cache-ak0.pinimg.com/originals/7c/18/51/7c185131cc8ab6c88b088f55f07218d6.png)  \\n [Hugh the Hunter on NOWNESS](https://www.nowness.com/story/hugh-the-hunter-zachary-heinzerling-hugh-hayden) \\n Premiered 2015 Sundance \\n"
 }, {
   "name": "Cutie and the Boxer",
   "imageUrl": "cutie-and-the-boxer.png",
@@ -39,9 +41,10 @@ export const portfolioData = [{
   "tags": ["feature", "documentary", "musicSupervision"],
   "author": "Zachary Heinzerling",
   "slug": "cutie-and-the-boxer",
-  "scId": null
+  "scId": null,
+  "description": "2014 Academy Award Nomination, Best Documentary \\n [Cinema Eye Decade Filmakers](http://www.indiewire.com/2016/09/cinema-eye-documentaries-directors-of-the-decade-1201729188/) \\n [2016 Emmy Award for Best Documentary](http://variety.com/2016/tv/news/frontline-60-minutes-news-and-documentary-award-winners-1201867659/) \\n "
 }, {
-  "name": "Ian Chang - EP",
+  "name": "Ian Chang - Spiritual Leader EP",
   "imageUrl": "ian-chang-ep.png",
   "credit": "Production, Mixing",
   "year": 2017,
@@ -49,7 +52,9 @@ export const portfolioData = [{
   "tags": ["production", "mixing"],
   "author": "Ian Chang",
   "slug": "ian-chang-ep",
-  "scId": null
+  "scId": null,
+  "description": "![Spiritual Leader](https://f4.bcbits.com/img/a1647805731_7.jpg) \\n [Kowloon Records](http://kowloon-records.com/ian-chang-spiritual-leader/) \\n [Ian Chang on YouTube](https://www.youtube.com/watch?v=CS7rDZhcHL0) \\n [Bandcamp](https://ianyhchang.bandcamp.com/track/spiritual-leader-track) \\n "
+
 }, {
   "name": "Airwick: Give the Gift of Home",
   "imageUrl": "airwick-gift-of-home.png",
@@ -59,7 +64,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary", "commercial"],
   "author": "Zachary Heinzerling",
   "slug": "airwick-give-the-gift-of-home",
-  "scId": 320972716
+  "scId": 320972716,
+  "description": "[Air Wick: Give the Gift of Home](https://www.youtube.com/watch?v=87zZo2K5A8I) \\n 12+ million youtube views \\n Droga5"
 }, {
   "name": "The Blue Dot",
   "imageUrl": "the-blue-dot.png",
@@ -69,7 +75,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "narrative"],
   "author": "Pepi Ginsberg",
   "slug": "the-blue-dot",
-  "scId": 320972692
+  "scId": 320972692,
+  "description": 'null'
 }, {
   "name": "Mazda Rebels: Phil and the Mighty Mushroom",
   "imageUrl": "phil-mighty-mushroom.png",
@@ -79,7 +86,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary", "commercial"],
   "author": "Zachary Heinzerling",
   "slug": "mazda-rebels-phil-and-the-mighty-mushroom",
-  "scId": 320972696
+  "scId": 320972696,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Vito Acconci | Where We Are Now (Who Are We Anyway?)",
   "imageUrl": "vito-acconci.png",
@@ -89,7 +97,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary"],
   "author": "Zachary Heinzerling",
   "slug": "vito-acconci-where-we-are-now-who-are-we-anyway",
-  "scId": null
+  "scId": null,
+  "description": "[YouTube](https://www.youtube.com/watch?v=HAGHz27Flcg)"
 }, {
   "name": "Katharina Grosse | Rockaway!",
   "imageUrl": "katharina-grosse.png",
@@ -99,7 +108,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary"],
   "author": "Sam Fleischner",
   "slug": "katharina-grosse-rockaway",
-  "scId": null
+  "scId": null,
+  "description": "<a href='https://www.youtube.com/watch?v=chhyDJnhIew' target='_blank'>YouTube</a>"
 }, {
   "name": "Every Little Thing Podcast",
   "imageUrl": "every-little-thing.png",
@@ -109,7 +119,8 @@ export const portfolioData = [{
   "tags": ["podcast", "originalScore", "documentary"],
   "author": "Flora Lichtman",
   "slug": "every-little-thing-podcast",
-  "scId": null
+  "scId": null,
+  "description": "[Every Little Thing](https://gimletmedia.com/every-little-thing/)"
 }, {
   "name": "Animated Life: Mary Leakey",
   "imageUrl": "animated-life-mary-leakey.png",
@@ -119,7 +130,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary"],
   "author": "Flora Lichtman and Sharon Shattuck",
   "slug": "animated-life-mary-leakey",
-  "scId": 320972712
+  "scId": 320972712,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Carolina Herrera - Refined Irreverence",
   "imageUrl": "carolina-herrera.png",
@@ -129,7 +141,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "commercial"],
   "author": "Ryan Dickie",
   "slug": "carolina-herrera-refined-irreverence",
-  "scId": 320972710
+  "scId": 320972710,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Animated Life: The Living Fossil Fish",
   "imageUrl": "animated-life-fossil-fish.png",
@@ -139,7 +152,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary"],
   "author": "Flora Lichtman and Sharon Shattuck",
   "slug": "animated-life-the-living-fossil-fish",
-  "scId": 320972714
+  "scId": 320972714,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Americana",
   "imageUrl": "americana.png",
@@ -149,7 +163,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "narrative"],
   "author": "Zachary Heinzerling",
   "slug": "americana",
-  "scId": 320972715
+  "scId": 320972715,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Kingdom",
   "imageUrl": "kingdom.png",
@@ -159,7 +174,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "narrative"],
   "author": "Bentley Heyman",
   "slug": "kingdom",
-  "scId": 320972702
+  "scId": 320972702,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Lasker Prizes",
   "imageUrl": "lasker-prizes-2015.png",
@@ -169,7 +185,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary"],
   "author": "Flora Lichtman",
   "slug": "lasker-prizes",
-  "scId": 320972701
+  "scId": 320972701,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "How saber-toothed cats grew their mouth swords, Flu - The Great Migration",
   "imageUrl": "vox-saber.png",
@@ -179,7 +196,8 @@ export const portfolioData = [{
   "tags": ["short", "originalScore", "documentary"],
   "author": "Flora Lichtman and Sharon Shattuck",
   "slug": "how-saber-toothed-cats-grew-their-mouth-swords-flu-the-great-migration",
-  "scId": 320972692
+  "scId": 320972692,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "How to Let Go of the World and Love All The Things Climate Can't Change",
   "imageUrl": "how-to-let-go.png",
@@ -189,7 +207,8 @@ export const portfolioData = [{
   "tags": ["feature", "documentary", "musicContribution"],
   "author": "Josh Fox",
   "slug": "how-to-let-go-of-the-world-and-love-all-the-things-climate-can-t-change",
-  "scId": null
+  "scId": null,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Physical Therapy LP",
   "imageUrl": "physical-therapy.png",
@@ -199,7 +218,8 @@ export const portfolioData = [{
   "tags": ["originalMusic", "mixing", "production", "songwriting"],
   "author": "Martin Crane",
   "slug": "physical-therapy-lp",
-  "scId": null
+  "scId": null,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Phosphorescent Blues LP",
   "imageUrl": "brazos-phossy.png",
@@ -209,7 +229,8 @@ export const portfolioData = [{
   "tags": ["originalMusic", "production", "songwriting"],
   "author": "Brazos",
   "slug": "phosphorescent-blues-lp",
-  "scId": null
+  "scId": null,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "Saltwater LP",
   "imageUrl": "brazos-saltwater.png",
@@ -219,7 +240,8 @@ export const portfolioData = [{
   "tags": ["originalMusic", "production", "songwriting"],
   "author": "Brazos",
   "slug": "saltwater-lp",
-  "scId": null
+  "scId": null,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }, {
   "name": "NARC - Infinite Mine LP",
   "imageUrl": "narc-ep.png",
@@ -229,5 +251,6 @@ export const portfolioData = [{
   "tags": ["originalMusic", "production", "mixing"],
   "author": "NARC",
   "slug": "narc-infinite-mine-lp",
-  "scId": null
+  "scId": null,
+  "description": "2017 String Quartets \n ACME \n Ravelin video portrait"
 }]
