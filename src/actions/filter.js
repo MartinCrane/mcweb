@@ -10,7 +10,7 @@ export function filterDisplay(x) {
     case "fAll":
       return this.props.portfolio
     case "fScoring":
-      return this.props.portfolio.filter((title)=> title.directors !== null )
+      return this.props.portfolio.filter((title)=> title.tags.indexOf('scoring') !== -1 )
     case "fNarrative":
       return this.props.portfolio.filter((title)=> title.tags.indexOf('narrative') !== -1 )
     case "fDocumentary":
