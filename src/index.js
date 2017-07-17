@@ -20,6 +20,7 @@ import { portfolioData } from './data/portfolio.js';
 import { blogData } from './data/blog.js';
 import About from './components/About';
 import Quartets from './components/Library/Quartets';
+import NoonQuartets from './components/Projects/NoonQuartets';
 import Access from './components/Library/Access';
 import { Login } from './components/account/Login';
 
@@ -37,6 +38,7 @@ ReactDOM.render(
       <Route path="/" component={ConnectedLogo} />
       <Route path="quartets" component={Quartets} />
       <Route path="access" component={Access} />
+      <Route path="noon-quartets" component={NoonQuartets} />
       <Route component={ConnectedApp}>
         <Route path="logo" component={ConnectedLogo} />
         <Route path="library" component={ConnectedLibraryContainer} />
