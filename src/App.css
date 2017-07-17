@@ -632,11 +632,11 @@ menu
 .deetsC {
   display: flex;
   width: 95%;
-  height: 87%;
+  height: 74%;
   top:0;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: absolute;
 
   margin-right: 10%;
@@ -646,12 +646,13 @@ menu
 .thumbDeets {
   display: none;
   padding: 1.5em;
+  text-align: center;
   border: 3px double rgba(34,34,34,1);
   background-color: rgba(250, 250, 250, .95);
-  -webkit-box-shadow: 54px -55px 130px -14px rgba(0,0,0,0.75);
--moz-box-shadow: 54px -55px 130px -14px rgba(0,0,0,0.75);
-box-shadow: 54px -55px 130px -14px rgba(0,0,0,0.75);
-  width: 100%;
+  -webkit-box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
+box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
+  width: 70%;
 }
 
 .thumbDeets img {
@@ -660,7 +661,7 @@ box-shadow: 54px -55px 130px -14px rgba(0,0,0,0.75);
 
 .TitleThumb:hover .thumbDeets {
   display: block;
-  transform: skewX(4deg) rotate(4deg);
+  transform: skewX(2deg) rotate(2deg);
 
   -webkit-transition: all 1.3s;
      -moz-transition: all 1.3s;
@@ -683,7 +684,7 @@ box-shadow: 54px -55px 130px -14px rgba(0,0,0,0.75);
      -moz-transition-timing-function: ease-out;
        -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
-  opacity: .7;
+  opacity: .6;
 }
 
 .thumbDetails h2
