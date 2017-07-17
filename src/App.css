@@ -645,13 +645,13 @@ menu
 
 .thumbDeets {
   display: none;
-  padding: 1.5em;
+  padding: .1em;
   text-align: center;
   border: 3px double rgba(34,34,34,1);
   background-color: rgba(250, 250, 250, .95);
   -webkit-box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
--moz-box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
-box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
+  box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
   width: 70%;
 }
 
@@ -659,6 +659,10 @@ box-shadow: 64px 64px 113px 8px rgba(0,0,0,0.75);
   width: 7em;
 }
 
+.thumbDeets a {
+  color: black;
+  text-decoration: underline;
+}
 .TitleThumb:hover .thumbDeets {
   display: block;
   transform: skewX(2deg) rotate(2deg);
