@@ -40,9 +40,9 @@ export default class TitleThumb extends Component {
               {this.props.title.credit} / {this.props.title.year} / {this.props.title.author}
             </h3>
           </div>
-          <div className='deetsC elementFloat'>
-            <div className="thumbDeets elementFloat" style={this.elementFloat()}>
-              <h2>{this.formatMarkdown(`#### ${this.props.title.description}`)}</h2>
+          <div className='deetsC '>
+            <div className="thumbDeets " style={this.elementFloat()}>
+              {this.formatMarkdown(`#### ${this.props.title.description}`)}
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ export const portfolioData = [{
   "author": "Callum Smith",
   "slug": "east-hell",
   "scId": 320972706,
-  "description": "[2017 ASCAP Columbia University Scoring Workshop](https://www.ascap.com/news-events/events/2017/film-scoring-workshop/cu/participants) \\n Premiered 2017 Columbia University Film Festival"
+  "description": "[2017 ASCAP Columbia University Scoring Workshop](https://www.ascap.com/news-events/events/2017/film-scoring-workshop/cu/participants)"
 }, {
   "name": "Hugh the Hunter",
   "imageUrl": "hugh-the-hunter.png",
@@ -31,7 +31,7 @@ export const portfolioData = [{
   "author": "Zachary Heinzerling",
   "slug": "hugh-the-hunter",
   "scId": 320990236,
-  "description": "[Hugh the Hunter on NOWNESS](https://www.nowness.com/story/hugh-the-hunter-zachary-heinzerling-hugh-hayden) \\n Premiered 2015 Sundance \\n"
+  "description": "[Hugh the Hunter on NOWNESS](https://www.nowness.com/story/hugh-the-hunter-zachary-heinzerling-hugh-hayden) \\n Premiered 2015 Sundance"
 }, {
   "name": "Cutie and the Boxer",
   "imageUrl": "cutie-and-the-boxer.png",
@@ -42,7 +42,7 @@ export const portfolioData = [{
   "author": "Zachary Heinzerling",
   "slug": "cutie-and-the-boxer",
   "scId": null,
-  "description": "2014 Academy Award Nomination, Best Documentary \\n [Cinema Eye Decade Filmakers](http://www.indiewire.com/2016/09/cinema-eye-documentaries-directors-of-the-decade-1201729188/) \\n [2016 Emmy Award for Best Documentary](http://variety.com/2016/tv/news/frontline-60-minutes-news-and-documentary-award-winners-1201867659/) \\n "
+  "description": "Academy Award Nomination, Best Documentary \\n [Cinema Eye Decade Filmakers](http://www.indiewire.com/2016/09/cinema-eye-documentaries-directors-of-the-decade-1201729188/) \\n [2016 Emmy Award for Best Documentary](http://variety.com/2016/tv/news/frontline-60-minutes-news-and-documentary-award-winners-1201867659/)"
 }, {
   "name": "Ian Chang - Spiritual Leader EP",
   "imageUrl": "ian-chang-ep.png",
@@ -53,7 +53,7 @@ export const portfolioData = [{
   "author": "Ian Chang",
   "slug": "ian-chang-ep",
   "scId": null,
-  "description": "[Kowloon Records](http://kowloon-records.com/ian-chang-spiritual-leader/) / [YouTube](https://www.youtube.com/watch?v=CS7rDZhcHL0) / [Bandcamp](https://ianyhchang.bandcamp.com/track/spiritual-leader-track) \\n "
+  "description": "[Kowloon Records](http://kowloon-records.com/ian-chang-spiritual-leader/) / [YouTube](https://www.youtube.com/watch?v=CS7rDZhcHL0) / [Bandcamp](https://ianyhchang.bandcamp.com/track/spiritual-leader-track)"
 
 }, {
   "name": "Airwick: Give the Gift of Home",
@@ -65,7 +65,7 @@ export const portfolioData = [{
   "author": "Zachary Heinzerling",
   "slug": "airwick-give-the-gift-of-home",
   "scId": 320972716,
-  "description": "[Air Wick: Give the Gift of Home](https://www.youtube.com/watch?v=87zZo2K5A8I) \\n 12+ million youtube views \\n Produced by Droga5"
+  "description": "[Air Wick: Give the Gift of Home](https://www.youtube.com/watch?v=87zZo2K5A8I) \\n Produced by Droga5"
 }, {
   "name": "The Blue Dot",
   "imageUrl": "the-blue-dot.png",
