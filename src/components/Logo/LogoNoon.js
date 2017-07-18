@@ -115,7 +115,7 @@ class Logo extends React.Component {
                 <div className="notes">
                   <h3 style={{'font-size':'1.5em'}}>July 18, 2017</h3>
                   <p>The Noon Quartets are a series of string quartets I wrote in the fall of 2016. When I began this project, I hadn’t read music notation in 15 years, had never in my life written notation, hadn’t experience the magic that is hearing other people play something I’d written. I wanted to make music that was separate from films or songs and combined the work I do on a computer with real life flesh and blood. 6 months later, with the generosity of the American Contemporary Music Ensemble, I can present the first installment of an ongoing series of my instrumental music. In addition to the music, I was lucky to have Pepi Ginsberg film the process, and her short documentary on No.3 is available at Ravelin Magazine. I hope you enjoy listening to these pieces as much as I enjoyed writing them.</p>
-                  <h2>- Martin</h2>
+                  <h3 style={{'font-size':'1.5em'}}>- Martin</h3>
 
                 </div>
               </div>
