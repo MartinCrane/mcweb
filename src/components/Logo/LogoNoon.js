@@ -109,11 +109,14 @@ class Logo extends React.Component {
                   <h4>Engineered by Ryan Streber at Oktaven Audio</h4>
                   <h4>Mixed by Martin Crane</h4>
                   <h4>Mastered by Alex DeTurk</h4>
+                  <h4>Orchestration Advice: Michael Beharie</h4>
                   <h4>Art: Matthew Boblet</h4>
                 </div>
                 <div className="notes">
-                  <p>These are notes on what Im writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whathese are notes on what Im writing and what  </p>
-                  <h4>Art: Matthew Boblet</h4>
+                  <h4>July 18, 2017</h4>
+                  <p>The Noon Quartets are a series of string quartets I wrote in the fall of 2016. When I began this project, I hadn’t read music notation in 15 years, had never in my life written notation, hadn’t experience the magic that is hearing other people play something I’d written. I wanted to make music that was separate from films or songs and combined the work I do on a computer with real life flesh and blood. 6 months later, with the generosity of the American Contemporary Music Ensemble, I can present the first installment of an ongoing series of my instrumental music. In addition to the music, I was lucky to have Pepi Ginsberg document the process for Ravelin Magazine, and her short documentary on No.3 is available at Ravelin Magazine. I hope you enjoy listening to these pieces as much as I enjoyed writing them.</p>
+                  <h4>- Martin</h4>
+
                 </div>
               </div>
             </div>
