@@ -9,7 +9,7 @@ export const portfolioData = [{
   "slug": "noon-quartets",
   "scId": null,
   "link": "www.google.com",
-  "description": "[Noon Quartets Page](/noon-quartets)\\nRavelin video portrait"
+  "description": "[Noon Quartets](/noon-quartets) / Ravelin video portrait"
 }, {
   "name": "East Hell",
   "imageUrl": "east-hell.png",
@@ -31,7 +31,7 @@ export const portfolioData = [{
   "author": "Zachary Heinzerling",
   "slug": "hugh-the-hunter",
   "scId": 320990236,
-  "description": "[NOWNESS](https://www.nowness.com/story/hugh-the-hunter-zachary-heinzerling-hugh-hayden) \\n Premiered 2015 Sundance"
+  "description": "[NOWNESS](https://www.nowness.com/story/hugh-the-hunter-zachary-heinzerling-hugh-hayden) / Premiered 2015 Sundance"
 }, {
   "name": "Cutie and the Boxer",
   "imageUrl": "cutie-and-the-boxer.png",
@@ -42,7 +42,7 @@ export const portfolioData = [{
   "author": "Zachary Heinzerling",
   "slug": "cutie-and-the-boxer",
   "scId": null,
-  "description": "Academy Award Nomination, Best Documentary \\n [Cinema Eye Decade Filmakers](http://www.indiewire.com/2016/09/cinema-eye-documentaries-directors-of-the-decade-1201729188/) \\n [2016 Emmy Award for Best Documentary](http://variety.com/2016/tv/news/frontline-60-minutes-news-and-documentary-award-winners-1201867659/)"
+  "description": "Academy Award Nomination / [Cinema Eye Decade Award](http://www.indiewire.com/2016/09/cinema-eye-documentaries-directors-of-the-decade-1201729188/) / [2016 Emmy](http://variety.com/2016/tv/news/frontline-60-minutes-news-and-documentary-award-winners-1201867659/)"
 }, {
   "name": "Ian Chang - Spiritual Leader EP",
   "imageUrl": "ian-chang-ep.png",
@@ -65,7 +65,7 @@ export const portfolioData = [{
   "author": "Zachary Heinzerling",
   "slug": "airwick-give-the-gift-of-home",
   "scId": 320972716,
-  "description": "[YouTube](https://www.youtube.com/watch?v=87zZo2K5A8I)\\nProduced by Droga5"
+  "description": "[YouTube](https://www.youtube.com/watch?v=87zZo2K5A8I) / Produced by Droga5"
 }, {
   "name": "The Blue Dot",
   "imageUrl": "the-blue-dot.png",
@@ -87,7 +87,7 @@ export const portfolioData = [{
   "author": "Zachary Heinzerling",
   "slug": "mazda-rebels-phil-and-the-mighty-mushroom",
   "scId": 320972696,
-  "description": "[Vimeo](https://vimeo.com/120486064)"
+  "description": "[Vimeo](https://vimeo.com/120486064) / Produced by Vice UK"
 }, {
   "name": "Vito Acconci | Where We Are Now (Who Are We Anyway?)",
   "imageUrl": "vito-acconci.png",
@@ -131,7 +131,7 @@ export const portfolioData = [{
   "author": "Flora Lichtman and Sharon Shattuck",
   "slug": "animated-life-mary-leakey",
   "scId": 320972712,
-  "description": "Series nominated for an Emmy for Outstanding Special Class - Short Format Daytime Program in 2016\\n[New York Times](https://www.nytimes.com/2015/12/08/opinion/animated-life-mary-leakey.html?_r=0)"
+  "description": "Emmy Nomination for Outstanding Special Class 2016 / [New York Times](https://www.nytimes.com/2015/12/08/opinion/animated-life-mary-leakey.html?_r=0)"
 }, {
   "name": "Carolina Herrera - Refined Irreverence",
   "imageUrl": "carolina-herrera.png",
@@ -142,7 +142,7 @@ export const portfolioData = [{
   "author": "Ryan Dickie",
   "slug": "carolina-herrera-refined-irreverence",
   "scId": 320972710,
-  "description": "Produced by Ways and Means"
+  "description": "Produced by [Ways and Means](http://ways-means.co/)"
 }, {
   "name": "Animated Life: The Living Fossil Fish",
   "imageUrl": "animated-life-fossil-fish.png",
@@ -153,7 +153,7 @@ export const portfolioData = [{
   "author": "Flora Lichtman and Sharon Shattuck",
   "slug": "animated-life-the-living-fossil-fish",
   "scId": 320972714,
-  "description": "Series nominated for an Emmy for Outstanding Special Class\\n[New York Times](https://www.nytimes.com/2015/12/22/opinion/animated-life-the-living-fossil-fish.html?_r=0)"
+  "description": "Emmy Nomination for Outstanding Special Class 2016 / [New York Times](https://www.nytimes.com/2015/12/22/opinion/animated-life-the-living-fossil-fish.html?_r=0)"
 }, {
   "name": "Americana",
   "imageUrl": "americana.png",
@@ -219,7 +219,7 @@ export const portfolioData = [{
   "author": "Martin Crane",
   "slug": "physical-therapy-lp",
   "scId": null,
-  "description": "[KCRW](http://www.kcrw.com/music/shows/album-preview/martin-crane-physical-therapy) / [Flood Magazine](http://floodmagazine.com/24605/premiere-martin-crane-drops-the-acoustic-guitar-goes-all-neon-in-physical-therapy/) / [FADER](http://www.thefader.com/2015/10/28/martin-crane-gunk-of-stars) / [Interview Magazine](http://www.interviewmagazine.com/music/exclusive-track-premiere-gadesco-martin-crane/)\\n[Spotify](https://open.spotify.com/album/2GXUqZv1RwRUTJsoQWDnjQ)"
+  "description": "[KCRW](http://www.kcrw.com/music/shows/album-preview/martin-crane-physical-therapy) / [Flood Magazine](http://floodmagazine.com/24605/premiere-martin-crane-drops-the-acoustic-guitar-goes-all-neon-in-physical-therapy/) / [FADER](http://www.thefader.com/2015/10/28/martin-crane-gunk-of-stars) / [Interview Magazine](http://www.interviewmagazine.com/music/exclusive-track-premiere-gadesco-martin-crane/) / [Spotify](https://open.spotify.com/album/2GXUqZv1RwRUTJsoQWDnjQ)"
 }, {
   "name": "Phosphorescent Blues LP",
   "imageUrl": "brazos-phossy.png",
@@ -230,7 +230,7 @@ export const portfolioData = [{
   "author": "Brazos",
   "slug": "phosphorescent-blues-lp",
   "scId": null,
-  "description": "[Relix](http://www.relix.com/reviews/detail/brazos-phosphorescent-blues)\\n[Spotify](https://open.spotify.com/album/6fHl5DpftbzFPWcIVCZ3GR)"
+  "description": "[Relix](http://www.relix.com/reviews/detail/brazos-phosphorescent-blues) / [Spotify](https://open.spotify.com/album/6fHl5DpftbzFPWcIVCZ3GR)"
 }, {
   "name": "Saltwater LP",
   "imageUrl": "brazos-saltwater.png",
@@ -241,7 +241,7 @@ export const portfolioData = [{
   "author": "Brazos",
   "slug": "saltwater-lp",
   "scId": null,
-  "description": "[The Guardian](http://www.theguardian.com/music/2013/may/23/brazos-saltwater-review) / [Line of Best Fit](http://www.thelineofbestfit.com/reviews/albums/brazos-saltwater-125481) / [Relix](https://www.relix.com/reviews/detail/brazos-saltwater)\\n[Spotify](https://open.spotify.com/album/1XitEOaiwewfkVhWNl5Xyq)"
+  "description": "[The Guardian](http://www.theguardian.com/music/2013/may/23/brazos-saltwater-review) / [Line of Best Fit](http://www.thelineofbestfit.com/reviews/albums/brazos-saltwater-125481) / [Relix](https://www.relix.com/reviews/detail/brazos-saltwater) / [Spotify](https://open.spotify.com/album/1XitEOaiwewfkVhWNl5Xyq)"
 }, {
   "name": "NARC - Infinite Mine LP",
   "imageUrl": "narc-ep.png",
