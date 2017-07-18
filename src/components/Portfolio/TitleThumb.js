@@ -20,7 +20,7 @@ export default class TitleThumb extends Component {
   }
 
   render() {
-    const test = (
+    const content = (
         <div className="TitleThumb elementFloat" >
           <div className='thumbImage'>
             <img
@@ -50,7 +50,7 @@ export default class TitleThumb extends Component {
     return (
       <div>
         <Col sm={12} md={12} lg={6}>
-          {test}
+          {content}
         </Col>
       </div>
     );

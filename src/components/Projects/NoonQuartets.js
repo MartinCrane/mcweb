@@ -53,63 +53,69 @@ export default class NoonQuartets extends Component {
     )
 
     return (
-        <div className='noonPage'>
-          <div className="continue">
-            <h1><Link to={'/work'}>martincrane.net</Link></h1>
-            <img style={{'height':'20px', 'padding-left':'1em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/right.png'></img>
+      <div className='noonPage'>
+        <div className="continue">
+          <h1><Link to={'/work'}>martincrane.net</Link></h1>
+          <img style={{'height':'20px', 'padding-left':'1em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/right.png'></img>
+      </div>
+        <div className='noonWrap elementFloat '>
+          <div className="noonTitle">
+            <h5><b>NOON QUARTETS</b> (2017)</h5>
+          </div>
+          <div className='noonCard'>
+            <div className='noonArt' >
+              <img className='slantL blessed' style={{'width':'100%'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/SQ001.png'></img>
+            </div>
+            <div className='fifty'>
+              <div className='noonPlayer slantR' style={{'width':'100%'}}>
+                <LogoPlayer
+                  songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/noon-quartet-3.m4a"
+                  title='Noon Quartet No.3'
+                  />
+                <LogoPlayer
+                  songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/noon-quartet-2.m4a"
+                  title='Noon Quartet No.2'
+                  />
+                <LogoPlayer
+                  songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/noon-quartet-1.m4a"
+                  title='Noon Quartet No.1'
+                  />
+                <img className='blessed' onClick={this.handlePlay} style={{'width':'100%', 'padding-top':'2em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rav-play.png'></img>
+              </div>
+            </div>
+          </div>
+          {video}
         </div>
-          <div className='noonWrap elementFloat '>
-            <div className="noonTitle">
-              <h5><b>NOON QUARTETS</b> (2017)</h5>
-            </div>
-            <div className='noonCard'>
-              <div className='noonArt' >
-                <img className='slantL blessed' style={{'width':'100%'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/SQ001.png'></img>
-              </div>
-              <div className='fifty'>
-                <div className='noonPlayer slantR' style={{'width':'100%'}}>
-                  <LogoPlayer
-                    songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
-                    title='Noon Quartet No.3'
-                    />
-                  <LogoPlayer
-                    songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
-                    title='Noon Quartet No.2'
-                    />
-                  <LogoPlayer
-                    songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/library/maximal-4.m4a"
-                    title='Noon Quartet No.1'
-                    />
-                  <img className='blessed' onClick={this.handlePlay} style={{'width':'100%', 'padding-top':'2em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rav.png'></img>
-                </div>
-              </div>
-            </div>
-            {video}
+        <div className={this.state.creditShow ? 'credits cup' : 'credits cdown'}>
+          <div id='tab' onClick={this.creditShow}>
+            <img src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rose-icon.png'></img>
           </div>
-          <div className={this.state.creditShow ? 'credits cup' : 'credits cdown'}>
-            <div id='tab' onClick={this.creditShow}>
-              <img src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rose-icon.png'></img>
-            </div>
-              <div className='creditsContainer'>
-                <div className="cre">
-                  <h4>Clarice Jensen - Cello </h4>
-                  <h4>Ben Russell - Violin</h4>
-                  <h4>Laura Lutzke - Violin</h4>
-                  <h4>Isabel Hagen - Viola</h4>
-                  <h4>of <a href="http://www.acmemusic.org/" target="_blank"><b>American Contemporary Music Ensemble (ACME)</b></a></h4>
-                  <h4>-</h4>
-                  <h4>Engineered by Ryan Streber at Oktaven Audio</h4>
-                  <h4>Mixed by Martin Crane</h4>
-                  <h4>Mastered by Alex DeTurk</h4>
-                  <h4>Art: Matthew Boblet</h4>
-                </div>
-                <div className="notes">
-                  <p>These are notes on what Im writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whathese are notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whre notes  writing and whathese are notes on what Im writing and what  </p>
-                  <h4>Art: Matthew Boblet</h4>
-                </div>
+            <div className='creditsContainer'>
+              <div className="cre">
+                <h4>Clarice Jensen - Cello </h4>
+                <h4>Ben Russell - Violin</h4>
+                <h4>Laura Lutzke - Violin</h4>
+                <h4>Isabel Hagen - Viola</h4>
+                <h4>of <a href="http://www.acmemusic.org/" target="_blank"><b>American Contemporary Music Ensemble (ACME)</b></a></h4>
+                <h4>-</h4>
+                <h4>Engineered by Ryan Streber at Oktaven Audio</h4>
+                <h4>Mixed by Martin Crane</h4>
+                <h4>Mastered by Alex DeTurk</h4>
+                <h4>Orchestration Advice: Michael Beharie</h4>
+                <h4>Art: Matthew Boblet</h4>
+              </div>
+              <div className="notes">
+                <h3 style={{'font-size':'1.5em'}}>July 18, 2017</h3>
+                <p>The Noon Quartets are a series of string quartets I wrote in the fall of 2016. When I began this project, I hadn’t read music notation in 15 years, had never in my life written notation, hadn’t experience the magic that is hearing other people play something I’d written. I wanted to make a studio recording separate from scoring that combined the work I do on a computer with real life flesh and blood. Six months later, with the generosity of the American Contemporary Music Ensemble, I can present the first installment of an ongoing series of my instrumental music. In addition to the music, I was lucky to have Pepi Ginsberg film the process, and her short documentary on No.3 is available at Ravelin Magazine. I hope you enjoy listening to these pieces as much as I enjoyed writing them.</p>
+                <h3 style={{'font-size':'1.5em'}}>- Martin</h3>
+
               </div>
             </div>
           </div>
+
+
+
+        </div>
     );
   }
 }
