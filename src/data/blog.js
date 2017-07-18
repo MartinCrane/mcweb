@@ -97,4 +97,12 @@ export const blogData = [{
   "slug": "narc-game-bae",
   "date_format": "May 17, 2017",
   "image": "https://s3.amazonaws.com/www.martincrane.net/image/blog/narc-infinite-mine.png"
+}, {
+  "id": 15,
+  "archive": true,
+  "body": "![NPR](http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg) \\n I co-produced and mixed Ian's debut EP, Spiritual Leader, and today NPR included one of his songs on their [All Songs Considered Mix](http://www.npr.org/sections/allsongs/2017/07/18/537775617/new-mix-josh-ritter-ian-chang-moses-sumney-and-more). Give it a Spin! \\n [Pre-order](https://ianyhchang.bandcamp.com/album/spiritual-leader) it over at Ian's Bandcamp page. Ian's great. You won't be disappointed. \\n",
+  "slug": "ian-chang-all-songs-considered",
+  "title": "Ian Chang on NPR All Songs Considered",
+  "date_format": "July 18, 2017",
+  "image": "http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg"
 }]
