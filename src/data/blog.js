@@ -100,7 +100,7 @@ export const blogData = [{
 }, {
   "id": 15,
   "archive": true,
-  "body": "![NPR](http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg) \\n I co-produced and mixed Ian's debut EP, Spiritual Leader, and today NPR included one of his songs on their [All Songs Considered Mix](http://www.npr.org/sections/allsongs/2017/07/18/537775617/new-mix-josh-ritter-ian-chang-moses-sumney-and-more). Give it a Spin! \\n [Pre-order](https://ianyhchang.bandcamp.com/album/spiritual-leader) it over at Ian's Bandcamp page. Ian's great. You won't be disappointed. \\n",
+  "body": "![NPR](http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg) \\n I co-produced and mixed Ian's debut EP, Spiritual Leader, and today NPR included one of his songs on their [All Songs Considered Mix](http://www.npr.org/sections/allsongs/2017/07/18/537775617/new-mix-josh-ritter-ian-chang-moses-sumney-and-more). Give it a spin! It is one of the more ambient songs on the record, so kudos to NPR for promoting music of all kinds. \\n [Pre-order](https://ianyhchang.bandcamp.com/album/spiritual-leader) Ian's EP over at his Bandcamp. You won't be disappointed. \\n",
   "slug": "ian-chang-all-songs-considered",
   "title": "Ian Chang on NPR All Songs Considered",
   "date_format": "July 18, 2017",
