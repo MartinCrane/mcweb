@@ -105,4 +105,12 @@ export const blogData = [{
   "title": "Ian Chang on NPR All Songs Considered",
   "date_format": "July 18, 2017",
   "image": "http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg"
+}, {
+  "id": 15,
+  "archive": true,
+  "body": "![Noon Quartets Cover](https://s3.amazonaws.com/www.martincrane.net/image/noon/SQ001.png) \\n Last fall I set out to write an album of string quartets. Six months later, I went in the studio with some amazing musicians from [ACME](http://www.acmemusic.org/) and made a record. This is the first half of it, my first record of concert music. \\n [NOON QUARTETS](https://www.martincrane.net/noon-quartets) \\n [Pepi Ginsberg](http://pepiginsberg.com/) made a short documentary on the making of it as well, which is up today on [Ravelin Magazine](http://ravelinmagazine.com/posts/pepi-ginsbergs-video-profile-of-martin-crane/). \\n",
+  "slug": "release-of-noon-quartets",
+  "title": "Noon Quartets",
+  "date_format": "July 19, 2017",
+  "image": "http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg"
 }]

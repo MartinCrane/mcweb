@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 import { updateMouse, elementFloat } from '../../actions/mouse'
 import { bindActionCreators } from 'redux'
 import { Clearfix } from 'react-bootstrap';
-
+import { Helmet } from "react-helmet";
 import { logoSliceLink } from '../../data/logoSliceLink'
 import { Media, Player, controls } from 'react-media-player'
 import CustomPlayPause from '../Library/CustomPlayPause'
@@ -48,7 +48,7 @@ class Logo extends React.Component {
               <div className="media">
                 <div className="media-player" >
                   <Player
-                    src="https://vimeo.com/224544275/4e9760980a"
+                    src="https://vimeo.com/224544275"
                     vendor="vimeo"
                     style={{'border':'10px white'}}
                     />
@@ -62,6 +62,11 @@ class Logo extends React.Component {
 
     return (
         <div className='noonPage'>
+          <Helmet titleTemplate="%s | martincrane.net">
+            <title>Noon Quartets</title>
+             <html lang="en" amp />
+            <meta name="description" content="Helmet application" />
+          </Helmet>
           <div className="continue">
             <h1><Link to={'/work'}>Continue to martincrane.net</Link></h1>
             <img style={{'height':'20px', 'padding-left':'1em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/right.png'></img>
@@ -104,17 +109,17 @@ class Logo extends React.Component {
                   <h4>Ben Russell - Violin</h4>
                   <h4>Laura Lutzke - Violin</h4>
                   <h4>Isabel Hagen - Viola</h4>
-                  <h4>of <a href="http://www.acmemusic.org/" target="_blank"><b>American Contemporary Music Ensemble (ACME)</b></a></h4>
+                  <h4>of <a href="http://www.acmemusic.org/" target="_blank">American Contemporary Music Ensemble (ACME)</a></h4>
                   <h4>-</h4>
-                  <h4>Engineered by Ryan Streber at Oktaven Audio</h4>
+                  <h4>Engineered by Ryan Streber at <a href='http://www.oktavenaudio.com/'>Oktaven Audio</a></h4>
                   <h4>Mixed by Martin Crane</h4>
-                  <h4>Mastered by Alex DeTurk</h4>
-                  <h4>Orchestration Advice: Michael Beharie</h4>
-                  <h4>Art: Matthew Boblet</h4>
+                  <h4>Mastered by <a href='http://alexdeturk.com/'>Alex DeTurk</a></h4>
+                  <h4>Orchestration Advice: <a href="http://michaelbeharie.com/">Michael Beharie</a></h4>
+                  <h4>Art: <a href='http://matthewboblet.com/'>Matthew Boblet</a></h4>
                 </div>
                 <div className="notes">
                   <h3 style={{'font-size':'1.5em'}}>July 18, 2017</h3>
-                  <p>The Noon Quartets are a series of string quartets I wrote in the fall of 2016. When I began this project, I had never written a concert piece or experienced the magic that is hearing other people play my music. I wanted to make a studio recording separate from scoring that combined the work I do on a computer with real life flesh and blood. Six months later, with the generosity of the American Contemporary Music Ensemble, I can present the first installment of an ongoing series of my instrumental music. In addition to the music, I was lucky to have Pepi Ginsberg film the process, and her short documentary on No.3 is available at Ravelin Magazine. I hope you enjoy listening to these pieces as much as I enjoyed writing them.</p>
+                  <p>The Noon Quartets are a series of string quartets I wrote in the fall of 2016. When I began this project, I had never written a concert piece or experienced the magic that is hearing other people play my music. I wanted to make a studio recording separate from scoring that combined the work I do on a computer with real life flesh and blood. Six months later, with the generosity of the <a href="http://www.acmemusic.org/" target="_blank">American Contemporary Music Ensemble </a>, I can present the first installment of an ongoing series of my instrumental music. In addition to the music, I was lucky to have <a href='http://pepiginsberg.com/'>Pepi Ginsberg</a> film the process, and her short documentary on No.3 is available at <a href='http://ravelinmagazine.com/posts/pepi-ginsbergs-video-profile-of-martin-crane/'>Ravelin Magazine</a>. I hope you enjoy listening to these pieces as much as I enjoyed writing them.</p>
                   <h3 style={{'font-size':'1.5em'}}>- Martin</h3>
 
                 </div>

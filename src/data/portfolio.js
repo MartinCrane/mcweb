@@ -9,7 +9,7 @@ export const portfolioData = [{
   "slug": "noon-quartets",
   "scId": null,
   "link": "www.google.com",
-  "description": "[Noon Quartets](/noon-quartets) / Ravelin video portrait"
+  "description": "[Noon Quartets](/noon-quartets) / [Ravelin Magazine portrait](http://ravelinmagazine.com/posts/pepi-ginsbergs-video-profile-of-martin-crane/)"
 }, {
   "name": "East Hell",
   "imageUrl": "east-hell.png",
