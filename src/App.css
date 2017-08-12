@@ -395,7 +395,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  cursor: pointer;
   width:50%;
 }
 .noonArt < img {
@@ -404,7 +403,6 @@ h3 {
 
 .blessed:hover {
   filter: invert(100%);
-  cursor: pointer;
   background-color: rgba(162, 150, 150, 0)
 }
 .slantL {
@@ -732,7 +730,7 @@ menu
           -webkit-box-shadow: 7px 6px 10px -3px rgba(0,0,0,0.10);
           -moz-box-shadow: 7px 6px 10px -3px rgba(0,0,0,0.10);
           box-shadow: 7px 6px 10px -3px rgba(0,0,0,0.10);
-  opacity: .85;
+  opacity: .97;
 
 }
 
@@ -1226,7 +1224,7 @@ textarea.form-control
 
     .noonArt {
       position: relative;
-      cursor: pointer;
+
       width:100%;
     }
     .noonArt < img {
@@ -1239,7 +1237,6 @@ textarea.form-control
     }
     .blessed:hover {
       filter: invert(100%);
-      cursor: pointer;
       background-color: rgba(162, 150, 150, 0)
     }
     .slantL {

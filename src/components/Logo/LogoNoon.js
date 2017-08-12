@@ -93,7 +93,7 @@ class Logo extends React.Component {
                     songUrl="https://s3.amazonaws.com/www.martincrane.net/audio/noon-quartet-1.m4a"
                     title='Noon Quartet No.1'
                     />
-                  <img className='blessed' onClick={this.handlePlay} style={{'width':'100%', 'padding-top':'2em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rav-play.png'></img>
+                  <img className='blessed' style={{'width':'100%', 'padding-top':'2em'}} src='https://s3.amazonaws.com/www.martincrane.net/image/noon/rav.png'></img>
                 </div>
               </div>
             </div>
