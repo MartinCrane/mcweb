@@ -35,11 +35,11 @@ store.dispatch({type: "LOAD_BLOG", payload: blogData.reverse()})
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history} onUpdate={() => window.scrollTo(0, 0)}>
-      <Route path="/" component={ConnectedLogo} />
       <Route path="quartets" component={Quartets} />
       <Route path="access" component={Access} />
       <Route path="noon-quartets" component={NoonQuartets} />
       <Route component={ConnectedApp}>
+        
         <Route path="logo" component={ConnectedLogo} />
         <Route path="library" component={ConnectedLibraryContainer} />
         <Route path="news" component={ConnectedBlogContainer}>
@@ -53,7 +53,8 @@ ReactDOM.render(
         <Route path="about" component={About} />
       </Route>
 
-      <Redirect from='*' to='/' />
+      <Redirect from='*' to='work' />
+      <Redirect from='/' to='work' />
 
     </Router>
   </Provider>,

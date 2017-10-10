@@ -1,4 +1,16 @@
 export const portfolioData = [{
+  "name": "GE Droneweek 2017 episode 1-5",
+  "imageUrl": "droneweek.png",
+  "credit": "Original Score and Sound Design",
+  "year": 2017,
+  "body": null,
+  "tags": ["originalMusic", "production", "songwriting"],
+  "author": "Zach Golden and Alec Sutherland",
+  "slug": "noon-quartets",
+  "scId": null,
+  "link": "www.google.com",
+  "description": "[Stream at VICELAND](https://www.viceland.com/en_us/show/droneweek) / [Adweek Article](http://www.adweek.com/tv-video/viceland-will-weave-ges-droneweek-into-one-hour-blocks-of-programming/)"
+},{
   "name": "Noon Quartets",
   "imageUrl": "noon-quartets.png",
   "credit": "Original Music",

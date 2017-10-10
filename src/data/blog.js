@@ -113,4 +113,12 @@ export const blogData = [{
   "title": "Noon Quartets",
   "date_format": "July 19, 2017",
   "image": "http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg"
+}, {
+  "id": 16,
+  "archive": true,
+  "body": "![Noon Quartets Cover](https://s3.amazonaws.com/www.martincrane.net/image/blog/droneweek.png) \\n I'm happy to announce my cable TV debut this week with the release of a [5 part collaborative series](https://www.viceland.com/en_us/show/droneweek) between GE and VICELAND that's airing this week during Droneweek. I scored the series and created the sound design. \\n It was a blast working on this project, as the footage is incredible, the team at [Spark Aerial](https://www.sparkaerial.com/) and [Barbarian](https://wearebarbarian.com/) and GE were great, and the technology that GE is working on is the kind of sustainable power solutions that I can believe in. Plus, the series travels all over the world, so I got to remake the music in various regional styles, which is really fun. It airs this week from 7-8 each night. Hope you can tune in.",
+  "slug": "droneweek",
+  "title": "GE Droneweek 2017 on VICELAND this week",
+  "date_format": "October 10, 2017",
+  "image": "http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg"
 }]
