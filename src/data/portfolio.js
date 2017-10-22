@@ -1,10 +1,22 @@
 export const portfolioData = [{
+  "name": "Alba and June",
+  "imageUrl": "alba-and-june.png",
+  "credit": "Original Score and Sound Design",
+  "year": 2018,
+  "body": null,
+  "tags": ["short", "originalScore", 'scoring', "narrative"],
+  "author": "Pepi Ginsberg",
+  "slug": "alba-and-june",
+  "scId": 320972712,
+  "link": "www.google.com",
+  "description": "To be released in 2018"
+},{
   "name": "GE Droneweek 2017 episode 1-5",
   "imageUrl": "droneweek.png",
   "credit": "Original Score and Sound Design",
   "year": 2017,
   "body": null,
-  "tags": ["originalMusic", "production", "songwriting"],
+  "tags": ["originalScore", 'scoring', "documentary", "commercial"],
   "author": "Zach Golden and Alec Sutherland",
   "slug": "ge",
   "scId": null,
