@@ -6,7 +6,7 @@ export const portfolioData = [{
   "body": null,
   "tags": ["originalMusic", "production", "songwriting"],
   "author": "Zach Golden and Alec Sutherland",
-  "slug": "noon-quartets",
+  "slug": "ge",
   "scId": null,
   "link": "www.google.com",
   "description": "[Stream at VICELAND](https://www.viceland.com/en_us/show/droneweek) / [Adweek Article](http://www.adweek.com/tv-video/viceland-will-weave-ges-droneweek-into-one-hour-blocks-of-programming/)"
@@ -18,8 +18,8 @@ export const portfolioData = [{
   "body": null,
   "tags": ["originalMusic", "production", "songwriting"],
   "author": "Martin Crane",
-  "slug": "noon-quartets",
-  "scId": null,
+  "slug": "noon-quartet-2",
+  "scId": 320972703,
   "link": "www.google.com",
   "description": "[Noon Quartets](/noon-quartets) / [Ravelin Magazine portrait](http://ravelinmagazine.com/posts/pepi-ginsbergs-video-profile-of-martin-crane/)"
 }, {
@@ -133,6 +133,17 @@ export const portfolioData = [{
   "slug": "every-little-thing-podcast",
   "scId": null,
   "description": "[Every Little Thing](https://gimletmedia.com/every-little-thing/)"
+}, {
+  "name": "Samsung 837: Surviving The Titanic",
+  "imageUrl": "samsung-titanic.png",
+  "credit": "Trailer Music",
+  "year": 2017,
+  "body": null,
+  "tags": ["originalScore", 'scoring', "narrative"],
+  "author": "Alec Sutherland",
+  "slug": "samsung-titanic",
+  "scId": 320972692,
+  "description": '[Surviving The Titanic at Samsung 837](https://www.samsung.com/us/837/events/surviving-the-titanic)'
 }, {
   "name": "Animated Life: Mary Leakey",
   "imageUrl": "animated-life-mary-leakey.png",
