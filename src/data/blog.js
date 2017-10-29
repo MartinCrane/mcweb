@@ -4,7 +4,7 @@ export const blogData = [{
   "body": "Hello there,\n\nThis is post number one for me. I thought I would start this blog in order to talk about what I'm up to... both the projects and sounds I'm making and how I'm making them.  \n\n**number 1 - Gadesco** \n\n !!!rp!!!https://vimeo.com/156655542!!!rp!!! \n\n\nRecently, I came out with [Physical Therapy](http://iomcoi.com/), my first record under my own name. This is coming after 2 Brazos records I wrote as well, but it is such a departure from those sounds that it didn’t feel like a Brazos record. I decided to release music under my own name because I’m interested in branching out into scoring, sound design and production, and I want it all under the same roof. I did have some help on this from Ian Chang and Spencer Zahn who played with me in Brazos.\n\nThe song above is one of my favorites from this record. I wrote it almost 10 years ago in Austin, and I've made 4 or 5 recordings of it since, but I never could get it quite right. This one feels the closest, and I really love what Zachary Heinzerling did with the video. It’s funny how songs can stay with you over the years. They serve as a 3rd reference point by which to triangulate your relationship with your former self, to see just how much you’ve changed (or haven’t).\n\n**number 2 - Scoring**  \n\n2015 was also the year I started writing to picture. My first project was Hugh The Hunter, a short film by Zachary Heinzerling. That went to Sundance 2015 and is now available on [NOWNESS](https://www.nowness.com/story/hugh-the-hunter-zachary-heinzerling-hugh-hayden).\\n I spent the rest of the year finishing my record and working with Zachary and [Sweet Fern Productions](http://www.sweetfernproductions.com/) on some web docs that turned out really nicely. Check back in for what I'm up to. I've got some awesome projects in the works! \n\nMC",
   "title": "GADESCO",
   "slug": "gadesco",
-  "date_format": "February 10, 2016"
+  "date_format": "January 10, 2016"
 }, {
   "id": 2,
   "archive": true,
@@ -112,13 +112,13 @@ export const blogData = [{
   "slug": "release-of-noon-quartets",
   "title": "Noon Quartets",
   "date_format": "July 19, 2017",
-  "image": "http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg"
+  "image": "https://s3.amazonaws.com/www.martincrane.net/image/noon/SQ001.png"
 }, {
   "id": 16,
   "archive": true,
-  "body": "![Noon Quartets Cover](https://s3.amazonaws.com/www.martincrane.net/image/blog/droneweek.png) \\n I'm happy to announce my cable TV debut this week with the release of a [5 part collaborative series](https://www.viceland.com/en_us/show/droneweek) between GE and VICELAND that's airing this week during Droneweek. I scored the series and created the sound design. \\n It was a blast working on this project, as the footage is incredible, the team at [Spark Aerial](https://www.sparkaerial.com/) and [Barbarian](https://wearebarbarian.com/) and GE were great, and the technology that GE is working on is the kind of sustainable power solutions that I can believe in. Plus, the series travels all over the world, so I got to remake the music in various regional styles, which is really fun. It airs this week from 7-8 each night. Hope you can tune in.",
+  "body": "![Droneweek Cover](https://s3.amazonaws.com/www.martincrane.net/image/blog/droneweek.png) \\n I'm happy to announce my cable TV debut this week with the release of a [5 part collaborative series](https://www.viceland.com/en_us/show/droneweek) between GE and VICELAND that's airing this week during Droneweek. I scored the series and created the sound design. \\n It was a blast working on this project, as the footage is incredible, the team at [Spark Aerial](https://www.sparkaerial.com/) and [Barbarian](https://wearebarbarian.com/) and GE were great, and the technology that GE is working on is the kind of sustainable power solutions that I can believe in. Plus, the series travels all over the world, so I got to remake the music in various regional styles, which is really fun. It airs this week from 7-8 each night. Hope you can tune in.",
   "slug": "droneweek",
   "title": "GE Droneweek 2017 on VICELAND this week",
   "date_format": "October 10, 2017",
-  "image": "http://mediad.publicbroadcasting.net/p/kwmu/files/201405/allsongsconsidered.jpg"
+  "image": "https://s3.amazonaws.com/www.martincrane.net/image/blog/droneweek.png"
 }]

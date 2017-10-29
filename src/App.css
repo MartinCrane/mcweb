@@ -645,6 +645,9 @@ menu
     margin-left: auto;
     padding-top: 1vw;
 }
+.mobileBreak {
+  display: none;
+}
 .thumbDetails
 {
     position: relative;
@@ -1331,7 +1334,7 @@ textarea.form-control
     }
     .ViewPort
     {
-        width: 100%;
+        width: 98%;
         margin: 0;
         padding: 0;
         padding-bottom: 5em;
@@ -1345,11 +1348,11 @@ textarea.form-control
     /*TITLE THUMB*/
     .TitleThumb
     {
-        font-size: 1.5em;
+        font-size: 1em;
 
         width: 100%;
         margin: 0;
-        margin-bottom: 150px;
+        margin-bottom: 30px;
         padding: 0;
     }
     .About
@@ -1374,7 +1377,10 @@ textarea.form-control
         top: -50px;
         left: 0;
     }
-
+    .mobileBreak {
+      display: block;
+      padding-top: 30px
+    }
     .SeekBar2
     {
         top: -3px;
@@ -1426,28 +1432,29 @@ textarea.form-control
         box-sizing: border-box;
         width: 100%;
         max-width: 500px;
-        border: white 1.5em solid;
+        border: white .5em solid;
     }
     .PostThumb  h1
     {
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
     }
     .PostThumb  h6
     {
-        font-size: 1.7em;
+        font-size: 1.2em;
         text-align: center;
     }
     .PostThumb  p
     {
-        font-size: 2em;
-        margin: 2em 0;
+        font-size: 1.4em;
+        margin: 1em ;
 
     }
     br {
      display: block;
-     margin: 30px 0;
+     margin: 0px ;
     }
+
     .BlogContainer
     {
         width: 100%;
@@ -1493,34 +1500,34 @@ textarea.form-control
     {
         z-index: 1000;
         bottom: 0;
-
+        position: fixed;
         display: block;
     }
     .MobileMenuItem
     {
-        font-size: 3.2vw;
+        font-size: 4.0vw;
         font-family: 'TradeGothicLTStd-Extended';
         z-index: 7;
         font-stretch: condensed;
         display: inline-flex;
 
         width: 25%;
-        height: 70px;
+        height: 50px;
 
-        -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
-            -ms-transform: rotate(5deg); /* IE 9 */
-                transform: rotate(5deg);
+
 
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
 
-        text-decoration: none;
-        text-decoration: none;
 
         color: black;
         border: 0 solid black;
         border-left: 2px solid black;
         background-color: white;
     }
+
     .MobileLogo
     {
         position: fixed;
